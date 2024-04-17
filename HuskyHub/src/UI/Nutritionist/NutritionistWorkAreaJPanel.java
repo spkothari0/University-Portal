@@ -15,6 +15,7 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.NutritionistWorkRequest;
 import Business.WorkQueue.WorkRequest;
+import java.util.Properties;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -187,7 +188,7 @@ public class NutritionistWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel8.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel8.setText("Weight (in kgs):");
+        jLabel8.setText("Weight (in kg):");
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 540, -1, 30));
 
         txtWeight.setEditable(false);
@@ -212,7 +213,7 @@ public class NutritionistWorkAreaJPanel extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("Height(in cms):");
+        jLabel7.setText("Height(in cm):");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 500, 86, 30));
 
         viewDetailsBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
