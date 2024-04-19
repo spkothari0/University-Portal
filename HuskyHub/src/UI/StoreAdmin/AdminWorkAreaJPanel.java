@@ -1,4 +1,4 @@
-package UI.Admin;
+package UI.StoreAdmin;
 
 import Store.SupplierDirectory;
 import java.awt.CardLayout;

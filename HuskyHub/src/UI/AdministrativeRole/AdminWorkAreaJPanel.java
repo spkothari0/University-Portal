@@ -36,7 +36,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         this.network = network;
         greetLbl.setText(account.getEmployee().getName() + "!!");
         valueLabel.setText(enterprise.getName());
-        if (enterprise.getEnterpriseType().toString().equals("Dorm Inventory Unit")) {
+        if (enterprise.getName().toString().equals("Dorm Inventory Unit")) {
             manageRequestsBtn.setVisible(false);
         }
     }
