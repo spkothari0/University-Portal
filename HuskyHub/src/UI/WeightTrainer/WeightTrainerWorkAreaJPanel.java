@@ -6,7 +6,7 @@
 package UI.WeightTrainer;
 
 import Business.Student.Student;
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -34,10 +34,10 @@ public class WeightTrainerWorkAreaJPanel extends javax.swing.JPanel {
     UserAccount account;
     NutritionOrganization nutritionOrganisation;
     Enterprise enterprise;
-    EcoSystem ecosystem;
+    Business ecosystem;
     Network network;
 
-    public WeightTrainerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public WeightTrainerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.account = account;

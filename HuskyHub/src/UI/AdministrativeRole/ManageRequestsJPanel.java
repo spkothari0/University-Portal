@@ -5,7 +5,7 @@
  */
 package UI.AdministrativeRole;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -27,7 +27,7 @@ public class ManageRequestsJPanel extends javax.swing.JPanel {
      * Creates new form ManageRequestsJPanel
      */
     private JPanel userProcessContainer;
-    private EcoSystem business;
+    private Business business;
     private UserAccount userAccount;
     private Enterprise enterprise;
 

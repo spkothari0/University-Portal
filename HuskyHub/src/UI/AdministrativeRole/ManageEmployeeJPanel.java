@@ -4,7 +4,7 @@
  */
 package UI.AdministrativeRole;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
@@ -27,7 +27,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     private OrganizationDirectory organizationDir;
     private JPanel userProcessContainer;
     private Organization org;
-    private EcoSystem system;
+    private Business system;
     private boolean emailValid;
     private boolean userNameValid;
     private boolean nameValid;
