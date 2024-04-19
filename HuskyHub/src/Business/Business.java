@@ -4,70 +4,64 @@
  */
 package Business;
 
-import Personnal.ManagerDirectory;
-import Personnal.PersonDirectory;
-import Personnal.StudentDirectory;
+import Business.Employee.EmployeeDirectory;
+import java.util.ArrayList;
 
+import Business.Enterprise.EnterpriseDirectory;
+import Business.Network.Network;
+import Business.Student.StudentDirectory;
+import Business.Student.StudentRequestDirectory;
+import Business.UserAccount.UserAccountDirectory;
 /**
  *
- * @author Yash Khavnekar
+ * @author spkothari
  */
 public class Business {
+    private static Business business;
+    private ArrayList<Network> networklList;
+    private StudentRequestDirectory studentRequestDirectory;
+    private EnterpriseDirectory enterpriseDirectory;
+    private EmployeeDirectory employeeDirectory;
+    private UserAccountDirectory userAccountDirectory;
+    private StudentDirectory studentDirectory;
 
-    UserAccountDirectory useraccountdirectory;
-    PersonDirectory persondirectory; //all people profiles regardless of the role
-    ManagerDirectory managerdirectory;
-    StudentDirectory studentdirectory;
-    String name;
-
-    public Business(String n) {
-        name = n;
-        useraccountdirectory = new UserAccountDirectory();
-        persondirectory = new PersonDirectory();
-        managerdirectory = new ManagerDirectory();
-        studentdirectory = new StudentDirectory();
+    public Business() {
+        networklList = new ArrayList<>();
+        studentRequestDirectory = new StudentRequestDirectory();
+        enterpriseDirectory = new EnterpriseDirectory();
+        employeeDirectory = new EmployeeDirectory();
+        userAccountDirectory = new UserAccountDirectory();
+        studentDirectory = new StudentDirectory();
     }
 
-    public UserAccountDirectory getUseraccountdirectory() {
-        return useraccountdirectory;
+    public static Business getInstance(){
+        if(business == null){
+            business = new Business();
+        }
+        return business;
     }
 
-    public void setUseraccountdirectory(UserAccountDirectory useraccountdirectory) {
-        this.useraccountdirectory = useraccountdirectory;
+    public ArrayList<Network> getNetworklList() {
+        return networklList;
     }
 
-    public PersonDirectory getPersondirectory() {
-        return persondirectory;
+    public StudentRequestDirectory getStudentRequestDirectory() {
+        return studentRequestDirectory;
     }
 
-    public void setPersondirectory(PersonDirectory persondirectory) {
-        this.persondirectory = persondirectory;
+    public EnterpriseDirectory getEnterpriseDirectory() {
+        return enterpriseDirectory;
     }
 
-    public ManagerDirectory getManagerdirectory() {
-        return managerdirectory;
+    public EmployeeDirectory getEmployeeDirectory() {
+        return employeeDirectory;
     }
 
-    public void setManagerdirectory(ManagerDirectory managerdirectory) {
-        this.managerdirectory = managerdirectory;
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
     }
 
-    public StudentDirectory getStudentdirectory() {
-        return studentdirectory;
+    public StudentDirectory getStudentDirectory() {
+        return studentDirectory;
     }
-
-    public void setStudentdirectory(StudentDirectory studentdirectory) {
-        this.studentdirectory = studentdirectory;
-    }
-    
-    
-    
-    
-    
-    
-
-   
-    
-    
-    
 }
