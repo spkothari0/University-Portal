@@ -1,4 +1,4 @@
-package UI.Admin;
+package UI.StoreAdmin;
 
 import Store.Supplier;
 import Store.SupplierDirectory;
