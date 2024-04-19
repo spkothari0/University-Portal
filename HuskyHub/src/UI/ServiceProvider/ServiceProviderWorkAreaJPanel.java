@@ -37,6 +37,7 @@ public class ServiceProviderWorkAreaJPanel extends javax.swing.JPanel {
         this.business = business;
         this.enterprise = enterprise;
         greetLbl.setText(account.getEmployee().getName() + "!!");
+        delManTbl.getTableHeader().setDefaultRenderer(new tableHeaderColors());
 
 
         populateTable();

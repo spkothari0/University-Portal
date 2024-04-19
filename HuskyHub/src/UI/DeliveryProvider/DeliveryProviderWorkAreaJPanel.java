@@ -39,6 +39,7 @@ public class DeliveryProviderWorkAreaJPanel extends javax.swing.JPanel {
         this.business = business;
         this.enterprise = enterprise;
         greetLbl.setText(account.getEmployee().getName() + "!!");
+        delManTbl.getTableHeader().setDefaultRenderer(new tableHeaderColors());
 
         if (enterprise.getEnterpriseType().equals("Maintenance Unit")) {
             processJButton.setText("Mark as completed");

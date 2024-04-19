@@ -44,6 +44,7 @@ public class NutritionistWorkAreaJPanel extends javax.swing.JPanel {
          this.enterprise = enterprise;
          this.ecosystem = business;
          greetLbl.setText(account.getEmployee().getName() + "!!");
+         tblStudentList.getTableHeader().setDefaultRenderer(new tableHeaderColors());
          this.network = network;
          populateStudent();
          

@@ -45,7 +45,8 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.ecosystem = business;
         this.network = network;
-        greetLbl.setText(account.getEmployee().getName() + "!!");        
+        greetLbl.setText(account.getEmployee().getName() + "!!");
+        tblStudentList.getTableHeader().setDefaultRenderer(new tableHeaderColors());
         populateStudent();
     }
 

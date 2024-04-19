@@ -44,6 +44,7 @@ public class PhysiotherapistWorkAreaJPanel extends javax.swing.JPanel {
          this.network = network;
          populateStudent();
          greetLbl.setText(account.getEmployee().getName() + "!!");
+         tblStudentList.getTableHeader().setDefaultRenderer(new tableHeaderColors());
         
     }
     

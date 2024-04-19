@@ -45,6 +45,7 @@ public class WeightTrainerWorkAreaJPanel extends javax.swing.JPanel {
         this.ecosystem = business;
         this.network = network;
         greetLbl.setText(account.getEmployee().getName() + "!!");
+        tblStudentList.getTableHeader().setDefaultRenderer(new tableHeaderColors());
         populateStudent();
     }
 
