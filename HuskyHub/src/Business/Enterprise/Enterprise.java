@@ -5,6 +5,7 @@
 package Business.Enterprise;
 
 import Business.Organization.OrganizationDirectory;
+import Business.UserAccount.UserAccountDirectory;
 
 /**
  *
@@ -13,6 +14,7 @@ import Business.Organization.OrganizationDirectory;
 public class Enterprise {
     private String name;
     private OrganizationDirectory organizationDirectory;
+    private UserAccountDirectory userAccountDirectory;
 
     public enum EnterpriseType {
         HealthAndFitness("Health and Fitness"),
@@ -35,6 +37,7 @@ public class Enterprise {
     public Enterprise(EnterpriseType type) {
         this.name = type.getValue();
         organizationDirectory = new OrganizationDirectory();
+        userAccountDirectory = new UserAccountDirectory();
     }
 
     public String getName() {
@@ -48,4 +51,11 @@ public class Enterprise {
     public OrganizationDirectory getOrganizationDirectory() {
         return organizationDirectory;
     }
+
+    public UserAccountDirectory getUserAccountDirectory() {
+        return userAccountDirectory;
+    }
+
+    
+    
 }
