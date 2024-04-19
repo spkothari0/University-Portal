@@ -6,11 +6,14 @@ package UI;
 
 import Business.Business;
 import Business.ConfigureASystem;
-import Business.UserAccount;
-import Business.UserAccountDirectory;
-import Personnal.ManagerProfile;
-import Personnal.Profile;
-import Personnal.StudentProfile;
+import Business.Enterprise.Enterprise;
+import Business.Network.Network;
+import Business.Organization.Organization;
+import Business.UserAccount.UserAccountDirectory;
+
+
+import Business.UserAccount.UserAccount;
+
 import Store.MasterOrderList;
 import Store.Store;
 import Store.SupplierDirectory;
@@ -32,17 +35,21 @@ public class MainJFrame extends javax.swing.JFrame {
     Store store;
     SupplierDirectory supplierDirectory;
     MasterOrderList masterOrderList;
+    Network network;
+    Enterprise enterprise;
+    Organization organization;
     /**
      * Creates new form MainJFrame
      */
     public MainJFrame() {
         initComponents();
-        business = ConfigureASystem.initialize();
+        business = ConfigureASystem.configure();
         store = new Store();
         supplierDirectory = store.getSupplierDirectory(); 
         masterOrderList = store.getMasterOrderList();
+  
         
-        UserAccountDirectory uadirectory = business.getUseraccountdirectory();
+        UserAccountDirectory uadirectory = business.getUserAccountDirectory();
         
         
         setSize(830,600);
@@ -209,37 +216,50 @@ public class MainJFrame extends javax.swing.JFrame {
 
 
         
-        UserAccountDirectory uad = business.getUseraccountdirectory();
-        UserAccount useraccount = uad.AuthenticateUser(userName, password);
+        UserAccountDirectory uad = business.getUserAccountDirectory();
+        UserAccount useraccount = uad.authenticateUser(userName, password);
+        
         
         StoreManagerJPanel storemanagerjpanel;
         StudentRoleJPanel studentjpanel;
         //AdminRoleWorkAreaJPanel adminworkarea;
-        Profile profile = useraccount.getAssociatedPersonProfile();
-
-        if (profile instanceof ManagerProfile) {
-
-            storemanagerjpanel = new StoreManagerJPanel(business, UserProcessContainer,profile);
-            UserProcessContainer.removeAll();
-            UserProcessContainer.add("Manager", storemanagerjpanel);
-            ((java.awt.CardLayout) UserProcessContainer.getLayout()).next(UserProcessContainer);
-
+        if (useraccount == null) {
+            for (Network network : business.getNetworklList()) {
+                for (Enterprise e : network.getEnterpriseDirectory().getEnterpriseList()) {
+                    useraccount = e.getUserAccountDirectory().authenticateUser(userName, password);
+                    if (useraccount == null) {
+                        for (Organization org : e.getOrganizationDirectory().getOrganizationList()) {
+                            useraccount = org.getUserAccountDirectory().authenticateUser(userName, password);
+                            if (useraccount != null) {
+                                enterprise = e;
+                                organization = org;
+                                break;
+                            }
+                        }
+                    } else {
+                        enterprise = e;
+                        break;
+                    }
+                    if (organization != null) {
+                        break;
+                    }
+                }
+                if (enterprise != null) {
+                    break;
+                }
+            }
         }
-
-        if (profile instanceof StudentProfile) {
-
-            StudentProfile spp = (StudentProfile) profile;
-            studentjpanel = new StudentRoleJPanel(business, spp, UserProcessContainer);
-            UserProcessContainer.removeAll();
-            UserProcessContainer.add("student", studentjpanel);
-            ((java.awt.CardLayout) UserProcessContainer.getLayout()).next(UserProcessContainer);
-
+        if (useraccount != null && useraccount.getStudent() != null) {
+            network = useraccount.getStudent().getNetwork();
         }
         if (useraccount == null) {
             JOptionPane.showMessageDialog(null, "Invalid credentials");
             return;
+        } else {
+            CardLayout layout = (CardLayout) UserProcessContainer.getLayout();
+            UserProcessContainer.add("workArea", useraccount.getRole().createWorkArea(UserProcessContainer, enterprise, organization, useraccount, business, network));
+            layout.next(UserProcessContainer);
         }
-   
         loginJButton.setEnabled(false);
         logoutJButton.setEnabled(true);
         userNameJTextField.setEnabled(false);
