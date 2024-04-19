@@ -5,8 +5,8 @@
  */
 package UI.Physiotherapist;
 
-import userinterface.PhysiotherapistRole.*;
-import Business.EcoSystem;
+import UI.Physiotherapist.*;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Student.Student;
@@ -32,7 +32,7 @@ public class PhysiotherapistWorkAreaJPanel extends javax.swing.JPanel {
     JPanel userProcessContainer;
     UserAccount account;
     Enterprise enterprise;
-    EcoSystem ecosystem;
+    Business ecosystem;
     Network network;
 
     public PhysiotherapistWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {

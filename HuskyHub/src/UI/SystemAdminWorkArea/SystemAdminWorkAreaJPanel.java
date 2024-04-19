@@ -5,7 +5,7 @@
  */
 package UI.SystemAdminWorkArea;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -26,7 +26,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
      * Creates new form SystemAdminWorkAreaJPanel
      */
     JPanel userProcessContainer;
-    EcoSystem system;
+    Business system;
     Organization organization;
     Enterprise enterprise;
     UserAccount account;

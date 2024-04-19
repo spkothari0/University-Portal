@@ -5,7 +5,7 @@
 package UI.SystemAdminWorkArea;
 
 import Business.Student.Student;
-import Business.EcoSystem;
+import Business.Business;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -22,7 +22,7 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ViewStudentsJPanel
      */
-    private EcoSystem business;
+    private Business business;
     private JPanel userProcessContainer;
 
     public ViewStudentsJPanel(JPanel userProcessContainer, EcoSystem business) {

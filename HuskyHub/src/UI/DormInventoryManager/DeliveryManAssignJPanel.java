@@ -6,7 +6,7 @@
 package UI.DormInventoryManager;
 
 //import Business.DeliveryMan.DeliveryMan;
-import Business.EcoSystem;
+import Business.Business;
 import Business.StudentRequestOrder;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -25,7 +25,7 @@ public class DeliveryManAssignJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private StudentRequestOrder order;
-    private EcoSystem business;
+    private Business business;
     private Enterprise enterprise;
     private DormInventoryWorkRequest request;
 

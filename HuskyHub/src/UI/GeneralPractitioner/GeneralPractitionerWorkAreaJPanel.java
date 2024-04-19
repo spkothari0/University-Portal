@@ -6,7 +6,7 @@
 package UI.GeneralPractitioner;
 
 import Business.Student.Student;
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -33,7 +33,7 @@ public class GeneralPractitionerWorkAreaJPanel extends javax.swing.JPanel {
     UserAccount account;
     NutritionOrganization nutritionOrganisation;
     Enterprise enterprise;
-    EcoSystem ecosystem;
+    Business ecosystem;
     Network network;
     public GeneralPractitionerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         initComponents();

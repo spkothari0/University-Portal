@@ -1,6 +1,6 @@
 package UI.DormInventoryManager;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -16,10 +16,10 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
     private UserAccount userAcc;
-    private EcoSystem system;
+    private Business system;
     private UserAccount account;
     private Enterprise enterprise;
-    private EcoSystem business;
+    private Business business;
     private Organization organization;
 
     /**

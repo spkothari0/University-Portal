@@ -4,7 +4,7 @@
  */
 package UI.DeliveryProvider;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -25,8 +25,8 @@ public class DeliveryProviderWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private UserAccount userAccount;
-    private EcoSystem system;
-    private EcoSystem business;
+    private Business system;
+    private Business business;
     private Enterprise enterprise;
 
     /**

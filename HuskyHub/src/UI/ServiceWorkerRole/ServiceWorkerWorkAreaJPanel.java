@@ -5,7 +5,7 @@
  */
 package UI.ServiceWorkerRole;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -26,8 +26,8 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private UserAccount userAccount;
-    private EcoSystem system;
-    private EcoSystem business;
+    private Business system;
+    private Business business;
     private Enterprise enterprise;
 
     public ServiceWorkerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {

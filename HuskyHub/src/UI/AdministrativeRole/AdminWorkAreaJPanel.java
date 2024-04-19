@@ -1,6 +1,6 @@
 package UI.AdministrativeRole;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -18,7 +18,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
     Enterprise enterprise;
     Organization organization;
     UserAccount account;
-    EcoSystem business;
+    Business business;
     Network network;
 
     /**

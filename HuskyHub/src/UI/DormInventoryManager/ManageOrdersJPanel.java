@@ -5,7 +5,7 @@
  */
 package UI.DormInventoryManager;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.Items;
 import Business.Organization.Organization;
@@ -28,7 +28,7 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
     private UserAccount userAcc;
     private UserAccount account;
     private Enterprise enterprise;
-    private EcoSystem business;
+    private Business business;
 
     /**
      * Creates new form ManageOrderJPanel

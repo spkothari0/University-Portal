@@ -4,7 +4,7 @@
  */
 package UI.SystemAdminWorkArea;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private EcoSystem system;
+    private Business system;
     private boolean emailValid;
     private boolean nameValid;
     private int entAvail = 0;

@@ -5,7 +5,7 @@
  */
 package UI.DormInventoryManager;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.Items;
 import Business.Organization.Organization;
@@ -29,7 +29,7 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     private Organization organization;
     private Enterprise enterprise;
     private UserAccount account;
-    private EcoSystem business;
+    private Business business;
     private boolean priceValid;
     private boolean itemValid;
 

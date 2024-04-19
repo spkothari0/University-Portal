@@ -6,7 +6,7 @@
 package UI.FitnessTrainer;
 
 import Business.Student.Student;
-import Business.EcoSystem;
+import Business.Business;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
