@@ -5,7 +5,6 @@
 package UI;
 
 import Business.Business;
-import Personnal.Profile;
 import Store.SupplierDirectory;
 import UI.Admin.AdminWorkAreaJPanel;
 import UI.StoreManager.SelectVendorJPanel;

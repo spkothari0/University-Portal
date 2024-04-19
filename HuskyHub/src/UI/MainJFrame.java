@@ -6,11 +6,8 @@ package UI;
 
 import Business.Business;
 import Business.ConfigureASystem;
-import Business.UserAccount;
-import Business.UserAccountDirectory;
-import Personnal.ManagerProfile;
-import Personnal.Profile;
-import Personnal.StudentProfile;
+import Business.UserAccount.UserAccount;
+import Business.UserAccount.UserAccountDirectory;
 import Store.MasterOrderList;
 import Store.Store;
 import Store.SupplierDirectory;
