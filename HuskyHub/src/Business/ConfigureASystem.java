@@ -7,6 +7,7 @@ package Business;
 import Business.Employee.Employee;
 import Business.UserAccount.UserAccount;
 import Business.Role.AdminRole;
+import Business.Role.HealthAndFitnessManagerRole;
 
 /**
  *
@@ -21,6 +22,14 @@ public class ConfigureASystem {
         UserAccount user=business.getUserAccountDirectory().createUserAccount("admin", "admin");
         user.setEmployee(e);
         user.setRole(new AdminRole());
+        
+        Employee e1 = business.getEmployeeDirectory().createNewEmployee("Health and Fitness Manager");
+        
+        UserAccount user1 = business.getUserAccountDirectory().createUserAccount("Health and Fitness Manager", "admin");
+        user.setEmployee(e1);
+        user.setRole(new HealthAndFitnessManagerRole());
+        
+        
         return business;
     }
 }
