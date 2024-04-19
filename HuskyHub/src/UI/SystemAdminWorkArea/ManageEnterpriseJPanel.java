@@ -4,7 +4,7 @@
  */
 package UI.SystemAdminWorkArea;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.utilities.tableHeaderColors;
@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private EcoSystem system;
+    private Business system;
     private Network n;
     private boolean nameValid;
     private int entAvail = 0;
@@ -31,7 +31,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageEnterpriseJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public ManageEnterpriseJPanel(JPanel userProcessContainer, Business system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;

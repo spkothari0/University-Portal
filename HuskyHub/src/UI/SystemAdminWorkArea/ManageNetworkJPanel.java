@@ -4,7 +4,7 @@
  */
 package UI.SystemAdminWorkArea;
 
-import Business.EcoSystem;
+import Business.Business;
 import Business.Network.Network;
 import Business.utilities.tableHeaderColors;
 import java.awt.CardLayout;
@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 public class ManageNetworkJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private EcoSystem system;
+    private Business system;
 
     /**
      *
@@ -30,7 +30,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
      */
     private boolean cityValid;
 
-    public ManageNetworkJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public ManageNetworkJPanel(JPanel userProcessContainer, Business system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;
