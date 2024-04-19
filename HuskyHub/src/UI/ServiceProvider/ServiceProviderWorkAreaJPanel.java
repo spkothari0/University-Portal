@@ -13,7 +13,6 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.MaintenanceWorkRequest;
 import Business.WorkQueue.WorkRequest;
-import Business.utilities.tableHeaderColors;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -108,7 +107,7 @@ public class ServiceProviderWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(delManTbl);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 730, 130));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 730, 130));
 
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         processJButton.setForeground(new java.awt.Color(51, 51, 51));
@@ -118,7 +117,7 @@ public class ServiceProviderWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, 150, 50));
+        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 150, 50));
 
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(51, 51, 51));
@@ -128,7 +127,7 @@ public class ServiceProviderWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 220, 120, 30));
+        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 310, 120, 30));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setText(" SERVICE REQUEST");

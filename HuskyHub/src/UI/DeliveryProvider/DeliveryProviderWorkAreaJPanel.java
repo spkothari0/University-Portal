@@ -12,7 +12,6 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
 import Business.WorkQueue.WorkRequest;
-import Business.utilities.tableHeaderColors;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -119,7 +118,7 @@ public class DeliveryProviderWorkAreaJPanel extends javax.swing.JPanel {
             delManTbl.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 730, 96));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 730, 96));
 
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         processJButton.setForeground(new java.awt.Color(51, 51, 51));
@@ -129,7 +128,7 @@ public class DeliveryProviderWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, 150, 50));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 340, 150, 50));
 
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(51, 51, 51));
@@ -139,7 +138,7 @@ public class DeliveryProviderWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, 120, 30));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 280, 120, 30));
 
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
