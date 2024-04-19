@@ -50,9 +50,7 @@ public class Product {
 
     public void setAvail(int avail) {
         this.avail = avail;
-    }
-    
-    
+    }    
 
     public int getModelNumber() {
         return modelNumber;
