@@ -17,7 +17,7 @@ import Business.UserAccount.UserAccount;
 import Store.MasterOrderList;
 import Store.Store;
 import Store.SupplierDirectory;
-import UI.Admin.AdminWorkAreaJPanel;
+import UI.StoreAdmin.AdminWorkAreaJPanel;
 import UI.StudentRole.StudentRoleJPanel;
 import java.awt.CardLayout;
 import static java.time.Clock.system;

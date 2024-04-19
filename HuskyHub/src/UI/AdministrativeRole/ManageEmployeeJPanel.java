@@ -36,7 +36,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageOrganizationJPanel
      */
-    public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDir, EcoSystem system) {
+    public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDir, Business business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.organizationDir = organizationDir;
@@ -83,7 +83,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
     private void populateRoleComboBox(Organization organization) {
         roleJComboBox.removeAllItems();
-        for (Role role : organization.getSupportedRole()) {
+        for (Role role : organization.getSupportedRoles()) {
 
             String r = role.toString();
             roleJComboBox.addItem(role);
@@ -432,8 +432,8 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             if (organization.getEmployeeDirectory().checkIfUsernameIsUnique(userName)) {
                 if (usernamePatternCorrect(userName)) {
                     if (organization.getUserAccountDirectory().checkIfUsernameIsUnique(userName)) {
-                        organization.getEmployeeDirectory().createEmployee(txtName.getText());
-                        organization.getUserAccountDirectory().createUserAccount(userName, password, employee, role);
+                        organization.getEmployeeDirectory().createNewEmployee(txtName.getText());
+                        organization.getUserAccountDirectory().createUserAccount(userName, password);
                         // organization.getUserAccountDirectory().createUserAccount(userName, password, role);
                         JOptionPane.showMessageDialog(null, "Employee created successfully");
                         //nd@nd.com    populateTable(organization);
