@@ -6,7 +6,7 @@ package UI;
 
 import Business.Business;
 import Store.SupplierDirectory;
-import UI.Admin.AdminWorkAreaJPanel;
+import UI.StoreAdmin.AdminWorkAreaJPanel;
 import UI.StoreManager.SelectVendorJPanel;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
