@@ -34,7 +34,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, Business system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

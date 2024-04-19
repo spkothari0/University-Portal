@@ -35,7 +35,7 @@ public class GeneralPractitionerWorkAreaJPanel extends javax.swing.JPanel {
     Enterprise enterprise;
     Business ecosystem;
     Network network;
-    public GeneralPractitionerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public GeneralPractitionerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
          this.account = account;

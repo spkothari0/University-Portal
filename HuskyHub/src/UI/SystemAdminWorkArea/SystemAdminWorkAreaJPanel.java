@@ -32,7 +32,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     UserAccount account;
     Network network;
 
-    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public SystemAdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = business;

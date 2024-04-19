@@ -36,7 +36,7 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageMenuJPanel
      */
-    ManageInventoryJPanel(JPanel userProcessContainer, Organization organization, EcoSystem business, Enterprise enterprise, UserAccount account) {
+    ManageInventoryJPanel(JPanel userProcessContainer, Organization organization, Business business, Enterprise enterprise, UserAccount account) {
         initComponents();
         this.organization = organization;
         this.enterprise = enterprise;

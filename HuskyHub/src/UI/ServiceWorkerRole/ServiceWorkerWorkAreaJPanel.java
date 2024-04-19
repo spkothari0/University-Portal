@@ -30,7 +30,7 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
     private Business business;
     private Enterprise enterprise;
 
-    public ServiceWorkerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public ServiceWorkerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

@@ -38,7 +38,7 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
     EcoSystem ecosystem;
     Network network;
 
-    public FitnessTrainerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public FitnessTrainerWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.account = account;

@@ -25,7 +25,7 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
     private Business business;
     private JPanel userProcessContainer;
 
-    public ViewStudentsJPanel(JPanel userProcessContainer, EcoSystem business) {
+    public ViewStudentsJPanel(JPanel userProcessContainer, Business business) {
         initComponents();
         this.business = business;
         this.userProcessContainer = userProcessContainer;

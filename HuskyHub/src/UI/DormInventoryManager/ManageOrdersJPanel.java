@@ -33,7 +33,7 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageOrderJPanel
      */
-    ManageOrdersJPanel(JPanel userProcessContainer, Organization organization, EcoSystem business, Enterprise enterprise, UserAccount account) {
+    ManageOrdersJPanel(JPanel userProcessContainer, Organization organization, Business business, Enterprise enterprise, UserAccount account) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

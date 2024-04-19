@@ -37,7 +37,7 @@ public class NutritionistWorkAreaJPanel extends javax.swing.JPanel {
     Business ecosystem;
     Network network;
 
-    public NutritionistWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+    public NutritionistWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, Business business, Network network) {
         initComponents();
          this.userProcessContainer = userProcessContainer;
          this.account = account;

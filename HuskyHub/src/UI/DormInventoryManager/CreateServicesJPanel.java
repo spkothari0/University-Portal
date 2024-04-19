@@ -33,7 +33,7 @@ public class CreateServicesJPanel extends javax.swing.JPanel {
     private boolean priceValid;
     private boolean itemValid;
 
-    public CreateServicesJPanel(JPanel userProcessContainer, Organization organization, EcoSystem business, Enterprise enterprise, UserAccount account) {
+    public CreateServicesJPanel(JPanel userProcessContainer, Organization organization, Business business, Enterprise enterprise, UserAccount account) {
         initComponents();
         this.organization = organization;
         this.enterprise = enterprise;

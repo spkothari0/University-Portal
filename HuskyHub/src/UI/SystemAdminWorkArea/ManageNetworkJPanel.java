@@ -30,7 +30,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
      */
     private boolean cityValid;
 
-    public ManageNetworkJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public ManageNetworkJPanel(JPanel userProcessContainer, Business system) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

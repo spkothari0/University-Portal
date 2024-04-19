@@ -32,7 +32,7 @@ public class DeliveryManAssignJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DeliveryManAssignJPanel
      */
-    DeliveryManAssignJPanel(JPanel userProcessContainer, EcoSystem business, Enterprise enterprise, DormInventoryWorkRequest request) {
+    DeliveryManAssignJPanel(JPanel userProcessContainer, Business business, Enterprise enterprise, DormInventoryWorkRequest request) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.business = business;
