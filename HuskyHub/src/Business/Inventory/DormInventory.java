@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author srira
+ * @author shreyas
  */
 public class DormInventory{
     
