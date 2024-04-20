@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author omkar
+ * @author daminithorat
  */
 public class OrganizationDirectory {
     

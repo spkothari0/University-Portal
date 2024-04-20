@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author omkar
+ * @author daminithorat
  */
 public class PhysioOrganization extends Organization{
     public PhysioOrganization() {
