@@ -85,7 +85,6 @@ public class MainJFrame extends javax.swing.JFrame {
         passwordField.setBackground(new java.awt.Color(204, 204, 204));
         passwordField.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
         passwordField.setForeground(new java.awt.Color(51, 51, 51));
-        passwordField.setText("Password@123");
         passwordField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordFieldActionPerformed(evt);
@@ -152,9 +151,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        orangeLbl.setBackground(new java.awt.Color(51, 51, 51));
         orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/UniversityImg.png"))); // NOI18N
-        orangeLbl.setMixingCutoutShape(null);
         container.add(orangeLbl, "card2");
 
         jSplitPane1.setRightComponent(container);
@@ -235,7 +232,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/orangesBackground.jpg"))); // NOI18N
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/UniversityImg.png"))); // NOI18N
 
         container.add(orangeLbl, "card2");
         jSplitPane1.setRightComponent(container);
