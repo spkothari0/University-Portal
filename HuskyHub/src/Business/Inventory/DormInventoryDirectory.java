@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author srira
+ * @author shreyas
  */
 public class DormInventoryDirectory {
     private ArrayList<DormInventory> dormInventoryList;

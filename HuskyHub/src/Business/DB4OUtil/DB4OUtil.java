@@ -16,7 +16,7 @@ import java.nio.file.Paths;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class DB4OUtil {
 

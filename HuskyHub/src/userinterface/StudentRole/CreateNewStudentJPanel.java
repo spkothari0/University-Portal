@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class CreateNewStudentJPanel extends javax.swing.JPanel {
 
