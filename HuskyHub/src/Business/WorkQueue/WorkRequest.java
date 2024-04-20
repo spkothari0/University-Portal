@@ -1,17 +1,18 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.WorkQueue;
 
 import Business.UserAccount.UserAccount;
-import java.util.*;
+import java.util.Date;
+import java.util.Random;
 
 /**
  *
- * @author spkothari
+ * @author yash
  */
-public class WorkRequest {
+public abstract class WorkRequest {
 
     private String message;
     private UserAccount sender;
@@ -19,12 +20,14 @@ public class WorkRequest {
     private String status;
     private Date requestDate;
     private Date resolveDate;
-    private UUID id;
-
-    public WorkRequest() {
-        id = UUID.randomUUID();
+    private int min = 1000;
+    private int max = 9999;
+    private int counter = 0;
+    
+    public WorkRequest(){
         requestDate = new Date();
-        status = "Initiated";
+         Random r = new Random();
+        counter = r.nextInt(max-min) + min;
     }
 
     public String getMessage() {
@@ -74,14 +77,13 @@ public class WorkRequest {
     public void setResolveDate(Date resolveDate) {
         this.resolveDate = resolveDate;
     }
-
-    public UUID getId() {
-        return id;
+    
+   public int getRequestID(){
+        return counter;
     }
-
+    
     @Override
     public String toString() {
         return message;
     }
-
 }

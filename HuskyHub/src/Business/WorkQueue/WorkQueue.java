@@ -1,33 +1,24 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.WorkQueue;
 
-import Business.UserAccount.UserAccount;
 import java.util.ArrayList;
 
 /**
  *
- * @author spkothari
+ * @author yash
  */
 public class WorkQueue {
-
-    private ArrayList<WorkRequest> workRequests;
+    
+    private ArrayList<WorkRequest> workRequestList;
 
     public WorkQueue() {
-        workRequests = new ArrayList<>();
+        workRequestList = new ArrayList<>();
     }
 
-    public ArrayList<WorkRequest> getWorkRequests() {
-        return workRequests;
-    }
-
-    public void setWorkRequests(ArrayList<WorkRequest> workRequests) {
-        this.workRequests = workRequests;
-    }
-    
-    public void requestCompleted(WorkRequest req){
-        req.setStatus("Completed");
+    public ArrayList<WorkRequest> getWorkRequestList() {
+        return workRequestList;
     }
 }
