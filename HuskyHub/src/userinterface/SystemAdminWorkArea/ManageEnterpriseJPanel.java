@@ -156,6 +156,11 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         nameJTextField.setBackground(new java.awt.Color(204, 204, 204));
         nameJTextField.setForeground(new java.awt.Color(51, 51, 51));
+        nameJTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nameJTextFieldActionPerformed(evt);
+            }
+        });
         nameJTextField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 nameJTextFieldKeyReleased(evt);
@@ -296,6 +301,10 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             citySuccessLbl.setVisible(true);
         }
     }//GEN-LAST:event_nameJTextFieldKeyReleased
+
+    private void nameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameJTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nameJTextFieldActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backJButton;
