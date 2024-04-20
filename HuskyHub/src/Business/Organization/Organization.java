@@ -1,97 +1,81 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Organization;
 
+import Business.Student.StudentDirectory;
 import Business.Employee.EmployeeDirectory;
 import Business.Role.Role;
-import Business.Student.StudentDirectory;
 import Business.UserAccount.UserAccountDirectory;
 import Business.WorkQueue.WorkQueue;
-
 import java.util.ArrayList;
-import java.util.UUID;
+import java.util.Random;
 
 /**
  *
- * @author spkothari
+ * @author omkar
  */
 public abstract class Organization {
 
-    private String name;
+    public String name;
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
     private StudentDirectory studentDirectory;
-    private UUID id;
+    private int organizationID;
+    private int min = 1000;
+    private int max = 9999;
+    private static int count = 0;
 
-    public enum OrganizationType {
-
-        Admin("Admin Organization"),
-        Diet("Diet Organization"),
-        Doctor("Doctor Organization"),
-        Trainer("Trainer Organization"),
-        HousingInventory("Housing Inventory Organization"),
-        HousingMaintenance("Housing Maintenance Organization"),
-        OGS("OGS Organization"),
-        FinancialAid("Financial Aid Organization"),
-        ITSupport("IT Support Organization"),
-        StoreManagement("Store Management Organization");
-
+    
+    public enum Type{
+        
+        Admin("Admin Organization"), 
+        Nutrition("Nutrition Organization"), 
+        Dietitian("Dietitian Organization"),
+        WeightTraining("Weight Training"),
+        FitnessTraining("Fitness Training"),
+        Physiotherapist("Physiotherapist"),
+        GeneralPractitioner("General Practitioner"),
+        DormInventory("Dorm Inventory"),
+        Delivery("DeliveryMan"),
+        Service("Service"),
+        ServiceWorker("Service Worker"),
+        Lab("Lab Organization"),
+        Doctor("Doctor Organisation");
+        
         private String value;
-
-        private OrganizationType(String value) {
+        
+        private Type(String value) {
             this.value = value;
         }
-
+        
         public String getValue() {
             return value;
         }
-
+        
     }
 
-    public Organization(OrganizationType type) {
-        name = type.getValue();
-        id = UUID.randomUUID();
+    public Organization(String name) {
+        this.name = name;
         workQueue = new WorkQueue();
         employeeDirectory = new EmployeeDirectory();
         userAccountDirectory = new UserAccountDirectory();
         studentDirectory = new StudentDirectory();
+        Random r = new Random();
+        count = r.nextInt(max-min) + min;
+        organizationID = count;
     }
 
-    public abstract ArrayList<Role> getSupportedRoles();
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public WorkQueue getWorkQueue() {
-        return workQueue;
-    }
-
-    public void setWorkQueue(WorkQueue workQueue) {
-        this.workQueue = workQueue;
-    }
-
-    public EmployeeDirectory getEmployeeDirectory() {
-        return employeeDirectory;
-    }
-
-    public void setEmployeeDirectory(EmployeeDirectory employeeDirectory) {
-        this.employeeDirectory = employeeDirectory;
-    }
-
+    public abstract ArrayList<Role> getSupportedRole();
+    
     public UserAccountDirectory getUserAccountDirectory() {
         return userAccountDirectory;
     }
 
-    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
-        this.userAccountDirectory = userAccountDirectory;
+    public int getOrganizationID() {
+        return organizationID;
     }
 
     public StudentDirectory getStudentDirectory() {
@@ -101,8 +85,29 @@ public abstract class Organization {
     public void setStudentDirectory(StudentDirectory studentDirectory) {
         this.studentDirectory = studentDirectory;
     }
+    
+    public EmployeeDirectory getEmployeeDirectory() {
+        return employeeDirectory;
+    }
+    
+    public String getName() {
+        return name;
+    }
 
-    public UUID getId() {
-        return id;
+    public WorkQueue getWorkQueue() {
+        return workQueue;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWorkQueue(WorkQueue workQueue) {
+        this.workQueue = workQueue;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
