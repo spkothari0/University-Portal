@@ -10,17 +10,17 @@ import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.StoreManager.ManageStoreJPanel;
+import userinterface.ServiceWorkerRole.ServiceWorkerWorkAreaJPanel;
 
 /**
  *
  * @author Sohan
  */
-public class StoreManagerRole extends Role{
+public class ServiceWorkerRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
-        return new ManageStoreJPanel(userProcessContainer, enterprise, organization, account, business, network);
+        return new ServiceWorkerWorkAreaJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
-
+    
 }

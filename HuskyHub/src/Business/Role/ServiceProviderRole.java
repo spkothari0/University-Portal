@@ -16,11 +16,12 @@ import userinterface.StoreManager.ManageStoreJPanel;
  *
  * @author Sohan
  */
-public class StoreManagerRole extends Role{
+public class ServiceProviderRole extends Role{
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         return new ManageStoreJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
-
+  
 }
+
