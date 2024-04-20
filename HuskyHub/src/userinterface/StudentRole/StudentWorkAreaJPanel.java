@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 

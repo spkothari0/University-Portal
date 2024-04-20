@@ -7,7 +7,7 @@ package Business.Enterprise;
 
 /**
  *
- * @author mittul.sharma
+ * @author shreyas
  */
 public class Items {
     String itemName;

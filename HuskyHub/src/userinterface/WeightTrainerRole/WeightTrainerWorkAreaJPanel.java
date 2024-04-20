@@ -34,7 +34,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author srira
+ * @author shreyas
  */
 public class WeightTrainerWorkAreaJPanel extends javax.swing.JPanel {
 

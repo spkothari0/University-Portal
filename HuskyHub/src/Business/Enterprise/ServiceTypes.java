@@ -7,7 +7,7 @@ package Business.Enterprise;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class ServiceTypes {
     String serviceName;

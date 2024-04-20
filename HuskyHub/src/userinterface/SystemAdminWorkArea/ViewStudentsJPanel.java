@@ -15,7 +15,7 @@ import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 
 /**
  *
- * @author omkar
+ * @author shreyas
  */
 public class ViewStudentsJPanel extends javax.swing.JPanel {
 
