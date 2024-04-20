@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author srira
+ * @author daminithorat
  */
 public class ManageDormInventoryJPanel extends javax.swing.JPanel {
 

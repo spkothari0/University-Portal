@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author omkar
+ * @author daminithorat
  */
 public class InventoryOrganization extends Organization{
 

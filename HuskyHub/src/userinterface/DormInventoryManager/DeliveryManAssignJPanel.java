@@ -19,7 +19,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author srira
+ * @author daminithorat
  */
 public class DeliveryManAssignJPanel extends javax.swing.JPanel {
 
