@@ -205,7 +205,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         jLabel15 = new javax.swing.JLabel();
         placeOrderBtn1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -526,7 +526,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(btnMaintainReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 490, 160, 51));
 
-        jPanel3.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
