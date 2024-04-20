@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class StudentAnalysisJPanel extends javax.swing.JPanel {
 
