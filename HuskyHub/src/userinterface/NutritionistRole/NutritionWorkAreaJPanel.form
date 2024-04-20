@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="33" green="33" red="33" type="rgb"/>
+      <Color blue="33" green="33" red="0" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -85,7 +85,7 @@
     <Component class="javax.swing.JButton" name="processBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="11" style="1"/>
@@ -100,7 +100,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="370" y="600" width="179" height="45"/>
+          <AbsoluteConstraints x="660" y="590" width="179" height="45"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -119,7 +119,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="380" width="150" height="30"/>
+          <AbsoluteConstraints x="240" y="310" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -129,21 +129,21 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Name:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="380" width="107" height="30"/>
+          <AbsoluteConstraints x="90" y="310" width="107" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioMale">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
+          <Color blue="33" green="33" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="11" style="1"/>
@@ -156,7 +156,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="460" width="68" height="-1"/>
+          <AbsoluteConstraints x="240" y="390" width="68" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -172,14 +172,14 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="500" width="150" height="30"/>
+          <AbsoluteConstraints x="240" y="420" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JRadioButton" name="radioFemale">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
+          <Color blue="33" green="33" red="0" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="11" style="1"/>
@@ -192,7 +192,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="340" y="460" width="72" height="-1"/>
+          <AbsoluteConstraints x="320" y="390" width="72" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -202,14 +202,14 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Weight (in Kgs):"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="540" width="-1" height="30"/>
+          <AbsoluteConstraints x="120" y="460" width="-1" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -225,7 +225,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="540" width="150" height="30"/>
+          <AbsoluteConstraints x="240" y="460" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -235,14 +235,14 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Age:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="420" width="90" height="30"/>
+          <AbsoluteConstraints x="110" y="350" width="90" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -258,7 +258,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="260" y="420" width="150" height="30"/>
+          <AbsoluteConstraints x="240" y="350" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -268,14 +268,14 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Gender:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="460" width="107" height="30"/>
+          <AbsoluteConstraints x="90" y="390" width="107" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -285,21 +285,21 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Height(in cms):"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="130" y="500" width="86" height="30"/>
+          <AbsoluteConstraints x="110" y="420" width="86" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="viewDetailsBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="11" style="1"/>
@@ -314,7 +314,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="420" y="320" width="138" height="45"/>
+          <AbsoluteConstraints x="690" y="320" width="138" height="45"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -324,20 +324,20 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Message:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="480" y="350" width="-1" height="70"/>
+          <AbsoluteConstraints x="150" y="480" width="-1" height="70"/>
         </Constraint>
       </Constraints>
     </Component>
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="ff" type="rgb"/>
+          <Color blue="66" green="66" red="0" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -378,7 +378,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="480" y="400" width="-1" height="-1"/>
+          <AbsoluteConstraints x="240" y="500" width="-1" height="90"/>
         </Constraint>
       </Constraints>
 
@@ -404,14 +404,14 @@
           <Font name="SansSerif" size="11" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Diet Chart:"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="460" y="510" width="80" height="30"/>
+          <AbsoluteConstraints x="130" y="600" width="80" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -437,7 +437,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="480" y="540" width="150" height="30"/>
+          <AbsoluteConstraints x="240" y="600" width="150" height="30"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -484,7 +484,7 @@
           <Font name="Tahoma" size="24" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="ff" type="rgb"/>
+          <Color blue="ff" green="ff" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="STUDENT DETAILS"/>
       </Properties>
