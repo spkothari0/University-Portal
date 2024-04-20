@@ -1,70 +1,83 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Student;
 
-import java.sql.Date;
-import java.util.UUID;
-
 import Business.Network.Network;
+import java.util.Random;
 
 /**
  *
- * @author spkothari
+ * @author yash
  */
 public class Student {
+    
     private String name;
-    private UUID id;
-    private Date dob;
+    private int id;
+    private int age;
     private double height;
     private double weight;
-    private double bmi;
+    private double BMI;
     private String gender;
+    private static int count = 0;
     private Network network;
     private String enterprise;
     private String goal;
     private String email;
     private String address;
     private String city;
-    private String zipCode;
-    private String roomNumber;
-
-    public Student(String n) {
-        id = UUID.randomUUID();
-        name = n;
-    }
+    private String zipcode;
+    private int min = 1000;
+    private int max = 9999;
+    private int roomNumber;
 
     public Student() {
-        id = UUID.randomUUID();
+        Random r = new Random();
+        count = r.nextInt(max-min) + min;
+        id = count;
+        roomNumber = r.nextInt(max-min)+min;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public UUID getId() {
+    public int getId() {
         return id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public Date getDob() {
-        return dob;
-    }
-
-    public void setDob(Date dob) {
-        this.dob = dob;
     }
 
     public double getHeight() {
         return height;
+    }
+
+    public Network getNetwork() {
+        return network;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public double getBMI() {
+        return BMI;
+    }
+
+    public void setBMI(double BMI) {
+        this.BMI = BMI;
+    }
+    
+    public void setNetwork(Network network) {
+        this.network = network;
+    }
+
+    public String getEnterprise() {
+        return enterprise;
+    }
+
+    public void setEnterprise(String enterprise) {
+        this.enterprise = enterprise;
     }
 
     public void setHeight(double height) {
@@ -79,36 +92,20 @@ public class Student {
         this.weight = weight;
     }
 
-    public double getBmi() {
-        return bmi;
+    public int getAge() {
+        return age;
     }
 
-    public void setBmi(double bmi) {
-        this.bmi = bmi;
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public Network getNetwork() {
-        return network;
-    }
-
-    public void setNetwork(Network network) {
-        this.network = network;
-    }
-
-    public String getEnterprise() {
-        return enterprise;
-    }
-
-    public void setEnterprise(String enterprise) {
-        this.enterprise = enterprise;
+    public String getName() {
+        return name;
     }
 
     public String getGoal() {
@@ -143,33 +140,21 @@ public class Student {
         this.city = city;
     }
 
-    public String getZipCode() {
-        return zipCode;
+    public String getZipcode() {
+        return zipcode;
     }
 
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
     }
 
-    public String getRoomNumber() {
+    public int getRoomNumber() {
         return roomNumber;
     }
-
-    public void setRoomNumber(String roomNumber) {
-        this.roomNumber = roomNumber;
-    }
-
+    
     @Override
     public String toString() {
         return name;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof Student) {
-            Student student = (Student) obj;
-            return student.getId().equals(this.getId());
-        }
-        return false;
-    }
+    
 }
