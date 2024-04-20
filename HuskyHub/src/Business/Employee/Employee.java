@@ -1,45 +1,45 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Employee;
 
-import java.util.UUID;
+import java.util.Random;
 
 /**
  *
- * @author spkothari
+ * @author shreyas
  */
 public class Employee {
-
+    
     private String name;
-    private UUID id;
+    private static int count = 0;
+    private int id;
+    private int min = 1000;
+    private int max = 9999;
 
-    public Employee(String n) {
-        name = n;
-        id = UUID.randomUUID();
-    }
 
     public Employee() {
-        id = UUID.randomUUID();
+        Random r = new Random();
+        count = r.nextInt(max-min) + min;
+        id = count;
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public UUID getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
     @Override
     public String toString() {
         return name;
     }
-    
     
 }

@@ -1,21 +1,20 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.UserAccount;
 
 import Business.Employee.Employee;
 import Business.Role.Role;
-import Business.Student.Student;
 import Business.WorkQueue.WorkQueue;
-import Business.WorkQueue.WorkRequest;
+import Business.Student.Student;
 
 /**
  *
- * @author spkothari
+ * @author yash
  */
 public class UserAccount {
-
+    
     private String username;
     private String password;
     private Employee employee;
@@ -26,7 +25,7 @@ public class UserAccount {
     public UserAccount() {
         workQueue = new WorkQueue();
     }
-
+    
     public String getUsername() {
         return username;
     }
@@ -43,12 +42,24 @@ public class UserAccount {
         this.password = password;
     }
 
-    public Employee getEmployee() {
-        return employee;
+    public Role getRole() {
+        return role;
     }
 
     public void setEmployee(Employee employee) {
         this.employee = employee;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public WorkQueue getWorkQueue() {
+        return workQueue;
     }
 
     public Student getStudent() {
@@ -58,45 +69,10 @@ public class UserAccount {
     public void setStudent(Student student) {
         this.student = student;
     }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
-
-    public WorkQueue getWorkQueue() {
-        return workQueue;
-    }
-
-    public boolean assignWork(WorkRequest req) {
-        req.setStatus("Assigned");
-        return workQueue.getWorkRequests().add(req);
-    }
-
-    public void completeWork(WorkRequest request) {
-        request.setStatus("Completed");
-    }
-
-    public boolean isAvailableforWork() {
-        return workQueue.getWorkRequests().stream()
-                .filter(r -> r.getStatus().equals("Assigned")).findAny().isEmpty() && employee != null;
-    }
-
+    
     @Override
     public String toString() {
         return username;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof UserAccount) {
-            UserAccount user = (UserAccount) obj;
-            return user.getUsername().equals(username);
-        }
-        return false;
-    }
-
+    
 }

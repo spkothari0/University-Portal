@@ -1,20 +1,20 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.UserAccount;
 
-import java.util.ArrayList;
-import java.util.UUID;
-
-import Business.Employee.Employee;
 import Business.Student.Student;
+import Business.Employee.Employee;
+import Business.Role.Role;
+import java.util.ArrayList;
 
 /**
  *
- * @author spkothari
+ * @author yash
  */
 public class UserAccountDirectory {
+    
     private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
@@ -24,66 +24,60 @@ public class UserAccountDirectory {
     public ArrayList<UserAccount> getUserAccountList() {
         return userAccountList;
     }
-
-    public UserAccount createUserAccount(String username, String password) {
-        UserAccount user = new UserAccount();
-        user.setUsername(username);
-        user.setPassword(password);
-        userAccountList.add(user);
-        return user;
+    
+    public UserAccount authenticateUser(String username, String password){
+        for (UserAccount ua : userAccountList)
+            if (ua.getUsername().equals(username) && ua.getPassword().equals(password)){
+                return ua;
+            }
+        return null;
     }
-
-    public void deleteUserAccount(UserAccount user) {
-        userAccountList.remove(user);
+    
+    public UserAccount createUserAccount(String username, String password, Role role){
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUsername(username);
+        userAccount.setPassword(password);
+        //userAccount.setEmployee(employee);
+        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
     }
-
-    public UserAccount getUserByUsername(String username) {
-        UserAccount user = null;
-        user = userAccountList.stream()
-                              .filter(account -> account.getUsername().equals(username))
-                              .findFirst()
-                              .orElse(null);
-
-        return user;
+    
+    public UserAccount createUserAccount(String username, String password,Employee employee, Role role){
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUsername(username);
+        userAccount.setPassword(password);
+        userAccount.setEmployee(employee);
+        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
     }
-
-    public UserAccount getUserById(UUID id) {
-        UserAccount user = null;
-        user = userAccountList.stream()
-                              .filter(account -> account.getEmployee().getId().equals(id) || account.getStudent().getId().equals(id))
-                              .findFirst()
-                              .orElse(null);
-
-        return user;
+    
+    public UserAccount createStudentAccount(String username, String password,Student student, Role role){
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUsername(username);
+        userAccount.setPassword(password);
+        //userAccount.setEmployee(employee);
+        userAccount.setStudent(student);
+        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
     }
-
-    public UserAccount getUserByEmployeeId(Employee e) {
-        UserAccount user = null;
-        user = userAccountList.stream()
-                              .filter(account -> account.getEmployee().equals(e))
-                              .findFirst()
-                              .orElse(null);
-
-        return user;
+    
+    public void removeUserAccount(UserAccount ua){
+        userAccountList.remove(ua);
     }
-
-    public UserAccount getUserByStudentId(Student s) {
-        UserAccount user = null;
-        user = userAccountList.stream()
-                              .filter(account -> account.getStudent().equals(s))
-                              .findFirst()
-                              .orElse(null);
-
-        return user;
+    
+    public UserAccount updateUserAccount(UserAccount userAccount, String password){
+        userAccount.setPassword(password);
+        return userAccount;
     }
-
-    public UserAccount authenticateUser(String username, String password) {
-        UserAccount user = null;
-        user = userAccountList.stream()
-                              .filter(account -> account.getUsername().equals(username) && account.getPassword().equals(password))
-                              .findFirst()
-                              .orElse(null);
-
-        return user;
+    
+    public boolean checkIfUsernameIsUnique(String username){
+        for (UserAccount ua : userAccountList){
+            if (ua.getUsername().equals(username))
+                return false;
+        }
+        return true;
     }
 }

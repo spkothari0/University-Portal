@@ -1,44 +1,45 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Role;
 
-import javax.swing.JPanel;
-
-import Business.Business;
+import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
+import javax.swing.JPanel;
 
 /**
  *
- * @author spkothari
+ * @author Sohan
  */
 public abstract class Role {
-
-    public enum RoleType {
-        AdminRole("Admin"),
-        HealthAndFitnessManagerRole("Health and Fitness Manager"),
-        NutritionistRole("Nutritionist"),
-        GeneralPractitionerDocRole("General Practitioner Doctor"),
-        PhysiotherapistRole("Physiotherapist"),
-        WeightLossTrainerRole("Weight Loss Trainer"),
-        FitnessTrainerRole("Fitness Trainer"),
-        DormAndHousingManagerRole("Dorm and Housing Manager"),
-        DeliveryProviderRole("Delivery Partner"),
-        MaintenanceWorkerRole("Maintenance Service Worker"),
-        OGSCoordinatorRole("OGS Coordinator"),
-        FinancialAidRole("Financial Aid Officer"),
-        ITSupportRole("IT Support Specialist"),
-        StoreManagerRole("Store Manager"),
-        StoreHelperRole("Store Helper");
+    
+    public enum RoleType{
         
+        Admin("Admin"),
+        MaintenanceAdmin("Maintenance Admin"),
+        Student("Student"),
+        Doctor("Doctor"), /*TBR*/
+        DoctorAdmin("Doctor Admin"),
+        TrainerAdmin("Trainer Admin"),
+        DietAdmin("Diet Admin"),
+        Nutritionist("Nutritionist"),
+        Dietician("Dietician"),
+        GeneralPhysician("General Physician"),
+        Physiotherapist("Physiotherapist"),
+        DormInventoryManager("Dorm Inventory Manager"),
+        DeliveryMan("Delivery Man"),
+        ServiceProvider("Service Provider"),
+        ServiceWorker("Service Worker"),
+        FitnessTrainer("Fitness Trainer"),
+        WeightTrainer("Weight Trainer");
+               
         private String value;
-
-        private RoleType(String n) {
-            value = n;
+        private RoleType(String value){
+            this.value = value;
         }
 
         public String getValue() {
@@ -51,8 +52,14 @@ public abstract class Role {
         }
     }
     
-    public abstract void createWorkArea(JPanel userProcessContainer, UserAccount user, Enterprise enterprise, Organization organization, Business business, Network network);
-    
+    public abstract JPanel createWorkArea(JPanel userProcessContainer,  
+            Enterprise enterprise, 
+            Organization organization,
+            UserAccount account, 
+            EcoSystem business,
+            Network network
+    );
+
     @Override
     public String toString() {
         return this.getClass().getName();

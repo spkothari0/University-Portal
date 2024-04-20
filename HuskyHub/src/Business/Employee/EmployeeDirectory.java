@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Employee;
 
@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author spkothari
+ * @author shreyas
  */
 public class EmployeeDirectory {
-
+    
     private ArrayList<Employee> employeeList;
 
     public EmployeeDirectory() {
@@ -21,17 +21,23 @@ public class EmployeeDirectory {
     public ArrayList<Employee> getEmployeeList() {
         return employeeList;
     }
-
-    public void setEmployeeList(ArrayList<Employee> employeeList) {
-        this.employeeList = employeeList;
-    }
-
-    public Employee createNewEmployee(String name) {
-        Employee employee=null;
-        employee = name == null ? new Employee() : new Employee(name);
+    
+    public Employee createEmployee(String name){
+        Employee employee = new Employee();
         employee.setName(name);
         employeeList.add(employee);
         return employee;
     }
-
+    
+    public void removeEmployee (Employee e){
+        employeeList.remove(e);
+    }
+    
+    public boolean checkIfUsernameIsUnique(String name){
+        for (Employee e : employeeList){
+            if (e.getName().equals(name))
+                return false;
+        }
+        return true;
+    }
 }
