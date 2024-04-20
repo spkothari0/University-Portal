@@ -1,63 +1,46 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Store;
 
-import java.util.ArrayList;
-import java.util.UUID;
-
 /**
  *
- * @author spkot
+ * @author Sohan
  */
-public class Store {
-
-    private String name;
-    private UUID id;
-    private ArrayList<Item> availableItems;
-
-    public Store() {
-        availableItems = new ArrayList<>();
-        id = UUID.randomUUID();
+public class Store{
+    String itemName;
+    int price;
+    String itemType;
+    
+    public String getItemName() {
+        return itemName;
     }
 
-    public String getName() {
-        return name;
+    public void setItemName(String ItemName) {
+        this.itemName = ItemName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public int getPrice() {
+        return price;
     }
 
-    public UUID getId() {
-        return id;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
+    public String getItemType() {
+        return itemType;
     }
 
-    public ArrayList<Item> getAvailableItems() {
-        return availableItems;
+    public void setItemType(String itemType) {
+        this.itemType = itemType;
     }
     
-    public Item createNewItem(){
-        Item i=new Item();
-        availableItems.add(i);
-        return i;
-    }
     
-    public void buyItem(Item i){
-        i.itemBought();
-    }
-    
-    public boolean isItemAvailable(Item i){
-        return i.isAvailable();
-    }
-
     @Override
-    public String toString() {
-        return name;
+        public String toString(){
+        return itemName;
     }
 }

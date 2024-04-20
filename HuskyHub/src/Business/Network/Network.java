@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Network;
 
@@ -8,17 +9,15 @@ import Business.Enterprise.EnterpriseDirectory;
 
 /**
  *
- * @author spkothari
+ * @author daminithorat
  */
 public class Network {
-
     private String name;
     private EnterpriseDirectory enterpriseDirectory;
-
-    public Network() {
-        enterpriseDirectory = new EnterpriseDirectory();
+    
+    public Network(){
+        enterpriseDirectory=new EnterpriseDirectory();
     }
-
     public String getName() {
         return name;
     }
@@ -30,9 +29,10 @@ public class Network {
     public EnterpriseDirectory getEnterpriseDirectory() {
         return enterpriseDirectory;
     }
-
+    
     @Override
-    public String toString() {
+    public String toString(){
         return name;
     }
+    
 }

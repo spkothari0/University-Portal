@@ -1,16 +1,26 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Business.Role;
 
-import javax.swing.JPanel;
-
-import Business.Business;
+import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
+import javax.swing.JPanel;
+import userinterface.StoreManager.ManageStoreJPanel;
 
+/**
+ *
+ * @author Sohan
+ */
 public class StoreManagerRole extends Role{
+
     @Override
-    public void createWorkArea(JPanel userProcessContainer, UserAccount user, Enterprise enterprise, Organization organization, Business business, Network network){
-        System.out.println("Admin role:Create work area");
+    public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
+        return new ManageStoreJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
+
 }
