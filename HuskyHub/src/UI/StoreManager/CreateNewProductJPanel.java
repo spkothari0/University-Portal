@@ -15,11 +15,11 @@ import javax.swing.JPanel;
 public class CreateNewProductJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
-    Supplier supplier;
-    public CreateNewProductJPanel(JPanel upc, Supplier s){
+    
+    public CreateNewProductJPanel(JPanel upc){
         initComponents();
         userProcessContainer = upc;
-        supplier = s;
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -127,7 +127,7 @@ public class CreateNewProductJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
 
-        Product p = supplier.getProductCatalog().addProduct();
+        Product p = getProductCatalog().addProduct();
         p.setProdName(txtName.getText());
         String stringPrice = txtPrice.getText();
         if(stringPrice.isEmpty()==false){
