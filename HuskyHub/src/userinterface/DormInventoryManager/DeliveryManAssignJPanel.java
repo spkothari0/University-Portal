@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.DormInventoryManager;
+package userinterface.DormInventoryManager;
 
 //import Business.DeliveryMan.DeliveryMan;
-import Business.Business;
+import Business.EcoSystem;
 import Business.StudentRequestOrder;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -19,20 +19,20 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author srira
+ * @author daminithorat
  */
 public class DeliveryManAssignJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private StudentRequestOrder order;
-    private Business business;
+    private EcoSystem business;
     private Enterprise enterprise;
     private DormInventoryWorkRequest request;
 
     /**
      * Creates new form DeliveryManAssignJPanel
      */
-    DeliveryManAssignJPanel(JPanel userProcessContainer, Business business, Enterprise enterprise, DormInventoryWorkRequest request) {
+    DeliveryManAssignJPanel(JPanel userProcessContainer, EcoSystem business, Enterprise enterprise, DormInventoryWorkRequest request) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.business = business;

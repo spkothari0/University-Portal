@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.AdministrativeRole;
+package userinterface.AdministrativeRole;
 
-import Business.Business;
+import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ashish
+ * @author daminithorat
  */
 public class ManageRequestsJPanel extends javax.swing.JPanel {
 
@@ -27,7 +27,7 @@ public class ManageRequestsJPanel extends javax.swing.JPanel {
      * Creates new form ManageRequestsJPanel
      */
     private JPanel userProcessContainer;
-    private Business business;
+    private EcoSystem business;
     private UserAccount userAccount;
     private Enterprise enterprise;
 

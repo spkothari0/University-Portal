@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.AdministrativeRole;
+package userinterface.AdministrativeRole;
 
-import Business.Business;
+import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
@@ -20,14 +20,14 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ashish
+ * @author daminithorat
  */
 public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
     private OrganizationDirectory organizationDir;
     private JPanel userProcessContainer;
     private Organization org;
-    private Business system;
+    private EcoSystem system;
     private boolean emailValid;
     private boolean userNameValid;
     private boolean nameValid;
@@ -36,7 +36,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageOrganizationJPanel
      */
-    public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDir, Business business) {
+    public ManageEmployeeJPanel(JPanel userProcessContainer, OrganizationDirectory organizationDir, EcoSystem system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.organizationDir = organizationDir;
@@ -83,7 +83,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
     private void populateRoleComboBox(Organization organization) {
         roleJComboBox.removeAllItems();
-        for (Role role : organization.getSupportedRoles()) {
+        for (Role role : organization.getSupportedRole()) {
 
             String r = role.toString();
             roleJComboBox.addItem(role);
@@ -432,8 +432,8 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             if (organization.getEmployeeDirectory().checkIfUsernameIsUnique(userName)) {
                 if (usernamePatternCorrect(userName)) {
                     if (organization.getUserAccountDirectory().checkIfUsernameIsUnique(userName)) {
-                        organization.getEmployeeDirectory().createNewEmployee(txtName.getText());
-                        organization.getUserAccountDirectory().createUserAccount(userName, password);
+                        organization.getEmployeeDirectory().createEmployee(txtName.getText());
+                        organization.getUserAccountDirectory().createUserAccount(userName, password, employee, role);
                         // organization.getUserAccountDirectory().createUserAccount(userName, password, role);
                         JOptionPane.showMessageDialog(null, "Employee created successfully");
                         //nd@nd.com    populateTable(organization);

@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package UI.AdministrativeRole;
+package userinterface.AdministrativeRole;
 
 import Business.Enterprise.Enterprise;
 import Business.Organization.Organization;
@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ashish
+ * @author daminithorat
  */
 public class ManageOrganizationJPanel extends javax.swing.JPanel {
 
