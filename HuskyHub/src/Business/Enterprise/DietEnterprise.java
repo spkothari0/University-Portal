@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author mittul.sharma
+ * @author shreyas
  */
 public class DietEnterprise extends Enterprise {
     

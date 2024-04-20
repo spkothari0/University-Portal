@@ -17,7 +17,7 @@ import userinterface.StudentRole.CreateNewStudentJPanel;
 
 /**
  *
- * @author ashish
+ * @author shreyas
  */
 public class MainJFrame extends javax.swing.JFrame {
 
