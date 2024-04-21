@@ -101,8 +101,6 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageNetwork = new javax.swing.JButton();
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
-        greetLbl = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTree = new javax.swing.JTree();
         viewStudentsBtn = new javax.swing.JButton();
@@ -137,18 +135,18 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 190, 38));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 230, 70));
 
         btnManageEnterprise.setBackground(new java.awt.Color(102, 255, 255));
         btnManageEnterprise.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(51, 51, 51));
-        btnManageEnterprise.setText("Manage Enterprises");
+        btnManageEnterprise.setText("Enterprises");
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 200, 40));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 220, 70));
 
         btnManageAdmin.setBackground(new java.awt.Color(102, 255, 255));
         btnManageAdmin.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -159,20 +157,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 230, 41));
-
-        greetLbl.setBackground(new java.awt.Color(102, 255, 255));
-        greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        greetLbl.setForeground(new java.awt.Color(102, 255, 255));
-        greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel2.add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 290, 60));
-
-        jLabel7.setBackground(new java.awt.Color(102, 255, 255));
-        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("Welcome,");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 90, 40));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 230, 70));
 
         jTree.setBackground(new java.awt.Color(204, 204, 204));
         jTree.setForeground(new java.awt.Color(51, 51, 51));
@@ -183,7 +168,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTree);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 243, 300));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 240, 243, 300));
 
         viewStudentsBtn.setBackground(new java.awt.Color(102, 255, 255));
         viewStudentsBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -194,7 +179,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 viewStudentsBtnActionPerformed(evt);
             }
         });
-        jPanel2.add(viewStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 190, 40));
+        jPanel2.add(viewStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 230, 70));
 
         jSplitPane.setRightComponent(jPanel2);
 
@@ -241,9 +226,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageEnterprise;
     private javax.swing.JButton btnManageNetwork;
-    private javax.swing.JLabel greetLbl;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

@@ -69,12 +69,12 @@ public class MainJFrame extends javax.swing.JFrame {
         LeftJPanel.setMaximumSize(new java.awt.Dimension(467, 722));
         LeftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userNameJTextField.setBackground(new java.awt.Color(204, 204, 204));
+        userNameJTextField.setBackground(new java.awt.Color(204, 255, 204));
         userNameJTextField.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         userNameJTextField.setForeground(new java.awt.Color(51, 51, 51));
-        LeftJPanel.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 204, 32));
+        LeftJPanel.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 250, 32));
 
-        passwordField.setBackground(new java.awt.Color(204, 204, 204));
+        passwordField.setBackground(new java.awt.Color(204, 255, 204));
         passwordField.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
         passwordField.setForeground(new java.awt.Color(51, 51, 51));
         passwordField.addActionListener(new java.awt.event.ActionListener() {
@@ -82,13 +82,13 @@ public class MainJFrame extends javax.swing.JFrame {
                 passwordFieldActionPerformed(evt);
             }
         });
-        LeftJPanel.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 347, 204, 32));
+        LeftJPanel.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 250, 32));
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("New User? Click on Sign Up");
-        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, 204, -1));
+        jLabel4.setText("New User? ");
+        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 204, -1));
 
         loginJButton.setBackground(new java.awt.Color(102, 255, 255));
         loginJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -99,7 +99,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 loginJButtonActionPerformed(evt);
             }
         });
-        LeftJPanel.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 409, 148, 49));
+        LeftJPanel.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 110, 49));
 
         registerBtn.setBackground(new java.awt.Color(102, 255, 255));
         registerBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -110,7 +110,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 registerBtnActionPerformed(evt);
             }
         });
-        LeftJPanel.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 558, 149, 49));
+        LeftJPanel.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 149, 49));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 255, 255));
@@ -127,17 +127,17 @@ public class MainJFrame extends javax.swing.JFrame {
                 logoutJButtonActionPerformed(evt);
             }
         });
-        LeftJPanel.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 469, 148, 49));
+        LeftJPanel.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 120, 49));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 255, 255));
         jLabel2.setText("Login id:");
-        LeftJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 100, -1));
+        LeftJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 100, -1));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 255, 255));
         jLabel5.setText("Password:");
-        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 70, -1));
+        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 70, -1));
 
         jSplitPane1.setLeftComponent(LeftJPanel);
 
