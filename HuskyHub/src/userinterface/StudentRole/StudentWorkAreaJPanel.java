@@ -193,6 +193,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(placeOrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 340, 80));
+
+        imgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg"))); // NOI18N
         add(imgLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 186, 490, 270));
 
         btnUpdateProfile.setBackground(new java.awt.Color(102, 255, 255));
@@ -241,8 +243,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
     private void btnAnalysisMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnalysisMouseExited
         // TODO add your handling code here:
-        productImage = null;
-        imgLabel.setIcon(productImage);
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg")));
         
     }//GEN-LAST:event_btnAnalysisMouseExited
 
@@ -264,14 +265,12 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
     private void placeOrderBtn1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_placeOrderBtn1MouseExited
         // TODO add your handling code here:
-        productImage = null;
-        imgLabel.setIcon(productImage);
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg")));
     }//GEN-LAST:event_placeOrderBtn1MouseExited
 
     private void btnMaintainReqMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMaintainReqMouseExited
         // TODO add your handling code here:
-        productImage = null;
-        imgLabel.setIcon(productImage);
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg")));
     }//GEN-LAST:event_btnMaintainReqMouseExited
 
 
