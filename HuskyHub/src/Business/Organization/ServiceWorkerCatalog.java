@@ -12,9 +12,9 @@ import java.util.ArrayList;
  *
  * @author daminithorat
  */
-public class ServiceWorkerOrganization extends Organization{
+public class ServiceWorkerCatalog extends Organization{
 
-    public ServiceWorkerOrganization() {
+    public ServiceWorkerCatalog() {
         super(Organization.Type.ServiceWorker.getValue());
     }
 

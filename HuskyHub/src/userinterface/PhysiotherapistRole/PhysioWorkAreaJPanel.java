@@ -13,7 +13,7 @@ import Business.Student.Student;
 import Business.Employee.Employee;
 import Business.Organization.Organization;
 
-import Business.Organization.PhysioOrganization;
+import Business.Organization.PhysioCatalog;
 import Business.UserAccount.UserAccount;
 
 import Business.WorkQueue.PhysioWorkRequest;

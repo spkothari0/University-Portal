@@ -27,31 +27,31 @@ public class OrganizationDirectory {
         Organization organization = null;
 
         if (type.getValue().equals(Type.Nutrition.getValue())){
-            organization = new NutritionOrganization();
+            organization = new NutritionistCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.WeightTraining.getValue())){
-            organization = new WeightTrainingOrganization();
+            organization = new WeightTrainingCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.FitnessTraining.getValue())){
-            organization = new FitnessTrainingOrganization();
+            organization = new FitnessTrainerCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Physiotherapist.getValue())){
-            organization = new PhysioOrganization();
+            organization = new PhysioCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.GeneralPractitioner.getValue())){
-            organization = new GenPracOrganization();
+            organization = new DoctorCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.DormInventory.getValue())){
-            organization = new InventoryOrganization();
+            organization = new InventoryCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Delivery.getValue())){
-            organization = new DeliveryOrganization();
+            organization = new DeliveryCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.Service.getValue())){
-            organization = new ServiceOrganization();
+            organization = new ServiceCatalog();
             organizationList.add(organization);
         }else if (type.getValue().equals(Type.ServiceWorker.getValue())){
-            organization = new ServiceWorkerOrganization();
+            organization = new ServiceWorkerCatalog();
             organizationList.add(organization);
         }
       

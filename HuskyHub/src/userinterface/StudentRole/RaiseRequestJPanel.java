@@ -12,7 +12,7 @@ import Business.Enterprise.MaintenanceEnterprise;
 import Business.Enterprise.ServiceTypes;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.ServiceOrganization;
+import Business.Organization.ServiceCatalog;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.WorkRequest;
 import Business.utilities.tableHeaderColors;
@@ -450,7 +450,7 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
                 for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
                     if (enter instanceof MaintenanceEnterprise) {
                         for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
-                            if (organization instanceof ServiceOrganization) {
+                            if (organization instanceof ServiceCatalog) {
                                 org = organization;
                                 break;
                             }

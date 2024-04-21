@@ -10,8 +10,8 @@ import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.GenPracOrganization;
-import Business.Organization.NutritionOrganization;
+import Business.Organization.DoctorCatalog;
+import Business.Organization.NutritionistCatalog;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.GenPracWorkRequest;
@@ -44,7 +44,7 @@ public class GenPractitionerWorkAreaJPanel extends javax.swing.JPanel {
      */   
     JPanel userProcessContainer;
     UserAccount account;
-    NutritionOrganization nutritionOrganisation;
+    NutritionistCatalog nutritionOrganisation;
     Enterprise enterprise;
     EcoSystem ecosystem;
     Network network;

@@ -10,7 +10,7 @@ import Business.Enterprise.DoctorEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.PhysioOrganization;
+import Business.Organization.PhysioCatalog;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.PhysioWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -54,7 +54,7 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof PhysioOrganization) {
+            if (organization instanceof PhysioCatalog) {
                 org = organization;
                 break;
             }
@@ -179,7 +179,7 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof PhysioOrganization) {
+                if (organization instanceof PhysioCatalog) {
                     org = organization;
                     break;
                 }
@@ -206,7 +206,7 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof PhysioOrganization) {
+                    if (organization instanceof PhysioCatalog) {
                         org = organization;
                         break;
                     }

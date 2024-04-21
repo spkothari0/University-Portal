@@ -10,7 +10,7 @@ import Business.Enterprise.Enterprise;
 import Business.Enterprise.TrainerEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.WeightTrainingOrganization;
+import Business.Organization.WeightTrainingCatalog;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.WeightTrainerWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -54,7 +54,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof WeightTrainingOrganization) {
+            if (organization instanceof WeightTrainingCatalog) {
                 org = organization;
                 break;
             }
@@ -176,7 +176,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof WeightTrainingOrganization) {
+                if (organization instanceof WeightTrainingCatalog) {
                     org = organization;
                     break;
                 }
@@ -203,7 +203,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof WeightTrainingOrganization) {
+                    if (organization instanceof WeightTrainingCatalog) {
                         org = organization;
                         break;
                     }

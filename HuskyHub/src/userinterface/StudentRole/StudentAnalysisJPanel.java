@@ -11,7 +11,7 @@ import Business.EcoSystem;
 import Business.Enterprise.DietEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.NutritionOrganization;
+import Business.Organization.NutritionistCatalog;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.NutritionistWorkRequest;
@@ -328,7 +328,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof NutritionOrganization) {
+                if (organization instanceof NutritionistCatalog) {
                     org = organization;
                     break;
                 }
@@ -358,7 +358,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof NutritionOrganization) {
+                    if (organization instanceof NutritionistCatalog) {
                         org = organization;
                         break;
                     }
@@ -415,7 +415,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof NutritionOrganization) {
+            if (organization instanceof NutritionistCatalog) {
                 org = organization;
                 break;
             }
