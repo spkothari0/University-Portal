@@ -6,24 +6,22 @@
 package Business.Organization;
 
 import Business.Role.Role;
-import Business.Role.ServiceProviderRole;
-//import Business.Role.StoreManagerRole;
+import Business.Role.PhysiotherapistRole;
 import java.util.ArrayList;
 
 /**
  *
  * @author daminithorat
  */
-public class ServiceCatalog extends Organization{
-    
-    public ServiceCatalog() {
-        super(Organization.Type.Service.getValue());
+public class PhysioOrganization extends Organization{
+    public PhysioOrganization() {
+        super(Organization.Type.Physiotherapist.getValue());
     }
-
+    
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new ServiceProviderRole());
+        roles.add(new PhysiotherapistRole());
         return roles;
     }
 }

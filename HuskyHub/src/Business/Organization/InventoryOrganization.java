@@ -4,28 +4,24 @@
  */
 package Business.Organization;
 
-import Business.Role.DeliveryManRole;
 import Business.Role.Role;
+import Business.Role.DormInventoryManagerRole;
 import java.util.ArrayList;
 
 /**
  *
  * @author daminithorat
  */
-public class DeliveryCatalog extends Organization{
+public class InventoryOrganization extends Organization{
 
-    public DeliveryCatalog() {
-        super(Organization.Type.Delivery.getValue());
+    public InventoryOrganization() {
+        super(Organization.Type.DormInventory.getValue());
     }
 
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new DeliveryManRole());
+        roles.add(new DormInventoryManagerRole());
         return roles;
     }
-     
-   
-    
-    
 }

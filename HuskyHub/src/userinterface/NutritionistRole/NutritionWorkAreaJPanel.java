@@ -13,7 +13,7 @@ import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.NutritionistCatalog;
+import Business.Organization.NutritionOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.NutritionistWorkRequest;
@@ -48,7 +48,7 @@ public class NutritionWorkAreaJPanel extends javax.swing.JPanel {
      */
     JPanel userProcessContainer;
     UserAccount account;
-    NutritionistCatalog nutritionOrganisation;
+    NutritionOrganization nutritionOrganisation;
     Enterprise enterprise;
     EcoSystem ecosystem;
     Network network;
@@ -122,6 +122,8 @@ public class NutritionWorkAreaJPanel extends javax.swing.JPanel {
         nutriMsgTxt = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         dietChartComboBox = new javax.swing.JComboBox<>();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
         viewGoalBtn = new javax.swing.JButton();
@@ -290,6 +292,12 @@ public class NutritionWorkAreaJPanel extends javax.swing.JPanel {
         dietChartComboBox.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         dietChartComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Weight Gain-1", "Weight Gain-2", "Weight Loss-1", "Weight Loss-2" }));
         add(dietChartComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 150, 30));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
 
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -464,6 +472,8 @@ public class NutritionWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> dietChartComboBox;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel greetLbl;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

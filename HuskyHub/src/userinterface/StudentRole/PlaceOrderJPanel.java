@@ -12,7 +12,7 @@ import Business.Enterprise.Items;
 import Business.Enterprise.DormInventoryEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.InventoryCatalog;
+import Business.Organization.InventoryOrganization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -135,11 +135,11 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
         addToCartHistBtn = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 51, 51));
+        setBackground(new java.awt.Color(51, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ORDER DETAILS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 0, 1127, 37));
@@ -183,7 +183,7 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, 93));
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Dorm Inventories");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 452, -1));
@@ -386,7 +386,7 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
                 for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
                     if (enter instanceof DormInventoryEnterprise) {
                         for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
-                            if (organization instanceof InventoryCatalog) {
+                            if (organization instanceof InventoryOrganization) {
                                 org = organization;
                                 break;
                             }
