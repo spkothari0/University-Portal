@@ -24,5 +24,10 @@ public class WeightTrainerRole extends Role {
         
         return new WeightTrainerWorkAreaJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
+
+    @Override
+    public String toString() {
+        return RoleType.WeightTrainer.getValue();
+    }
     
 }

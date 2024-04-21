@@ -22,4 +22,9 @@ public class DormInventoryManagerRole extends Role{
     public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         return new ManageDormInventoryJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
+
+    @Override
+    public String toString() {
+        return RoleType.DormInventoryManager.getValue();
+    }
 }

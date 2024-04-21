@@ -23,4 +23,9 @@ public class PhysiotherapistRole extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         return new PhysioWorkAreaJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
+
+    @Override
+    public String toString() {
+        return RoleType.Physiotherapist.getValue();
+    }
 }
