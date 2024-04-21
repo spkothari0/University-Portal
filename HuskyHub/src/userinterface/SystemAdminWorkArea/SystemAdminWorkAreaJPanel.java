@@ -128,7 +128,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnManageNetwork.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageNetwork.setBackground(new java.awt.Color(102, 255, 255));
         btnManageNetwork.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(51, 51, 51));
         btnManageNetwork.setText("Add/Delete Network");
@@ -139,7 +139,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 190, 38));
 
-        btnManageEnterprise.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageEnterprise.setBackground(new java.awt.Color(102, 255, 255));
         btnManageEnterprise.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(51, 51, 51));
         btnManageEnterprise.setText("Manage Enterprises");
@@ -150,7 +150,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 200, 40));
 
-        btnManageAdmin.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageAdmin.setBackground(new java.awt.Color(102, 255, 255));
         btnManageAdmin.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(51, 51, 51));
         btnManageAdmin.setText("Add/Delete Enterprise Admin");
@@ -185,7 +185,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 243, 300));
 
-        viewStudentsBtn.setBackground(new java.awt.Color(204, 204, 204));
+        viewStudentsBtn.setBackground(new java.awt.Color(102, 255, 255));
         viewStudentsBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         viewStudentsBtn.setForeground(new java.awt.Color(51, 51, 51));
         viewStudentsBtn.setText("Students List");
