@@ -67,11 +67,9 @@ public class ManageServiceJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         totBillTxt = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         orderMgtTbl.setBackground(new java.awt.Color(204, 204, 204));
@@ -186,7 +184,7 @@ public class ManageServiceJPanel extends javax.swing.JPanel {
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 423, 478, 120));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel2.setForeground(new java.awt.Color(102, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Order Details");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 390, 452, -1));
@@ -201,14 +199,8 @@ public class ManageServiceJPanel extends javax.swing.JPanel {
         totBillTxt.setForeground(new java.awt.Color(51, 51, 51));
         add(totBillTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 560, 193, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
-
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
+        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText("Maintenance Request Management");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 440, 30));
     }// </editor-fold>//GEN-END:initComponents
@@ -305,8 +297,6 @@ public class ManageServiceJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backBtn;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JTable itemListTbl;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
