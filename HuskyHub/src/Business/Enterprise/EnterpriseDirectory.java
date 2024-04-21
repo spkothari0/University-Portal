@@ -33,27 +33,31 @@ public class EnterpriseDirectory {
     //Create enterprise
     public Enterprise createAndAddEnterprise(String name,Enterprise.EnterpriseType type){
         Enterprise enterprise = null;
-        if(type == Enterprise.EnterpriseType.DietUnit){
-            enterprise=new DietEnterprise(name);
-            enterpriseList.add(enterprise);
+        if(null != type)
+            switch (type) {
+            case NourishmentEnterprise:
+                enterprise=new NourishmentEnterprise(name);
+                break;
+            case GymHelperEnterprise:
+                enterprise=new GymHelperEnterprise(name);
+                break;
+            case HealthConsultantEnterprise:
+                enterprise=new HealthConsultantEnterprise(name);
+                break;
+            case UniversityHousingEnterprise:
+                enterprise=new UniversityHousingEnterprise(name);
+                break;
+            case HousingRepairEnterprise:
+                enterprise=new HousingRepairEnterprise(name);
+                break;
+            case CollegeStoreEnterprise:
+                enterprise=new CollegeStoreEnterprise(name);
+                break;
+            default:
+                break;
         }
-        if(type == Enterprise.EnterpriseType.TrainerUnit){
-            enterprise=new TrainerEnterprise(name);
-            enterpriseList.add(enterprise);
-        }
-        if(type == Enterprise.EnterpriseType.DoctorUnit){
-            enterprise=new DoctorEnterprise(name);
-            enterpriseList.add(enterprise);
-        }
-        if(type == Enterprise.EnterpriseType.DormInventoryUnit){
-            enterprise=new DormInventoryEnterprise(name);
-            enterpriseList.add(enterprise);
-        }
-
-        if(type == Enterprise.EnterpriseType.MaintenanceUnit){
-            enterprise=new MaintenanceEnterprise(name);
-            enterpriseList.add(enterprise); 
-        }
+        
+        enterpriseList.add(enterprise);
         return enterprise;
     }
 }

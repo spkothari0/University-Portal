@@ -17,7 +17,6 @@ public class ManageStoreJPanel extends javax.swing.JPanel {
 
     JPanel userProcessContainer;
     private UserAccount userAcc;
-    private EcoSystem system;
     private UserAccount account;
     //private Organization organization;
     private Enterprise enterprise;
