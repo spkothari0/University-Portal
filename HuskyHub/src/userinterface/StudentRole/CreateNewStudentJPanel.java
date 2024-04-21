@@ -238,7 +238,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         });
         add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 190, 30));
 
-        submitBtn.setBackground(new java.awt.Color(255, 51, 51));
+        submitBtn.setBackground(new java.awt.Color(102, 255, 255));
         submitBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         submitBtn.setForeground(new java.awt.Color(51, 51, 51));
         submitBtn.setText("Submit");

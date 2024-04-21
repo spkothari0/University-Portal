@@ -56,7 +56,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        manageEmployeeJButton.setBackground(new java.awt.Color(204, 204, 204));
+        manageEmployeeJButton.setBackground(new java.awt.Color(102, 255, 255));
         manageEmployeeJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         manageEmployeeJButton.setForeground(new java.awt.Color(51, 51, 51));
         manageEmployeeJButton.setText("Manage Employee");
@@ -67,7 +67,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 180, 40));
 
-        manageOrganizationJButton.setBackground(new java.awt.Color(204, 204, 204));
+        manageOrganizationJButton.setBackground(new java.awt.Color(102, 255, 255));
         manageOrganizationJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         manageOrganizationJButton.setForeground(new java.awt.Color(51, 51, 51));
         manageOrganizationJButton.setText("Manage Organization");
@@ -88,7 +88,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel.setText("<value>");
         add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 500, 30));
 
-        manageRequestsBtn.setBackground(new java.awt.Color(204, 204, 204));
+        manageRequestsBtn.setBackground(new java.awt.Color(102, 255, 255));
         manageRequestsBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         manageRequestsBtn.setForeground(new java.awt.Color(51, 51, 51));
         manageRequestsBtn.setText("Manage Requests");
