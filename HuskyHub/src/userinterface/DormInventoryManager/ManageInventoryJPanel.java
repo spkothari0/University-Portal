@@ -7,8 +7,8 @@ package userinterface.DormInventoryManager;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.Items;
 import Business.Organization.Organization;
+import Business.Store.Items;
 import Business.UserAccount.UserAccount;
 import Business.utilities.tableHeaderColors;
 import java.awt.CardLayout;

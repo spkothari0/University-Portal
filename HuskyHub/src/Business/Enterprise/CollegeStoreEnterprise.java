@@ -4,10 +4,10 @@ import Business.Role.Role;
 import java.util.ArrayList;
 
 
-public class StoreEnterprise extends Enterprise {
+public class CollegeStoreEnterprise extends Enterprise {
    
-    public StoreEnterprise(String name){
-        super(name,Enterprise.EnterpriseType.CollegeStore);
+    public CollegeStoreEnterprise(String name){
+        super(name,Enterprise.EnterpriseType.CollegeStoreEnterprise);
     }
     
     @Override

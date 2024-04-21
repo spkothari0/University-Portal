@@ -42,8 +42,9 @@ public abstract class Organization {
         Delivery("DeliveryMan"),
         Service("Service"),
         ServiceWorker("Service Worker"),
-        Lab("Lab Organization"),
-        Doctor("Doctor Organisation");
+        Doctor("Doctor Organisation"),
+        FoodStore("Food Store"),
+        StationaryStore("Stationery Store Organization");
         
         private String value;
         

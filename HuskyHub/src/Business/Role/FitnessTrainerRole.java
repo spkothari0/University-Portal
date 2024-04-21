@@ -24,5 +24,10 @@ public class FitnessTrainerRole extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         return new FitnessTrainerWorkAreaJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
+
+    @Override
+    public String toString() {
+        return RoleType.FitnessTrainer.getValue();
+    }
     
 }
