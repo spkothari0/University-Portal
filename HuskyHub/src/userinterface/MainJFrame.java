@@ -69,12 +69,12 @@ public class MainJFrame extends javax.swing.JFrame {
         LeftJPanel.setMaximumSize(new java.awt.Dimension(467, 722));
         LeftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userNameJTextField.setBackground(new java.awt.Color(204, 255, 204));
+        userNameJTextField.setBackground(new java.awt.Color(204, 204, 204));
         userNameJTextField.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         userNameJTextField.setForeground(new java.awt.Color(51, 51, 51));
         LeftJPanel.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 270, 32));
 
-        passwordField.setBackground(new java.awt.Color(204, 255, 204));
+        passwordField.setBackground(new java.awt.Color(204, 204, 204));
         passwordField.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
         passwordField.setForeground(new java.awt.Color(51, 51, 51));
         passwordField.addActionListener(new java.awt.event.ActionListener() {
@@ -143,8 +143,8 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        universityLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img.png"))); // NOI18N
-        container.add(universityLbl, "card2");
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img.png"))); // NOI18N
+        container.add(orangeLbl, "card2");
 
         jSplitPane1.setRightComponent(container);
 
@@ -224,7 +224,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        universityLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img"))); // NOI18N
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img"))); // NOI18N
 
         container.add(universityLbl, "card2");
         jSplitPane1.setRightComponent(container);
