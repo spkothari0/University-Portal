@@ -97,23 +97,23 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
         jLabel5.setText("Enter Your Message:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 170, 80));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 170, 80));
 
         jScrollPane1.setBackground(new java.awt.Color(204, 204, 204));
         jScrollPane1.setForeground(new java.awt.Color(51, 51, 51));
 
-        msgTxt.setBackground(new java.awt.Color(204, 255, 204));
+        msgTxt.setBackground(new java.awt.Color(204, 204, 204));
         msgTxt.setColumns(20);
         msgTxt.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
         msgTxt.setForeground(new java.awt.Color(51, 51, 51));
         msgTxt.setRows(5);
         jScrollPane1.setViewportView(msgTxt);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 320, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 320, -1));
 
-        jButton1.setBackground(new java.awt.Color(102, 255, 255));
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Request Workouts");
@@ -122,9 +122,9 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 180, 48));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 180, 48));
 
-        weightTbl.setBackground(new java.awt.Color(204, 255, 204));
+        weightTbl.setBackground(new java.awt.Color(204, 204, 204));
         weightTbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         weightTbl.setForeground(new java.awt.Color(51, 51, 51));
         weightTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -148,7 +148,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(weightTbl);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, 820, 90));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 820, 90));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
@@ -159,7 +159,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
         enterpriseLabel.setText("WEIGHT TRAINER");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 270, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 270, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

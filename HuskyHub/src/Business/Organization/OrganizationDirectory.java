@@ -26,7 +26,6 @@ public class OrganizationDirectory {
     public Organization createOrganization(Type type) {
         Organization organization = null;
 
-<<<<<<< HEAD
         if (type.getValue().equals(Type.Nutrition.getValue())) {
             organization = new NutritionOrganization();
         } else if (type.getValue().equals(Type.WeightTraining.getValue())) {
@@ -49,35 +48,6 @@ public class OrganizationDirectory {
             organization = new FoodStoreOrganization();
         } else if (type.getValue().equals(Type.StationaryStore.getValue())) {
             organization = new StationeryStoreOrganization();
-=======
-        if (type.getValue().equals(Type.Nutrition.getValue())){
-            organization = new NutritionOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.WeightTraining.getValue())){
-            organization = new WeightTrainingOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.FitnessTraining.getValue())){
-            organization = new FitnessTrainingOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.Physiotherapist.getValue())){
-            organization = new PhysioOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.GeneralPractitioner.getValue())){
-            organization = new GenPracOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.DormInventory.getValue())){
-            organization = new InventoryOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.Delivery.getValue())){
-            organization = new DeliveryOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.Service.getValue())){
-            organization = new ServiceOrganization();
-            organizationList.add(organization);
-        }else if (type.getValue().equals(Type.ServiceWorker.getValue())){
-            organization = new ServiceWorkerOrganization();
-            organizationList.add(organization);
->>>>>>> yash
         }
         organizationList.add(organization);
         return organization;

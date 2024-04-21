@@ -90,7 +90,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(0, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        delManTbl.setBackground(new java.awt.Color(204, 255, 204));
+        delManTbl.setBackground(new java.awt.Color(204, 204, 204));
         delManTbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         delManTbl.setForeground(new java.awt.Color(51, 51, 51));
         delManTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -124,7 +124,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
             delManTbl.getColumnModel().getColumn(3).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 730, 96));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 730, 96));
 
         processJButton.setBackground(new java.awt.Color(102, 255, 255));
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -135,7 +135,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 150, 50));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 150, 50));
 
         refreshJButton.setBackground(new java.awt.Color(102, 255, 255));
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -146,7 +146,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 100, 120, 50));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 120, 30));
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -173,7 +173,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText("Delivery Request Processing");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 410, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 410, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
