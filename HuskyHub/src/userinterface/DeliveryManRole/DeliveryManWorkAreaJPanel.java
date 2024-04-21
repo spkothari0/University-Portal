@@ -82,8 +82,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         refreshJButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
@@ -160,12 +158,6 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 40));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
-
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 320, 30));
@@ -204,9 +196,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable delManTbl;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel greetLbl;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton processJButton;

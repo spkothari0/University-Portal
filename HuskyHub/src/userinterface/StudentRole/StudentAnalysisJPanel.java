@@ -97,8 +97,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         dietStatusTbl = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -107,7 +105,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -152,7 +150,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 60, 32));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel6.setForeground(new java.awt.Color(102, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Your Analysis");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 692, 36));
@@ -246,12 +244,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Training");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 180, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
         add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 760, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -262,7 +254,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 760, 10));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Diet Status");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 470, 378, -1));
@@ -385,7 +377,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
     private javax.swing.JTable dietStatusTbl;
     private javax.swing.JComboBox<String> goalComboBox;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -393,7 +384,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
