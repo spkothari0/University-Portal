@@ -187,7 +187,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtName.setBackground(new java.awt.Color(204, 204, 204));
+        txtName.setBackground(new java.awt.Color(204, 255, 204));
         txtName.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         txtName.setForeground(new java.awt.Color(51, 51, 51));
         txtName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -197,7 +197,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         });
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 190, 30));
 
-        confirmPasswordTxt.setBackground(new java.awt.Color(204, 204, 204));
+        confirmPasswordTxt.setBackground(new java.awt.Color(204, 255, 204));
         confirmPasswordTxt.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         confirmPasswordTxt.setForeground(new java.awt.Color(51, 51, 51));
         confirmPasswordTxt.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -208,12 +208,12 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(confirmPasswordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 190, 30));
 
         jLabel3.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel3.setForeground(new java.awt.Color(102, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Email ID:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 107, 30));
 
-        txtPassword.setBackground(new java.awt.Color(204, 204, 204));
+        txtPassword.setBackground(new java.awt.Color(204, 255, 204));
         txtPassword.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         txtPassword.setForeground(new java.awt.Color(51, 51, 51));
         txtPassword.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -223,7 +223,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         });
         add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 190, 30));
 
-        txtEmail.setBackground(new java.awt.Color(204, 204, 204));
+        txtEmail.setBackground(new java.awt.Color(204, 255, 204));
         txtEmail.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(51, 51, 51));
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
@@ -250,7 +250,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 530, 100, 50));
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel4.setForeground(new java.awt.Color(102, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Password:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 107, 30));
@@ -261,7 +261,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         jLabel1.setText("STUDENT REGISTRATION");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, 40, 1210, 50));
 
-        resetBtn.setBackground(new java.awt.Color(204, 204, 204));
+        resetBtn.setBackground(new java.awt.Color(102, 255, 255));
         resetBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         resetBtn.setForeground(new java.awt.Color(51, 51, 51));
         resetBtn.setText("Reset");
@@ -273,24 +273,24 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(resetBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 530, 100, 50));
 
         jLabel2.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setForeground(new java.awt.Color(102, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Name:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 107, 30));
 
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel6.setForeground(new java.awt.Color(102, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Confirm Password:");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, -1, 30));
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Age:");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 180, 90, 30));
 
-        txtAge.setBackground(new java.awt.Color(204, 204, 204));
+        txtAge.setBackground(new java.awt.Color(204, 255, 204));
         txtAge.setForeground(new java.awt.Color(51, 51, 51));
         txtAge.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -300,13 +300,13 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 180, 190, 30));
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel9.setForeground(new java.awt.Color(102, 255, 255));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("Gender:");
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 107, 20));
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Height(in cms):");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 86, 30));
@@ -322,7 +322,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         });
         add(radioMale, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 68, -1));
 
-        txtHeight.setBackground(new java.awt.Color(204, 204, 204));
+        txtHeight.setBackground(new java.awt.Color(204, 255, 204));
         txtHeight.setForeground(new java.awt.Color(51, 51, 51));
         txtHeight.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -341,7 +341,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         });
         add(radioFemale, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 72, -1));
 
-        txtWeight.setBackground(new java.awt.Color(204, 204, 204));
+        txtWeight.setBackground(new java.awt.Color(204, 255, 204));
         txtWeight.setForeground(new java.awt.Color(51, 51, 51));
         txtWeight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -356,12 +356,12 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(txtWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 470, 190, 30));
 
         jLabel10.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel10.setForeground(new java.awt.Color(102, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel10.setText("Address:");
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, 110, 30));
 
-        txtAdress.setBackground(new java.awt.Color(204, 204, 204));
+        txtAdress.setBackground(new java.awt.Color(204, 255, 204));
         txtAdress.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         txtAdress.setForeground(new java.awt.Color(51, 51, 51));
         txtAdress.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -372,12 +372,12 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(txtAdress, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 190, 30));
 
         jLabel11.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel11.setForeground(new java.awt.Color(102, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel11.setText("City:");
         add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 90, 30));
 
-        txtCity.setBackground(new java.awt.Color(204, 204, 204));
+        txtCity.setBackground(new java.awt.Color(204, 255, 204));
         txtCity.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         txtCity.setForeground(new java.awt.Color(51, 51, 51));
         txtCity.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -391,22 +391,23 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 280, 190, 30));
 
         jLabel12.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel12.setForeground(new java.awt.Color(102, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel12.setText("Campus");
         add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 80, 30));
 
+        networkJComboBox.setBackground(new java.awt.Color(204, 255, 204));
         networkJComboBox.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 330, 190, 30));
 
         jLabel13.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel13.setForeground(new java.awt.Color(102, 255, 255));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel13.setText("Zip Code:");
         add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 110, 30));
 
-        txtZipcode.setBackground(new java.awt.Color(204, 204, 204));
+        txtZipcode.setBackground(new java.awt.Color(204, 255, 204));
         txtZipcode.setForeground(new java.awt.Color(51, 51, 51));
         txtZipcode.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -416,7 +417,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(txtZipcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 380, 190, 30));
 
         jLabel17.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel17.setForeground(new java.awt.Color(102, 255, 255));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel17.setText("Weight (in Kgs):");
         add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 470, -1, 20));
