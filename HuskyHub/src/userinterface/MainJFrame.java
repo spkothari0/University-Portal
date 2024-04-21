@@ -57,7 +57,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
-        universityLbl = new javax.swing.JLabel();
+        orangeLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
@@ -72,7 +72,7 @@ public class MainJFrame extends javax.swing.JFrame {
         userNameJTextField.setBackground(new java.awt.Color(204, 255, 204));
         userNameJTextField.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         userNameJTextField.setForeground(new java.awt.Color(51, 51, 51));
-        LeftJPanel.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 270, 32));
+        LeftJPanel.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 250, 32));
 
         passwordField.setBackground(new java.awt.Color(204, 255, 204));
         passwordField.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
@@ -82,13 +82,13 @@ public class MainJFrame extends javax.swing.JFrame {
                 passwordFieldActionPerformed(evt);
             }
         });
-        LeftJPanel.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 270, 32));
+        LeftJPanel.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 250, 32));
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(153, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("New User? ");
-        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 204, -1));
+        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 204, -1));
 
         loginJButton.setBackground(new java.awt.Color(102, 255, 255));
         loginJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -99,7 +99,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 loginJButtonActionPerformed(evt);
             }
         });
-        LeftJPanel.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 120, 49));
+        LeftJPanel.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 110, 49));
 
         registerBtn.setBackground(new java.awt.Color(102, 255, 255));
         registerBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -110,13 +110,13 @@ public class MainJFrame extends javax.swing.JFrame {
                 registerBtnActionPerformed(evt);
             }
         });
-        LeftJPanel.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 149, 49));
+        LeftJPanel.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, 149, 49));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(153, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("University Hub");
-        LeftJPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 295, 58));
+        LeftJPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 295, 58));
 
         logoutJButton.setBackground(new java.awt.Color(0, 204, 204));
         logoutJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -132,19 +132,19 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(102, 255, 255));
         jLabel2.setText("Login id:");
-        LeftJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 100, -1));
+        LeftJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 100, -1));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 255, 255));
         jLabel5.setText("Password:");
-        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 70, -1));
+        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 70, -1));
 
         jSplitPane1.setLeftComponent(LeftJPanel);
 
         container.setLayout(new java.awt.CardLayout());
 
-        universityLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img.png"))); // NOI18N
-        container.add(universityLbl, "card2");
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img.png"))); // NOI18N
+        container.add(orangeLbl, "card2");
 
         jSplitPane1.setRightComponent(container);
 
@@ -224,9 +224,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        universityLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img"))); // NOI18N
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/university_img"))); // NOI18N
 
-        container.add(universityLbl, "card2");
+        container.add(orangeLbl, "card2");
         jSplitPane1.setRightComponent(container);
         getContentPane().add(jSplitPane1, "card2");
         pack();
@@ -306,9 +306,9 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginJButton;
     private javax.swing.JButton logoutJButton;
+    private javax.swing.JLabel orangeLbl;
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JButton registerBtn;
-    private javax.swing.JLabel universityLbl;
     private javax.swing.JTextField userNameJTextField;
     // End of variables declaration//GEN-END:variables
 }

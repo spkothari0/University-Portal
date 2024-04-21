@@ -86,9 +86,11 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         typeComboBox = new javax.swing.JComboBox<>();
         priceLbl1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         menuTbl.setBackground(new java.awt.Color(204, 204, 204));
@@ -223,10 +225,16 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         priceLbl1.setText("Only Numbers Allowed");
         add(priceLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 540, 160, 20));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
+        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
         enterpriseLabel.setText("Store Inventory Management");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 70, 410, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 410, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void populateTable() {
@@ -377,6 +385,8 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel itemLbl;
     private javax.swing.JTextField itemNameTxt;
     private javax.swing.JLabel itemSuccessLbl;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

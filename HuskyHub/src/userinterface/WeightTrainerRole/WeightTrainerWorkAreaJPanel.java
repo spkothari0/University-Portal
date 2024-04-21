@@ -10,7 +10,7 @@ import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.NutritionistCatalog;
+import Business.Organization.NutritionOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.WeightTrainerWorkRequest;
@@ -43,7 +43,7 @@ public class WeightTrainerWorkAreaJPanel extends javax.swing.JPanel {
      */
     JPanel userProcessContainer;
     UserAccount account;
-    NutritionistCatalog nutritionOrganisation;
+    NutritionOrganization nutritionOrganisation;
     Enterprise enterprise;
     EcoSystem ecosystem;
     Network network;

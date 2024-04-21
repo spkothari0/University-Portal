@@ -10,7 +10,7 @@ import Business.EcoSystem;
 import Business.Employee.Employee;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.NutritionistCatalog;
+import Business.Organization.NutritionOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.FitnessTrainerWorkRequest;
@@ -43,7 +43,7 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
      */
     JPanel userProcessContainer;
     UserAccount account;
-    NutritionistCatalog nutritionOrganisation;
+    NutritionOrganization nutritionOrganisation;
     Enterprise enterprise;
     EcoSystem ecosystem;
     Network network;
@@ -113,6 +113,8 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         fitnessChartComboBox = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
         viewMessageBtn = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
@@ -284,6 +286,12 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel4.setText("Fitness Chart:");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 590, 80, 30));
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 320, 50));
@@ -440,6 +448,8 @@ public class FitnessTrainerWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTextArea fitnessMsgTxt;
     private javax.swing.JLabel greetLbl;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
