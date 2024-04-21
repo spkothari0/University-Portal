@@ -90,9 +90,15 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         genPracTbl = new javax.swing.JTable();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
+<<<<<<< HEAD
         setBackground(new java.awt.Color(0, 102, 102));
+=======
+        setBackground(new java.awt.Color(51, 51, 51));
+>>>>>>> yash
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         msgTxt.setBackground(new java.awt.Color(204, 255, 204));
@@ -146,8 +152,16 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 820, 130));
 
+        jLabel9.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
+
+        jLabel10.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
+        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
         enterpriseLabel.setText("GENERAL PRACTITIONER");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 410, 30));
     }// </editor-fold>//GEN-END:initComponents
@@ -216,7 +230,9 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JTable genPracTbl;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea msgTxt;

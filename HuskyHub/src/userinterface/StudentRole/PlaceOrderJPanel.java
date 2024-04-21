@@ -11,7 +11,10 @@ import Business.Enterprise.Enterprise;
 import Business.Enterprise.UniversityHousingEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
+<<<<<<< HEAD
 import Business.Store.Items;
+=======
+>>>>>>> yash
 import Business.Organization.InventoryOrganization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
@@ -132,11 +135,15 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
         histItemTbl = new javax.swing.JTable();
         addToCartHistBtn = new javax.swing.JButton();
 
+<<<<<<< HEAD
         setBackground(new java.awt.Color(0, 102, 102));
+=======
+        setBackground(new java.awt.Color(51, 51, 51));
+>>>>>>> yash
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ORDER DETAILS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 690, 40));
@@ -180,7 +187,7 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, 93));
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Dorm Inventories");
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 260, 20));

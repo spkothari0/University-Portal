@@ -135,13 +135,16 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         addToCartHistBtn = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
 
+<<<<<<< HEAD
         setPreferredSize(new java.awt.Dimension(1000, 807));
 
+=======
+>>>>>>> yash
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Maintenance Request Details");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 780, 37));
@@ -185,7 +188,7 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, 93));
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(255, 51, 51));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Services Available");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 300, -1));
@@ -278,13 +281,13 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 110, 452, -1));
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(255, 51, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Order History Details");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 310, 280, -1));
 
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(255, 51, 51));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Cart Items");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 300, 450, -1));
@@ -347,7 +350,7 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(addToCartHistBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(255, 51, 51));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Service Request History");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 350, -1));
@@ -358,6 +361,7 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1200, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1074, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -374,6 +378,117 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+=======
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 795, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+        // TODO add your handling code here:
+        userProcessContainer.remove(this);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.previous(userProcessContainer);
+    }//GEN-LAST:event_backBtnActionPerformed
+
+    private void addToCartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addToCartBtnActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = dormServiceTbl.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else {
+            ServiceTypes s = (ServiceTypes) dormServiceTbl.getValueAt(selectedRow, 0);
+            cartCount++;
+            cusList.add(s);
+            this.total = populateTable(cusList);
+            totBillTxt.setText(this.total);
+            JOptionPane.showMessageDialog(null, "Added to cart successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_addToCartBtnActionPerformed
+
+    public String populateTable(ArrayList<ServiceTypes> cusList) {
+        DefaultTableModel dtm = (DefaultTableModel) invoiceTbl.getModel();
+        dtm.setRowCount(0);
+        int totalBill = 0;
+        for (int i = itemCount; i < cusList.size(); i++) {
+            Object row[] = new Object[2];
+
+            row[0] = cusList.get(i);
+            row[1] = cusList.get(i).getPrice();
+            totalBill = totalBill + cusList.get(i).getPrice();
+            dtm.addRow(row);
+        }
+
+        return String.valueOf(totalBill);
+    }
+
+    private void delCartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delCartBtnActionPerformed
+        // TODO add your handling code here:
+        int selectedRow = invoiceTbl.getSelectedRow();
+        if (selectedRow < 0) {
+            JOptionPane.showMessageDialog(null, "Please select a row", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        } else {
+            ServiceTypes s = (ServiceTypes) invoiceTbl.getValueAt(selectedRow, 0);
+            cusList.remove(s);
+            this.total = populateTable(cusList);
+            totBillTxt.setText(this.total);
+
+        }
+    }//GEN-LAST:event_delCartBtnActionPerformed
+
+    private void placeOrderBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeOrderBtnActionPerformed
+        // TODO add your handling code here:
+        if (invoiceTbl.getRowCount() > 0 && cartCount > 0) {
+            MaintenanceWorkRequest request = new MaintenanceWorkRequest();
+            request.setCusList(cusList);
+            request.setSender(userAccount);
+            request.setStatus("Request pending");
+            request.setTotalBill(Integer.parseInt(totBillTxt.getText()));
+            request.setMessage(studentNotes.getText());
+            Organization org = null;
+            for (Network net : business.getNetworkList()) {
+                for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
+                    if (enter instanceof MaintenanceEnterprise) {
+                        for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
+                            if (organization instanceof ServiceOrganization) {
+                                org = organization;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (org != null) {
+                org.getWorkQueue().getWorkRequestList().add(request);
+                userAccount.getWorkQueue().getWorkRequestList().add(request);
+                populateTable(new ArrayList<ServiceTypes>());
+                studentNotes.setText("");
+                totBillTxt.setText("");
+                JOptionPane.showMessageDialog(null, "Request raised successfully", "Success", JOptionPane.INFORMATION_MESSAGE);
+            }
+
+        } else {
+            JOptionPane.showMessageDialog(null, "Please add the service to the cart to raise request.", "INFORMATION", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+    }//GEN-LAST:event_placeOrderBtnActionPerformed
+
+>>>>>>> yash
     private void addToCartHistBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addToCartHistBtnActionPerformed
         // TODO add your handling code here:
         int selectedRow = histTbl.getSelectedRow();

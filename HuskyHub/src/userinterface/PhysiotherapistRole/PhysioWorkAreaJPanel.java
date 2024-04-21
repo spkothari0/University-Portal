@@ -125,7 +125,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         setForeground(new java.awt.Color(204, 204, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        tblStudentList.setBackground(new java.awt.Color(204, 204, 204));
+        tblStudentList.setBackground(new java.awt.Color(204, 255, 204));
         tblStudentList.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         tblStudentList.setForeground(new java.awt.Color(51, 51, 51));
         tblStudentList.setModel(new javax.swing.table.DefaultTableModel(
@@ -169,7 +169,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 410, 107, 30));
 
         nameTxt.setEditable(false);
-        nameTxt.setBackground(new java.awt.Color(204, 204, 204));
+        nameTxt.setBackground(new java.awt.Color(204, 255, 204));
         nameTxt.setFont(new java.awt.Font("SansSerif", 0, 11)); // NOI18N
         nameTxt.setForeground(new java.awt.Color(51, 51, 51));
         add(nameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, 190, 30));
@@ -181,7 +181,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, 90, 30));
 
         txtAge.setEditable(false);
-        txtAge.setBackground(new java.awt.Color(204, 204, 204));
+        txtAge.setBackground(new java.awt.Color(204, 255, 204));
         txtAge.setForeground(new java.awt.Color(51, 51, 51));
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 190, 30));
 
@@ -222,7 +222,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 540, 86, 30));
 
         txtHeight.setEditable(false);
-        txtHeight.setBackground(new java.awt.Color(204, 204, 204));
+        txtHeight.setBackground(new java.awt.Color(204, 255, 204));
         txtHeight.setForeground(new java.awt.Color(51, 51, 51));
         add(txtHeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 540, 190, 30));
 
@@ -233,7 +233,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 590, -1, 30));
 
         txtWeight.setEditable(false);
-        txtWeight.setBackground(new java.awt.Color(204, 204, 204));
+        txtWeight.setBackground(new java.awt.Color(204, 255, 204));
         txtWeight.setForeground(new java.awt.Color(51, 51, 51));
         add(txtWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 590, 190, 30));
 
@@ -268,7 +268,7 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         jLabel3.setText("Message:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 420, 100, -1));
 
-        physioMsgTxt.setBackground(new java.awt.Color(204, 204, 204));
+        physioMsgTxt.setBackground(new java.awt.Color(204, 255, 204));
         physioMsgTxt.setColumns(20);
         physioMsgTxt.setForeground(new java.awt.Color(51, 51, 51));
         physioMsgTxt.setRows(5);

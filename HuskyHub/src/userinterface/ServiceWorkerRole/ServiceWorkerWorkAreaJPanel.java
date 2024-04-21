@@ -78,6 +78,8 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(0, 51, 51));
@@ -150,6 +152,12 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 40));
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText(" SERVICE REQUEST");
@@ -201,6 +209,8 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable delManTbl;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel greetLbl;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;

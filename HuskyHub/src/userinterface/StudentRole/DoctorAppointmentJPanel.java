@@ -58,7 +58,11 @@ public class DoctorAppointmentJPanel extends javax.swing.JPanel {
         jSplitPane1.setDividerLocation(80);
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+<<<<<<< HEAD
         jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+=======
+        jPanel1.setBackground(new java.awt.Color(255, 51, 51));
+>>>>>>> yash
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         generalBtn.setBackground(new java.awt.Color(102, 255, 255));
