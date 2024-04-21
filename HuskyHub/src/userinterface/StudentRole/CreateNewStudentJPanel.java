@@ -160,7 +160,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         networkJComboBox = new javax.swing.JComboBox();
         jLabel13 = new javax.swing.JLabel();
         txtZipcode = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel17 = new javax.swing.JLabel();
         AgeSuccessLbl = new javax.swing.JLabel();
         nameLbl = new javax.swing.JLabel();
@@ -184,8 +183,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         weightLbl = new javax.swing.JLabel();
         heightLbl = new javax.swing.JLabel();
         emailIDAlreadyLbl = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -262,7 +259,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("STUDENT REGISTRATION");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 60, 1210, 50));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, 40, 1210, 50));
 
         resetBtn.setBackground(new java.awt.Color(204, 204, 204));
         resetBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -417,7 +414,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
             }
         });
         add(txtZipcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 380, 190, 30));
-        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 1190, 10));
 
         jLabel17.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(204, 204, 204));
@@ -522,12 +518,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         emailIDAlreadyLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         emailIDAlreadyLbl.setText("EmailID already Exists");
         add(emailIDAlreadyLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 160, 20));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 100, 100));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 264, 52));
     }// </editor-fold>//GEN-END:initComponents
 
     private void resetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetBtnActionPerformed
@@ -872,7 +862,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -880,9 +869,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel nameLbl;
     private javax.swing.JLabel nameSuccessLbl;
     private javax.swing.JComboBox networkJComboBox;
