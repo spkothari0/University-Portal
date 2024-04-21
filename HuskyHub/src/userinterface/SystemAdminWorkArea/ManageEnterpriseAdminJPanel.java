@@ -273,7 +273,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 backJButton1ActionPerformed(evt);
             }
         });
-        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
+        add(backJButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 30));
 
         submitJButton1.setBackground(new java.awt.Color(102, 255, 255));
         submitJButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N

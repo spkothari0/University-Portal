@@ -78,6 +78,7 @@ public class ManageStoreJPanel extends javax.swing.JPanel {
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Welcome,");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 120, 30));
