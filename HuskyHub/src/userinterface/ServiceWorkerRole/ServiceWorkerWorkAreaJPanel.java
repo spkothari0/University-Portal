@@ -82,7 +82,7 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         delManTbl.setBackground(new java.awt.Color(204, 204, 204));
@@ -115,7 +115,7 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 730, 130));
 
-        processJButton.setBackground(new java.awt.Color(204, 204, 204));
+        processJButton.setBackground(new java.awt.Color(102, 255, 255));
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         processJButton.setForeground(new java.awt.Color(51, 51, 51));
         processJButton.setText("Mark as Completed");
@@ -124,9 +124,9 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, 150, 50));
+        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 150, 50));
 
-        refreshJButton.setBackground(new java.awt.Color(204, 204, 204));
+        refreshJButton.setBackground(new java.awt.Color(102, 255, 255));
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(51, 51, 51));
         refreshJButton.setText("Refresh");
@@ -135,12 +135,13 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 220, 120, 30));
+        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 120, 30));
 
-        jPanel3.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Welcome,");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 120, 40));
@@ -158,7 +159,7 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
+        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText(" SERVICE REQUEST");
         jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 410, 30));
 
@@ -166,21 +167,16 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1200, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

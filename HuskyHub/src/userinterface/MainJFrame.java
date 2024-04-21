@@ -52,11 +52,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         passwordField = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         loginJButton = new javax.swing.JButton();
         registerBtn = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         logoutJButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
         orangeLbl = new javax.swing.JLabel();
 
@@ -66,7 +67,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jSplitPane1.setDividerLocation(300);
         jSplitPane1.setMaximumSize(new java.awt.Dimension(1754, 724));
 
-        LeftJPanel.setBackground(new java.awt.Color(51, 51, 51));
+        LeftJPanel.setBackground(new java.awt.Color(0, 102, 102));
         LeftJPanel.setMaximumSize(new java.awt.Dimension(467, 722));
         LeftJPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -84,7 +85,6 @@ public class MainJFrame extends javax.swing.JFrame {
         passwordField.setBackground(new java.awt.Color(204, 204, 204));
         passwordField.setFont(new java.awt.Font("SansSerif", 0, 10)); // NOI18N
         passwordField.setForeground(new java.awt.Color(51, 51, 51));
-        passwordField.setText("Password@123");
         passwordField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordFieldActionPerformed(evt);
@@ -93,15 +93,12 @@ public class MainJFrame extends javax.swing.JFrame {
         LeftJPanel.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 347, 204, 32));
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel4.setForeground(new java.awt.Color(153, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("New User? Click on Sign Up");
-        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 204, -1));
+        LeftJPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 530, 204, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/UserImg.png"))); // NOI18N
-        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 78, 250, 150));
-
-        loginJButton.setBackground(new java.awt.Color(255, 51, 51));
+        loginJButton.setBackground(new java.awt.Color(102, 255, 255));
         loginJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         loginJButton.setForeground(new java.awt.Color(51, 51, 51));
         loginJButton.setText("Log in");
@@ -112,7 +109,7 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         LeftJPanel.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 409, 148, 49));
 
-        registerBtn.setBackground(new java.awt.Color(255, 51, 51));
+        registerBtn.setBackground(new java.awt.Color(102, 255, 255));
         registerBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         registerBtn.setForeground(new java.awt.Color(51, 51, 51));
         registerBtn.setText("Sign Up");
@@ -124,12 +121,12 @@ public class MainJFrame extends javax.swing.JFrame {
         LeftJPanel.add(registerBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 558, 149, 49));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel6.setForeground(new java.awt.Color(153, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Northeastern University");
-        LeftJPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 295, 58));
+        jLabel6.setText("University Hub");
+        LeftJPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 295, 58));
 
-        logoutJButton.setBackground(new java.awt.Color(204, 204, 204));
+        logoutJButton.setBackground(new java.awt.Color(0, 204, 204));
         logoutJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         logoutJButton.setForeground(new java.awt.Color(51, 51, 51));
         logoutJButton.setText("Log Out");
@@ -140,12 +137,21 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         LeftJPanel.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 469, 148, 49));
 
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel2.setText("Login id:");
+        LeftJPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 100, -1));
+
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel5.setText("Password:");
+        LeftJPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 70, -1));
+
         jSplitPane1.setLeftComponent(LeftJPanel);
 
         container.setLayout(new java.awt.CardLayout());
 
-        orangeLbl.setBackground(new java.awt.Color(51, 51, 51));
-        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/orangesBackground.jpg"))); // NOI18N
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/UniversityImg.png"))); // NOI18N
         container.add(orangeLbl, "card2");
 
         jSplitPane1.setRightComponent(container);
@@ -226,7 +232,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/orangesBackground.jpg"))); // NOI18N
+        orangeLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/UniversityImg.png"))); // NOI18N
 
         container.add(orangeLbl, "card2");
         jSplitPane1.setRightComponent(container);
@@ -302,6 +308,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel LeftJPanel;
     private javax.swing.JPanel container;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

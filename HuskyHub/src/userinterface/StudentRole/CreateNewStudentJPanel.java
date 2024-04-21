@@ -187,7 +187,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         jLabel8 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtName.setBackground(new java.awt.Color(204, 204, 204));
@@ -259,7 +259,7 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, 107, 30));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("STUDENT REGISTRATION");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-90, 60, 1210, 50));
