@@ -9,7 +9,7 @@ import Business.EcoSystem;
 import Business.Enterprise.DoctorEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
-import Business.Organization.GenPracOrganization;
+import Business.Organization.DoctorCatalog;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.GenPracWorkRequest;
@@ -54,7 +54,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof GenPracOrganization) {
+            if (organization instanceof DoctorCatalog) {
                 org = organization;
                 break;
             }
@@ -167,7 +167,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof GenPracOrganization) {
+                if (organization instanceof DoctorCatalog) {
                     org = organization;
                     break;
                 }
@@ -194,7 +194,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof GenPracOrganization) {
+                    if (organization instanceof DoctorCatalog) {
                         org = organization;
                         break;
                     }

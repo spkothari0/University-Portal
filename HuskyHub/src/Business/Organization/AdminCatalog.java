@@ -4,7 +4,7 @@
  */
 package Business.Organization;
 
-import Business.Role.DeliveryManRole;
+import Business.Role.AdminRole;
 import Business.Role.Role;
 import java.util.ArrayList;
 
@@ -12,20 +12,17 @@ import java.util.ArrayList;
  *
  * @author daminithorat
  */
-public class DeliveryOrganization extends Organization{
+public class AdminCatalog extends Organization{
 
-    public DeliveryOrganization() {
-        super(Organization.Type.Delivery.getValue());
+    public AdminCatalog() {
+        super(Type.Admin.getValue());
     }
-
+    
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new DeliveryManRole());
+        roles.add(new AdminRole());
         return roles;
     }
      
-   
-    
-    
 }

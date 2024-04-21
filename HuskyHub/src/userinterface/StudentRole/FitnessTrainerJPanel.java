@@ -9,7 +9,7 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.TrainerEnterprise;
 import Business.Network.Network;
-import Business.Organization.FitnessTrainingOrganization;
+import Business.Organization.FitnessTrainerCatalog;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.FitnessTrainerWorkRequest;
@@ -54,7 +54,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof FitnessTrainingOrganization) {
+            if (organization instanceof FitnessTrainerCatalog) {
                 org = organization;
                 break;
             }
@@ -164,7 +164,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof FitnessTrainingOrganization) {
+                if (organization instanceof FitnessTrainerCatalog) {
                     org = organization;
                     break;
                 }
@@ -191,7 +191,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof FitnessTrainingOrganization) {
+                    if (organization instanceof FitnessTrainerCatalog) {
                         org = organization;
                         break;
                     }
