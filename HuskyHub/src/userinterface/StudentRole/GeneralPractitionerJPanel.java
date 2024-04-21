@@ -6,7 +6,7 @@
 package userinterface.StudentRole;
 
 import Business.EcoSystem;
-import Business.Enterprise.DoctorEnterprise;
+import Business.Enterprise.HealthConsultantEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.GenPracOrganization;
@@ -49,7 +49,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
         dtm.setRowCount(0);
         Organization org = null;
         for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-            if (enter instanceof DoctorEnterprise) {
+            if (enter instanceof HealthConsultantEnterprise) {
                 e = enter;
             }
         }
@@ -162,7 +162,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
             Organization org = null;
 
             for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                if (enter instanceof DoctorEnterprise) {
+                if (enter instanceof HealthConsultantEnterprise) {
                     e = enter;
                 }
             }
@@ -189,7 +189,7 @@ public class GeneralPractitionerJPanel extends javax.swing.JPanel {
                 Organization org = null;
 
                 for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    if (enter instanceof DoctorEnterprise) {
+                    if (enter instanceof HealthConsultantEnterprise) {
                         e = enter;
                     }
                 }

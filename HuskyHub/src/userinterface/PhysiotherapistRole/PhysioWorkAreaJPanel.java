@@ -273,7 +273,11 @@ public class PhysioWorkAreaJPanel extends javax.swing.JPanel {
         physioMsgTxt.setRows(5);
         jScrollPane2.setViewportView(physioMsgTxt);
 
+<<<<<<< HEAD
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, -1, -1));
+=======
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 540, -1, -1));
+>>>>>>> origin/dev
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));

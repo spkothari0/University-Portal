@@ -7,8 +7,8 @@ package userinterface.DormInventoryManager;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.Items;
 import Business.Organization.Organization;
+import Business.Store.Items;
 import Business.UserAccount.UserAccount;
 import Business.utilities.tableHeaderColors;
 import java.awt.CardLayout;
@@ -181,7 +181,11 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         add(delBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 150, 40));
 
         itemLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
+<<<<<<< HEAD
         itemLbl.setForeground(new java.awt.Color(255, 0, 51));
+=======
+        itemLbl.setForeground(new java.awt.Color(102, 255, 255));
+>>>>>>> origin/dev
         itemLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         itemLbl.setText("Only Alphabets are allowed");
         add(itemLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 150, 20));
@@ -190,24 +194,42 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         add(itemSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 30, -1));
 
         priceLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
+<<<<<<< HEAD
         priceLbl.setForeground(new java.awt.Color(255, 0, 51));
         priceLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         priceLbl.setText("Only Numbers Allowed");
         add(priceLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 160, 20));
+=======
+        priceLbl.setForeground(new java.awt.Color(102, 255, 255));
+        priceLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        priceLbl.setText("Only Numbers Allowed");
+        add(priceLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 160, 20));
+>>>>>>> origin/dev
 
         priceSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
         add(priceSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 30, -1));
 
         price0lbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
+<<<<<<< HEAD
         price0lbl.setForeground(new java.awt.Color(255, 0, 51));
+=======
+        price0lbl.setForeground(new java.awt.Color(102, 255, 255));
+>>>>>>> origin/dev
         price0lbl.setText("Price Should be Greater than 0");
         add(price0lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 390, -1, -1));
 
         priceLbl1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
+<<<<<<< HEAD
         priceLbl1.setForeground(new java.awt.Color(255, 0, 51));
         priceLbl1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         priceLbl1.setText("Only Numbers Allowed");
         add(priceLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 160, 20));
+=======
+        priceLbl1.setForeground(new java.awt.Color(102, 255, 255));
+        priceLbl1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        priceLbl1.setText("Only Numbers Allowed");
+        add(priceLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 160, 20));
+>>>>>>> origin/dev
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));

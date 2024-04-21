@@ -8,7 +8,7 @@ package userinterface.StudentRole;
 import Business.Student.Student;
 import Business.StudentRequestOrder;
 import Business.EcoSystem;
-import Business.Enterprise.DietEnterprise;
+import Business.Enterprise.NourishmentEnterprise;
 import Business.Enterprise.Enterprise;
 import Business.Network.Network;
 import Business.Organization.NutritionOrganization;
@@ -315,7 +315,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
             Organization org = null;
 
             for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                if (enter instanceof DietEnterprise) {
+                if (enter instanceof NourishmentEnterprise) {
                     e = enter;
                 }
             }
@@ -345,7 +345,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
                 Organization org = null;
 
                 for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    if (enter instanceof DietEnterprise) {
+                    if (enter instanceof NourishmentEnterprise) {
                         e = enter;
                     }
                 }
@@ -400,7 +400,7 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         dtm.setRowCount(0);
         Organization org = null;
         for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-            if (enter instanceof DietEnterprise) {
+            if (enter instanceof NourishmentEnterprise) {
                 e = enter;
             }
         }

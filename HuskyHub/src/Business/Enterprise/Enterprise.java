@@ -7,6 +7,7 @@ package Business.Enterprise;
 
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
+import Business.Store.Items;
 import Business.Inventory.DormInventoryDirectory;
 import java.util.ArrayList;
 
@@ -21,7 +22,9 @@ public abstract class Enterprise extends Organization {
     private DormInventoryDirectory dormInventoryDirectory;
     private ArrayList<Items> itemsList;
     private ArrayList<ServiceTypes> serviceTypeList;
-
+    private ArrayList<Items> foodInventoryList;
+    private ArrayList<Items> stationaryInventoryList;
+    
     public Enterprise(String name, EnterpriseType type) {
         super(name);
         this.enterpriseType = type;
@@ -40,12 +43,21 @@ public abstract class Enterprise extends Organization {
 
     public enum EnterpriseType {
 
+<<<<<<< HEAD
         DietUnit("Diet Unit"),
         TrainerUnit("Trainer Unit"),
         DoctorUnit("Doctor Unit"),
         DormInventoryUnit("Dorm Inventory Unit"),
         MaintenanceUnit("Maintenance Unit"),
         CollegeStore("College Store");
+=======
+        NourishmentEnterprise("Nourishment Enterprise"),
+        GymHelperEnterprise("Gym Helper Enterprise"),
+        HealthConsultantEnterprise("Health Consultant Enterprise"),
+        UniversityHousingEnterprise("University Housing Enterprise"),
+        HousingRepairEnterprise("Housing Repair Enterprise"),
+        CollegeStoreEnterprise("College Store Enterprise");
+>>>>>>> origin/dev
 
         private String value;
 
@@ -106,5 +118,4 @@ public abstract class Enterprise extends Organization {
     public void deleteItem(Items item) {
         itemsList.remove(item);
     }
-
 }

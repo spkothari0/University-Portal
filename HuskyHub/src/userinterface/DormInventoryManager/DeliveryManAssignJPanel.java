@@ -99,7 +99,11 @@ public class DeliveryManAssignJPanel extends javax.swing.JPanel {
                 appointDelManBtnActionPerformed(evt);
             }
         });
+<<<<<<< HEAD
         add(appointDelManBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 95, 36));
+=======
+        add(appointDelManBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 95, 36));
+>>>>>>> origin/dev
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed

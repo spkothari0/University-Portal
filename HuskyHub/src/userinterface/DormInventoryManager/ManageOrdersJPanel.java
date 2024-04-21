@@ -7,8 +7,8 @@ package userinterface.DormInventoryManager;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.Items;
 import Business.Organization.Organization;
+import Business.Store.Items;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -207,7 +207,11 @@ public class ManageOrdersJPanel extends javax.swing.JPanel {
         totBillTxt.setEditable(false);
         totBillTxt.setBackground(new java.awt.Color(204, 255, 204));
         totBillTxt.setForeground(new java.awt.Color(51, 51, 51));
+<<<<<<< HEAD
         add(totBillTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, 193, -1));
+=======
+        add(totBillTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 540, 193, -1));
+>>>>>>> origin/dev
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed

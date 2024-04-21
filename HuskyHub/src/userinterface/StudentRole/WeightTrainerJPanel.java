@@ -7,7 +7,7 @@ package userinterface.StudentRole;
 
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.TrainerEnterprise;
+import Business.Enterprise.GymHelperEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Organization.WeightTrainingOrganization;
@@ -49,7 +49,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
         dtm.setRowCount(0);
         Organization org = null;
         for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-            if (enter instanceof TrainerEnterprise) {
+            if (enter instanceof GymHelperEnterprise) {
                 e = enter;
             }
         }
@@ -163,7 +163,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
             Organization org = null;
 
             for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                if (enter instanceof TrainerEnterprise) {
+                if (enter instanceof GymHelperEnterprise) {
                     e = enter;
                 }
             }
@@ -190,7 +190,7 @@ public class WeightTrainerJPanel extends javax.swing.JPanel {
                 Organization org = null;
 
                 for (Enterprise enter : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    if (enter instanceof TrainerEnterprise) {
+                    if (enter instanceof GymHelperEnterprise) {
                         e = enter;
                     }
                 }
