@@ -8,10 +8,10 @@ package userinterface.StudentRole;
 import Business.Student.Student;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.Items;
-import Business.Enterprise.DormInventoryEnterprise;
+import Business.Enterprise.UniversityHousingEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
+import Business.Store.Items;
 import Business.Organization.InventoryOrganization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
@@ -384,7 +384,7 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
             Organization org = null;
             for (Network net : business.getNetworkList()) {
                 for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
-                    if (enter instanceof DormInventoryEnterprise) {
+                    if (enter instanceof UniversityHousingEnterprise) {
                         for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
                             if (organization instanceof InventoryOrganization) {
                                 org = organization;

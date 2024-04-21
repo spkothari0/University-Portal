@@ -8,7 +8,7 @@ package userinterface.StudentRole;
 import Business.Student.Student;
 import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
-import Business.Enterprise.MaintenanceEnterprise;
+import Business.Enterprise.HousingRepairEnterprise;
 import Business.Enterprise.ServiceTypes;
 import Business.Network.Network;
 import Business.Organization.Organization;
@@ -136,6 +136,8 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
         histItemTbl = new javax.swing.JTable();
         addToCartHistBtn = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
+
+        setPreferredSize(new java.awt.Dimension(1000, 807));
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -366,19 +368,19 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1200, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1074, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(120, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 795, Short.MAX_VALUE)
+            .addGap(0, 807, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -448,7 +450,7 @@ public class RaiseRequestJPanel extends javax.swing.JPanel {
             Organization org = null;
             for (Network net : business.getNetworkList()) {
                 for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
-                    if (enter instanceof MaintenanceEnterprise) {
+                    if (enter instanceof HousingRepairEnterprise) {
                         for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
                             if (organization instanceof ServiceOrganization) {
                                 org = organization;
