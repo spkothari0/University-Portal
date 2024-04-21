@@ -23,4 +23,9 @@ public class StoreManagerRole extends Role{
         return new ManageStoreJPanel(userProcessContainer, enterprise, organization, account, business, network);
     }
 
+    @Override
+    public String toString() {
+        return RoleType.ServiceProvider.getValue();
+    }
+
 }

@@ -38,11 +38,11 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         organizationJComboBox.removeAllItems();
         String ent = enterprise.getEnterpriseType().toString();
         for (Type type : Organization.Type.values()) {
-            if (ent.equals("Diet Unit")) {
+            if (ent.equals("Nourishment Enterprise")) {
                 if (type.getValue().equals(Type.Nutrition.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-            } else if (ent.equals("Trainer Unit")) {
+            } else if (ent.equals("Gym Helper Enterprise")) {
                 if (type.getValue().equals(Type.FitnessTraining.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
@@ -50,29 +50,33 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                     organizationJComboBox.addItem(type);
                 }
 
-            } else if (ent.equals("Doctor Unit")) {
+            } else if (ent.equals("Health Consultant Enterprise")) {
                 if (type.getValue().equals(Type.GeneralPractitioner.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.Physiotherapist.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-//                if (type.getValue().equals(Type.Orthopedic.getValue())) {
-//                    organizationJComboBox.addItem(type);
-//                }
 
-            } else if (ent.equals("Dorm Inventory Unit")) {
+            } else if (ent.equals("University Housing Enterprise")) {
                 if (type.getValue().equals(Type.DormInventory.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.Delivery.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-            } else if (ent.equals("Maintenance Unit")) {
+            } else if (ent.equals("Housing Repair Enterprise")) {
                 if (type.getValue().equals(Type.Service.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.ServiceWorker.getValue())) {
+                    organizationJComboBox.addItem(type);
+                }
+            }else if (ent.equals("College Store Enterprise")) {
+                if (type.getValue().equals(Type.FoodStore.getValue())) {
+                    organizationJComboBox.addItem(type);
+                }
+                if (type.getValue().equals(Type.StationaryStore.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
             }

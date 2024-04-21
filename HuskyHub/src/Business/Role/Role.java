@@ -35,7 +35,9 @@ public abstract class Role {
         ServiceProvider("Service Provider"),
         ServiceWorker("Service Worker"),
         FitnessTrainer("Fitness Trainer"),
-        WeightTrainer("Weight Trainer");
+        WeightTrainer("Weight Trainer"),
+        FoodStoreMaager("Food Store Manager"),
+        StationeryStoreManager("Stationery Store Manager");
                
         private String value;
         private RoleType(String value){

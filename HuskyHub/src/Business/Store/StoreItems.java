@@ -9,7 +9,7 @@ package Business.Store;
  *
  * @author Sohan
  */
-public class Store{
+public class StoreItems{
     String itemName;
     int price;
     String itemType;
