@@ -9,7 +9,7 @@ import Business.EcoSystem;
 import Business.Enterprise.Enterprise;
 import Business.Enterprise.TrainerEnterprise;
 import Business.Network.Network;
-import Business.Organization.FitnessTrainerCatalog;
+import Business.Organization.FitnessTrainingOrganization;
 import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.FitnessTrainerWorkRequest;
@@ -54,7 +54,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
             }
         }
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-            if (organization instanceof FitnessTrainerCatalog) {
+            if (organization instanceof FitnessTrainingOrganization) {
                 org = organization;
                 break;
             }
@@ -89,9 +89,11 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         fitnessTbl = new javax.swing.JTable();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         msgTxt.setBackground(new java.awt.Color(204, 204, 204));
@@ -144,8 +146,14 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 820, 150));
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
+
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
+        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
         enterpriseLabel.setText("FITNESS TRAINER");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 410, 30));
     }// </editor-fold>//GEN-END:initComponents
@@ -164,7 +172,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
                 }
             }
             for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                if (organization instanceof FitnessTrainerCatalog) {
+                if (organization instanceof FitnessTrainingOrganization) {
                     org = organization;
                     break;
                 }
@@ -191,7 +199,7 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
                     }
                 }
                 for (Organization organization : e.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof FitnessTrainerCatalog) {
+                    if (organization instanceof FitnessTrainingOrganization) {
                         org = organization;
                         break;
                     }
@@ -215,7 +223,9 @@ public class FitnessTrainerJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JTable fitnessTbl;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea msgTxt;
