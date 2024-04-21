@@ -6,22 +6,22 @@
 package Business.Organization;
 
 import Business.Role.Role;
-import Business.Role.GeneralPractitionerRole;
+import Business.Role.PhysiotherapistRole;
 import java.util.ArrayList;
 
 /**
  *
  * @author daminithorat
  */
-public class GenPracOrganization extends Organization{
-    public GenPracOrganization() {
-        super(Organization.Type.GeneralPractitioner.getValue());
+public class PhysioCatalog extends Organization{
+    public PhysioCatalog() {
+        super(Organization.Type.Physiotherapist.getValue());
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new GeneralPractitionerRole());
+        roles.add(new PhysiotherapistRole());
         return roles;
     }
 }

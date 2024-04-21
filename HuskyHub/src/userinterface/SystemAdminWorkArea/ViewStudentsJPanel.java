@@ -48,18 +48,16 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
         searchBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(255, 51, 51));
-        enterpriseLabel.setText("Northeastern University Students");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 410, 30));
+        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
+        enterpriseLabel.setText("List of Students");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 410, 30));
 
-        tblStudents.setBackground(new java.awt.Color(204, 204, 204));
+        tblStudents.setBackground(new java.awt.Color(204, 255, 204));
         tblStudents.setForeground(new java.awt.Color(51, 51, 51));
         tblStudents.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,13 +69,13 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblStudents);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 670, 220));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 670, 220));
 
-        txtNuIdSearchField.setBackground(new java.awt.Color(204, 204, 204));
+        txtNuIdSearchField.setBackground(new java.awt.Color(204, 255, 204));
         txtNuIdSearchField.setForeground(new java.awt.Color(51, 51, 51));
-        add(txtNuIdSearchField, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 120, -1));
+        add(txtNuIdSearchField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 120, -1));
 
-        searchBtn.setBackground(new java.awt.Color(204, 204, 204));
+        searchBtn.setBackground(new java.awt.Color(102, 255, 255));
         searchBtn.setForeground(new java.awt.Color(51, 51, 51));
         searchBtn.setText("Search");
         searchBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -85,13 +83,13 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
                 searchBtnActionPerformed(evt);
             }
         });
-        add(searchBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 200, -1, -1));
+        add(searchBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, -1));
 
-        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setText("Enter NUID");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
 
-        backJButton.setBackground(new java.awt.Color(204, 204, 204));
+        backJButton.setBackground(new java.awt.Color(102, 255, 255));
         backJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         backJButton.setForeground(new java.awt.Color(51, 51, 51));
         backJButton.setText("<< Back");
@@ -101,12 +99,6 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
             }
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
@@ -170,8 +162,6 @@ public class ViewStudentsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backJButton;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton searchBtn;
     private javax.swing.JTable tblStudents;

@@ -4,24 +4,24 @@
  * and open the template in the editor.
  */
 package Business.Organization;
+
+import Business.Role.FitnessTrainerRole;
 import Business.Role.Role;
-import Business.Role.WeightTrainerRole;
 import java.util.ArrayList;
 
 /**
  *
  * @author daminithorat
  */
-public class WeightTrainingOrganization extends Organization {
-
-    public WeightTrainingOrganization() {
-        super(Organization.Type.WeightTraining.getValue());
+public class FitnessTrainerCatalog extends Organization {
+    public FitnessTrainerCatalog() {
+        super(Organization.Type.FitnessTraining.getValue());
     }
     
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList<>();
-        roles.add(new WeightTrainerRole());
+        roles.add(new FitnessTrainerRole());
         return roles;
     }
     

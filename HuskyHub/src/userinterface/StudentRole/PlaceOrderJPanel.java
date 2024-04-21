@@ -12,7 +12,7 @@ import Business.Enterprise.Items;
 import Business.Enterprise.DormInventoryEnterprise;
 import Business.Network.Network;
 import Business.Organization.Organization;
-import Business.Organization.InventoryOrganization;
+import Business.Organization.InventoryCatalog;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.DormInventoryWorkRequest;
 import Business.WorkQueue.WorkRequest;
@@ -386,7 +386,7 @@ public class PlaceOrderJPanel extends javax.swing.JPanel {
                 for (Enterprise enter : net.getEnterpriseDirectory().getEnterpriseList()) {
                     if (enter instanceof DormInventoryEnterprise) {
                         for (Organization organization : enter.getOrganizationDirectory().getOrganizationList()) {
-                            if (organization instanceof InventoryOrganization) {
+                            if (organization instanceof InventoryCatalog) {
                                 org = organization;
                                 break;
                             }

@@ -13,9 +13,9 @@ import java.util.ArrayList;
  *
  * @author daminithorat
  */
-public class NutritionOrganization extends Organization {
+public class NutritionistCatalog extends Organization {
 
-    public NutritionOrganization() {
+    public NutritionistCatalog() {
         super(Type.Nutrition.getValue());
     }
     
