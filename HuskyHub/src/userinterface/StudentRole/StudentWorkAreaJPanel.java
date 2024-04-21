@@ -18,6 +18,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import userinterface.StudentRole.UpdateStudentJPanel;
 
 /**
  *
@@ -36,6 +37,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     private Student student;
     ImageIcon productImage;
     Network network;
+    
+    
     private boolean ageValid = true;
     private boolean zipValid = true;
     private boolean heightValid = true;
@@ -193,6 +196,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(placeOrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 340, 80));
+
+        imgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg"))); // NOI18N
         add(imgLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 186, 490, 270));
 
         btnUpdateProfile.setBackground(new java.awt.Color(102, 255, 255));
@@ -211,7 +216,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAnalysisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnalysisActionPerformed
-
+            //                                                                  JPanel userProcessContainer, Student student, EcoSystem system, UserAccount userAccount, Enterprise enterprise, Network network
         StudentAnalysisJPanel studentAnalysisJPanel = new StudentAnalysisJPanel(userProcessContainer, student, system, userAccount, enterprise, network);
         userProcessContainer.add("StudentAnalysisJPanel", studentAnalysisJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -247,7 +252,12 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnAnalysisMouseExited
 
     private void btnUpdateProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateProfileActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network
+        UpdateStudentJPanel updateStudentJPanel = new UpdateStudentJPanel(userProcessContainer, enterprise, organization, userAccount, system, network);
+        userProcessContainer.add("UpdateStudentJPanel", updateStudentJPanel);
+        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+        
       
     }//GEN-LAST:event_btnUpdateProfileActionPerformed
 
