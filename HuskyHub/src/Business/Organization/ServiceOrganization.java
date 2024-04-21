@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author ashish
+ * @author daminithorat
  */
 public class ServiceOrganization extends Organization{
     
