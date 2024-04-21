@@ -31,7 +31,7 @@ public class DB4OUtil {
         return dB4OUtil;
     }
 
-    protected synchronized static void shutdown(ObjectContainer conn) {
+    public synchronized static void shutdown(ObjectContainer conn) {
         if (conn != null) {
             conn.close();
         }

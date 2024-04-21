@@ -49,19 +49,17 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(51, 51, 51));
+        setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Manage Dorm Inventory");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 320, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 320, -1));
 
-        manageInventoryBtn.setBackground(new java.awt.Color(204, 204, 204));
+        manageInventoryBtn.setBackground(new java.awt.Color(102, 255, 255));
         manageInventoryBtn.setForeground(new java.awt.Color(51, 51, 51));
         manageInventoryBtn.setText("Manage Inventory");
         manageInventoryBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -69,9 +67,9 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
                 manageInventoryBtnActionPerformed(evt);
             }
         });
-        add(manageInventoryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 170, 50));
+        add(manageInventoryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 170, 50));
 
-        manageOrdersBtn.setBackground(new java.awt.Color(204, 204, 204));
+        manageOrdersBtn.setBackground(new java.awt.Color(102, 255, 255));
         manageOrdersBtn.setForeground(new java.awt.Color(51, 51, 51));
         manageOrdersBtn.setText("Manage Orders");
         manageOrdersBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -79,9 +77,9 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
                 manageOrdersBtnActionPerformed(evt);
             }
         });
-        add(manageOrdersBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, 170, 50));
+        add(manageOrdersBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 170, 50));
 
-        jPanel3.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
@@ -94,12 +92,6 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, 320, 60));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, 100, 100));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 264, 52));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageInventoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageInventoryBtnActionPerformed
@@ -120,9 +112,7 @@ public class ManageDormInventoryJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel greetLbl;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JButton manageInventoryBtn;
     private javax.swing.JButton manageOrdersBtn;

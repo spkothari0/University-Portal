@@ -44,7 +44,7 @@ public abstract class Enterprise extends Organization {
         TrainerUnit("Trainer Unit"),
         DoctorUnit("Doctor Unit"),
         DormInventoryUnit("Dorm Inventory Unit"),
-        MaintenanceUnit("Maintenance Unit");
+        MaintenanceUnit("Maintenance Unit"),
         CollegeStore("College Store");
 
         private String value;
