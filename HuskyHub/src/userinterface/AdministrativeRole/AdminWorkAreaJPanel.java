@@ -80,7 +80,7 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         valueLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         valueLabel.setForeground(new java.awt.Color(102, 255, 255));
         valueLabel.setText("<value>");
-        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 140, 30));
+        add(valueLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, 400, 30));
 
         manageRequestsBtn.setBackground(new java.awt.Color(102, 255, 255));
         manageRequestsBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
