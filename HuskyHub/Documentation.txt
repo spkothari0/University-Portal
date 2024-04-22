@@ -1,0 +1,43 @@
+nourishmentadmin@neu.edu
+doctoradmin@neu.edu
+gym@neu.edu
+housingadmin@neu.edu
+repairadmin@neu.edu
+storeadmin@neu.edu
+
+Nutrition:
+nutrition@neu.edu
+===================
+General Doc:
+general@neu.edu
+
+Physio Doc:
+physio@neu.edu
+==================
+
+Housing Inventory:
+hinventory@neu.edu
+
+Delivery man:
+delivery@neu.edu
+======================
+(repair and maintainance)
+Housing service provider:
+servicep@neu.edu
+
+Service worker:
+worker@neu.edu
+========================
+Food store manager:
+fsm@neu.edu
+
+Stationery:
+ssm@neu.edu
+===================
+
+Student:
+shreyas@neu.edu
+=================
+
+SHreyas: Univ STore
+Yash: Nurtitionist
