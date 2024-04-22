@@ -11,10 +11,12 @@ import Business.EcoSystem;
 import Business.Network.Network;
 import Business.Organization.Organization;
 import Business.Role.StudentRole;
+import java.awt.Color;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -48,27 +50,17 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
 
     private void clearLabels() {
         nameLbl.setVisible(false);
-        nameSuccessLbl.setVisible(false);
         emailLbl.setVisible(false);
         emailIDAlreadyLbl.setVisible(false);
-        emailSuccessLbl.setVisible(false);
-        passwordSuccessLbl.setVisible(false);
         passwordLbl.setVisible(false);
-        confirmPasswordSuccessLbl.setVisible(false);
         confirmPasswordLbl.setVisible(false);
-        AgeSuccessLbl.setVisible(false);
         invalidAgeLbl.setVisible(false);
         ageBandLbl.setVisible(false);
-        addressSuccessLbl.setVisible(false);
         addressLbl.setVisible(false);
         cityLbl.setVisible(false);
-        citySuccessLbl.setVisible(false);
         zipLbl.setVisible(false);
-        zipSuccessLbl.setVisible(false);
         heightLbl.setVisible(false);
-        heightSuccessLbl.setVisible(false);
         weightLbl.setVisible(false);
-        weightSuccessLbl.setVisible(false);
 
     }
 
@@ -161,25 +153,15 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         jLabel13 = new javax.swing.JLabel();
         txtZipcode = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        AgeSuccessLbl = new javax.swing.JLabel();
         nameLbl = new javax.swing.JLabel();
         invalidAgeLbl = new javax.swing.JLabel();
         ageBandLbl = new javax.swing.JLabel();
-        confirmPasswordSuccessLbl = new javax.swing.JLabel();
         confirmPasswordLbl = new javax.swing.JLabel();
-        nameSuccessLbl = new javax.swing.JLabel();
         emailLbl = new javax.swing.JLabel();
-        emailSuccessLbl = new javax.swing.JLabel();
-        passwordSuccessLbl = new javax.swing.JLabel();
         passwordLbl = new javax.swing.JLabel();
         addressLbl = new javax.swing.JLabel();
-        addressSuccessLbl = new javax.swing.JLabel();
-        citySuccessLbl = new javax.swing.JLabel();
         cityLbl = new javax.swing.JLabel();
-        zipSuccessLbl = new javax.swing.JLabel();
         zipLbl = new javax.swing.JLabel();
-        weightSuccessLbl = new javax.swing.JLabel();
-        heightSuccessLbl = new javax.swing.JLabel();
         weightLbl = new javax.swing.JLabel();
         heightLbl = new javax.swing.JLabel();
         emailIDAlreadyLbl = new javax.swing.JLabel();
@@ -422,9 +404,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         jLabel17.setText("Weight (in Kgs):");
         add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 470, -1, 20));
 
-        AgeSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(AgeSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 170, 50, 40));
-
         nameLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         nameLbl.setForeground(new java.awt.Color(255, 51, 51));
         nameLbl.setText(" Only Alphabets are allowed.");
@@ -441,28 +420,16 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         ageBandLbl.setText("Age Should be between 15-85");
         add(ageBandLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, -1, 20));
 
-        confirmPasswordSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(confirmPasswordSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 330, 40, -1));
-
         confirmPasswordLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         confirmPasswordLbl.setForeground(new java.awt.Color(255, 51, 51));
         confirmPasswordLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         confirmPasswordLbl.setText("Password Not Matching");
         add(confirmPasswordLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 160, 20));
 
-        nameSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(nameSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 30, 40));
-
         emailLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         emailLbl.setForeground(new java.awt.Color(255, 51, 51));
         emailLbl.setText("Valid Format - 'xx@xx.xx'");
         add(emailLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 150, 20));
-
-        emailSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(emailSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 230, 40, 30));
-
-        passwordSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(passwordSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 280, 30, -1));
 
         passwordLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         passwordLbl.setForeground(new java.awt.Color(255, 51, 51));
@@ -474,33 +441,17 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         addressLbl.setText("Only Alphabets, Numbers, '#/-' are allowed");
         add(addressLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, 250, 20));
 
-        addressSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(addressSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 230, 50, -1));
-
-        citySuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(citySuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 280, 30, -1));
-
         cityLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         cityLbl.setForeground(new java.awt.Color(255, 51, 51));
         cityLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cityLbl.setText("Only Alphabets are allowed");
         add(cityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 160, 20));
 
-        zipSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(zipSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 380, 30, -1));
-
         zipLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         zipLbl.setForeground(new java.awt.Color(255, 51, 51));
         zipLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         zipLbl.setText("Only Numbers Allowed");
         add(zipLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 410, 160, 20));
-
-        weightSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(weightSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 470, 40, 30));
-
-        heightSuccessLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        heightSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(heightSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 470, 60, 30));
 
         weightLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         weightLbl.setForeground(new java.awt.Color(255, 51, 51));
@@ -541,16 +492,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         txtZipcode.setText("");
         txtHeight.setText("");
         txtWeight.setText("");
-        nameSuccessLbl.setVisible(false);
-        emailSuccessLbl.setVisible(false);
-        passwordSuccessLbl.setVisible(false);
-        confirmPasswordSuccessLbl.setVisible(false);
-        AgeSuccessLbl.setVisible(false);
-        addressSuccessLbl.setVisible(false);
-        citySuccessLbl.setVisible(false);
-        zipSuccessLbl.setVisible(false);
-        heightSuccessLbl.setVisible(false);
-        weightSuccessLbl.setVisible(false);
     }
 
     private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
@@ -607,14 +548,16 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private void confirmPasswordTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_confirmPasswordTxtKeyReleased
         // TODO add your handling code here:
         if (confirmPasswordTxt.getText().equals(txtPassword.getText()) && !confirmPasswordTxt.getText().isEmpty()) {
-            confirmPasswordSuccessLbl.setVisible(true);
             confirmPasswordLbl.setVisible(false);
+            acceptableInput(confirmPasswordTxt);
         } else if (confirmPasswordTxt.getText().isEmpty()) {
             confirmPasswordLbl.setVisible(false);
-            confirmPasswordSuccessLbl.setVisible(false);
+            nonAcceptableInput(confirmPasswordTxt);
+
         } else {
             confirmPasswordLbl.setVisible(true);
-            confirmPasswordSuccessLbl.setVisible(false);
+            nonAcceptableInput(confirmPasswordTxt);
+
         }
     }//GEN-LAST:event_confirmPasswordTxtKeyReleased
 
@@ -628,13 +571,11 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
                 invalidAgeLbl.setVisible(true);
                 ageValid = false;
                 ageBandLbl.setVisible(false);
-                AgeSuccessLbl.setVisible(false);
                 return;
             } else {
                 invalidAgeLbl.setVisible(false);
                 ageValid = false;
                 ageBandLbl.setVisible(false);
-                AgeSuccessLbl.setVisible(false);
                 return;
             }
         }
@@ -642,12 +583,12 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
             ageBandLbl.setVisible(true);
             ageValid = false;
             invalidAgeLbl.setVisible(false);
-            AgeSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtAge);
         } else {
             invalidAgeLbl.setVisible(false);
             ageBandLbl.setVisible(false);
             ageValid = true;
-            AgeSuccessLbl.setVisible(true);
+            acceptableInput(txtAge);
         }
     }//GEN-LAST:event_txtAgeKeyReleased
 
@@ -655,13 +596,13 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         if (!namePatternCorrect(txtName.getText()) && !(txtName.getText().isEmpty())) {
             nameLbl.setVisible(true);
-            nameSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtName);
         } else if (txtName.getText().isEmpty()) {
             nameLbl.setVisible(false);
-            nameSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtName);
         } else {
             nameLbl.setVisible(false);
-            nameSuccessLbl.setVisible(true);
+            acceptableInput(txtName);
         }
     }//GEN-LAST:event_txtNameKeyReleased
 
@@ -670,21 +611,22 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         if (!usernamePatternCorrect(txtEmail.getText()) && !(txtEmail.getText().isEmpty()) && system.getStudentDirectory().checkIfUsernameIsUnique(txtEmail.getText())) {
             emailLbl.setVisible(true);
             emailIDAlreadyLbl.setVisible(false);
-            emailSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtEmail);
+            
             emailValid = false;
         } else if (txtEmail.getText().isEmpty()) {
             emailLbl.setVisible(false);
             emailIDAlreadyLbl.setVisible(false);
+            nonAcceptableInput(txtEmail);
             emailValid = false;
-            emailSuccessLbl.setVisible(false);
         } else if (!system.getStudentDirectory().checkIfUsernameIsUnique(txtEmail.getText())) {
             emailIDAlreadyLbl.setVisible(true);
-            emailSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtEmail);
             emailValid = false;
         } else {
             emailLbl.setVisible(false);
             emailIDAlreadyLbl.setVisible(false);
-            emailSuccessLbl.setVisible(true);
+            acceptableInput(txtEmail);
             emailValid = true;
         }
     }//GEN-LAST:event_txtEmailKeyReleased
@@ -692,45 +634,46 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private void txtPasswordKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyReleased
         // TODO add your handling code here:
         if (!passwordPatternCorrect(txtPassword.getText()) && !(txtPassword.getText().isEmpty())) {
-            passwordSuccessLbl.setVisible(false);
             passwordLbl.setVisible(true);
+            nonAcceptableInput(txtPassword);
         } else if (txtPassword.getText().isEmpty()) {
             passwordLbl.setVisible(false);
-            passwordSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtPassword);
         } else {
             passwordLbl.setVisible(false);
-            passwordSuccessLbl.setVisible(true);
+            acceptableInput(txtPassword);
         }
     }//GEN-LAST:event_txtPasswordKeyReleased
 
     private void txtAdressKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAdressKeyReleased
         // TODO add your handling code here:
         if (!addressPatternCorrect(txtAdress.getText()) && !(txtAdress.getText().isEmpty())) {
-            addressSuccessLbl.setVisible(false);
             addressLbl.setVisible(true);
+            nonAcceptableInput(txtAdress);
         } else if (txtAdress.getText().isEmpty()) {
             addressLbl.setVisible(false);
-            addressSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtAdress);
+
         } else {
             addressLbl.setVisible(false);
-            addressSuccessLbl.setVisible(true);
+            acceptableInput(txtAdress);
         }
     }//GEN-LAST:event_txtAdressKeyReleased
 
     private void txtCityKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCityKeyReleased
         // TODO add your handling code here:
         if (!cityPatternCorrect(txtCity.getText()) && !(txtCity.getText().isEmpty())) {
-            citySuccessLbl.setVisible(false);
             cityLbl.setVisible(true);
+            nonAcceptableInput(txtCity);
             cityValid = false;
         } else if (txtCity.getText().isEmpty()) {
-            citySuccessLbl.setVisible(false);
             cityLbl.setVisible(false);
+            nonAcceptableInput(txtCity);
             cityValid = false;
         } else {
             cityValid = true;
             cityLbl.setVisible(false);
-            citySuccessLbl.setVisible(true);
+            acceptableInput(txtCity);
         }
     }//GEN-LAST:event_txtCityKeyReleased
 
@@ -741,23 +684,23 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
             zip = Integer.parseInt(txtZipcode.getText());
             if (zip == 0) {
                 zipLbl.setVisible(false);
-                zipSuccessLbl.setVisible(false);
                 zipValid = false;
+                nonAcceptableInput(txtZipcode);
             }
             zipValid = true;
-            zipSuccessLbl.setVisible(true);
             zipLbl.setVisible(false);
+            acceptableInput(txtZipcode);
             return;
         } catch (NumberFormatException e) {
             if (!txtZipcode.getText().isEmpty()) {
                 zipValid = false;
-                zipSuccessLbl.setVisible(false);
                 zipLbl.setVisible(true);
+                nonAcceptableInput(txtZipcode);
                 return;
             } else {
                 zipValid = false;
                 zipLbl.setVisible(false);
-                zipSuccessLbl.setVisible(false);
+                acceptableInput(txtZipcode);
                 return;
             }
         }
@@ -767,32 +710,30 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int height = 0;
         if (txtHeight.getText().isEmpty()) {
-            heightSuccessLbl.setVisible(false);
             heightLbl.setVisible(false);
+            nonAcceptableInput(txtHeight);
         }
         try {
             height = Integer.parseInt(txtHeight.getText());
         } catch (NumberFormatException e) {
             if (!txtHeight.getText().isEmpty()) {
                 heightValid = false;
-                heightSuccessLbl.setVisible(false);
                 heightLbl.setVisible(true);
                 return;
             } else {
                 heightValid = false;
                 heightLbl.setVisible(false);
-                heightSuccessLbl.setVisible(false);
                 return;
             }
         }
         if (txtHeight.getText().length() > 3 || txtHeight.getText().length() < 3) {
             heightValid = false;
             heightLbl.setVisible(true);
-            heightSuccessLbl.setVisible(false);
+            nonAcceptableInput(txtHeight);
         } else {
             heightValid = true;
             heightLbl.setVisible(false);
-            heightSuccessLbl.setVisible(true);
+            acceptableInput(txtHeight);
         }
     }//GEN-LAST:event_txtHeightKeyReleased
 
@@ -800,32 +741,28 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         int weight = 0;
         if (txtWeight.getText().isEmpty()) {
-            weightSuccessLbl.setVisible(false);
             weightLbl.setVisible(false);
+            nonAcceptableInput(txtHeight);
         }
         try {
             weight = Integer.parseInt(txtWeight.getText());
         } catch (NumberFormatException e) {
             if (!txtWeight.getText().isEmpty()) {
                 weightValid = false;
-                weightSuccessLbl.setVisible(false);
                 weightLbl.setVisible(true);
                 return;
             } else {
                 weightValid = false;
                 weightLbl.setVisible(false);
-                weightSuccessLbl.setVisible(false);
                 return;
             }
         }
         if (weight > 200) {
             weightValid = false;
             weightLbl.setVisible(true);
-            weightSuccessLbl.setVisible(false);
         } else {
             weightValid = true;
             weightLbl.setVisible(false);
-            weightSuccessLbl.setVisible(true);
         }
     }//GEN-LAST:event_txtWeightKeyReleased
 
@@ -841,22 +778,23 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
+    private void acceptableInput(JTextField txt){
+        txt.setBackground(new java.awt.Color(204,255,204));
+    }
+    
+    private void nonAcceptableInput(JTextField txt){
+        txt.setBackground(new java.awt.Color(255,153,153));
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AgeSuccessLbl;
     private javax.swing.JLabel addressLbl;
-    private javax.swing.JLabel addressSuccessLbl;
     private javax.swing.JLabel ageBandLbl;
     private javax.swing.JLabel cityLbl;
-    private javax.swing.JLabel citySuccessLbl;
     private javax.swing.JLabel confirmPasswordLbl;
-    private javax.swing.JLabel confirmPasswordSuccessLbl;
     private javax.swing.JPasswordField confirmPasswordTxt;
     private javax.swing.JLabel emailIDAlreadyLbl;
     private javax.swing.JLabel emailLbl;
-    private javax.swing.JLabel emailSuccessLbl;
     private javax.swing.JLabel heightLbl;
-    private javax.swing.JLabel heightSuccessLbl;
     private javax.swing.JLabel invalidAgeLbl;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -872,10 +810,8 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel nameLbl;
-    private javax.swing.JLabel nameSuccessLbl;
     private javax.swing.JComboBox networkJComboBox;
     private javax.swing.JLabel passwordLbl;
-    private javax.swing.JLabel passwordSuccessLbl;
     private javax.swing.JRadioButton radioFemale;
     private javax.swing.JRadioButton radioMale;
     private javax.swing.JButton resetBtn;
@@ -890,8 +826,6 @@ public class CreateNewStudentJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtWeight;
     private javax.swing.JTextField txtZipcode;
     private javax.swing.JLabel weightLbl;
-    private javax.swing.JLabel weightSuccessLbl;
     private javax.swing.JLabel zipLbl;
-    private javax.swing.JLabel zipSuccessLbl;
     // End of variables declaration//GEN-END:variables
 }
