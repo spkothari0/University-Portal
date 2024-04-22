@@ -122,6 +122,14 @@ public abstract class Enterprise extends Organization {
     public ArrayList<Items> getStationeryInventoryList() {
         return stationeryInventoryList;
     }
+    
+    public void setFoodInventoryList(ArrayList<Items> l){
+        foodInventoryList=l;
+    }
+    
+    public void setStationeryInventoryList(ArrayList<Items> l){
+        stationeryInventoryList=l;
+    }
 
     public Items createFoodMenu() {
         Items i = new Items();
