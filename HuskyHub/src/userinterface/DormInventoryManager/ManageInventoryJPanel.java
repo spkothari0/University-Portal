@@ -16,6 +16,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -43,11 +44,9 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         this.account = account;
         this.business = business;
         itemLbl.setVisible(false);
-        itemSuccessLbl.setVisible(false);
         priceLbl.setVisible(false);
         price0lbl.setVisible(false);
         menuTbl.getTableHeader().setDefaultRenderer(new tableHeaderColors());
-        priceSuccessLbl.setVisible(false);
         this.userProcessContainer = userProcessContainer;
         populateTable();
     }
@@ -78,9 +77,7 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         addBtn = new javax.swing.JButton();
         delBtn = new javax.swing.JButton();
         itemLbl = new javax.swing.JLabel();
-        itemSuccessLbl = new javax.swing.JLabel();
         priceLbl = new javax.swing.JLabel();
-        priceSuccessLbl = new javax.swing.JLabel();
         price0lbl = new javax.swing.JLabel();
         priceLbl1 = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
@@ -186,17 +183,11 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         itemLbl.setText("Only Alphabets are allowed");
         add(itemLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 150, 20));
 
-        itemSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(itemSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 30, -1));
-
         priceLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         priceLbl.setForeground(new java.awt.Color(255, 0, 0));
         priceLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         priceLbl.setText("Only Numbers Allowed");
         add(priceLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, 160, 20));
-
-        priceSuccessLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/tick.png"))); // NOI18N
-        add(priceSuccessLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 30, -1));
 
         price0lbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         price0lbl.setForeground(new java.awt.Color(255, 0, 0));
@@ -265,8 +256,6 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
             populateTable();
             itemNameTxt.setText("");
             priceTxt.setText("");
-            itemSuccessLbl.setVisible(false);
-            priceSuccessLbl.setVisible(false);
 
         } else {
             JOptionPane.showMessageDialog(null, "Please enter all the required fields correctly!", "Error", JOptionPane.ERROR_MESSAGE);
@@ -298,13 +287,13 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     private void itemNameTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_itemNameTxtKeyReleased
         // TODO add your handling code here:
         if (!cityPatternCorrect(itemNameTxt.getText()) && !(itemNameTxt.getText().isEmpty())) {
-            itemSuccessLbl.setVisible(false);
             itemValid = false;
             itemLbl.setVisible(true);
+            nonAcceptableInput(itemNameTxt);
         } else {
             itemLbl.setVisible(false);
             itemValid = true;
-            itemSuccessLbl.setVisible(true);
+            acceptableInput(itemNameTxt);
         }
     }//GEN-LAST:event_itemNameTxtKeyReleased
 
@@ -312,9 +301,9 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         if (priceTxt.getText().isEmpty()) {
             priceValid = false;
-            priceSuccessLbl.setVisible(false);
             priceLbl.setVisible(false);
             price0lbl.setVisible(false);
+            nonAcceptableInput(priceTxt);
             return;
         }
         int price = 0;
@@ -322,35 +311,41 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
             price = Integer.parseInt(priceTxt.getText());
             if (price > 0) {
                 priceValid = true;
-                priceSuccessLbl.setVisible(true);
                 priceLbl.setVisible(false);
                 price0lbl.setVisible(false);
+                acceptableInput(priceTxt);
                 return;
             } else if (price == 0 || price < 0) {
                 priceValid = false;
-                priceSuccessLbl.setVisible(false);
                 price0lbl.setVisible(true);
                 priceLbl.setVisible(false);
+                nonAcceptableInput(priceTxt);
                 return;
             }
         } catch (NumberFormatException e) {
             if (!priceTxt.getText().isEmpty()) {
                 priceValid = false;
-                priceSuccessLbl.setVisible(false);
                 priceLbl.setVisible(true);
                 price0lbl.setVisible(false);
+                nonAcceptableInput(priceTxt);
                 return;
             } else {
                 priceValid = false;
                 priceLbl.setVisible(false);
                 price0lbl.setVisible(false);
-                priceSuccessLbl.setVisible(true);
+                acceptableInput(priceTxt);
                 return;
             }
         }
     }//GEN-LAST:event_priceTxtKeyReleased
 
-
+private void acceptableInput(JTextField txt){
+        txt.setBackground(new java.awt.Color(204,255,204));
+    }
+    
+    private void nonAcceptableInput(JTextField txt){
+        txt.setBackground(new java.awt.Color(255,153,153));
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addBtn;
     private javax.swing.JButton backBtn;
@@ -358,7 +353,6 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel itemLbl;
     private javax.swing.JTextField itemNameTxt;
-    private javax.swing.JLabel itemSuccessLbl;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
@@ -366,7 +360,6 @@ public class ManageInventoryJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel price0lbl;
     private javax.swing.JLabel priceLbl;
     private javax.swing.JLabel priceLbl1;
-    private javax.swing.JLabel priceSuccessLbl;
     private javax.swing.JTextField priceTxt;
     // End of variables declaration//GEN-END:variables
 }
