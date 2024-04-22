@@ -86,7 +86,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Enter Campus Name:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 132, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, 132, 20));
 
         submitJButton.setBackground(new java.awt.Color(102, 255, 255));
         submitJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -97,7 +97,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 90, 40));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 90, 40));
 
         nameJTextField.setBackground(new java.awt.Color(204, 255, 204));
         nameJTextField.setForeground(new java.awt.Color(51, 51, 51));
@@ -106,7 +106,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 nameJTextFieldKeyReleased(evt);
             }
         });
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 190, 30));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, 190, 30));
 
         backJButton.setBackground(new java.awt.Color(102, 255, 255));
         backJButton.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -162,7 +162,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         cityLbl.setForeground(new java.awt.Color(255, 51, 51));
         cityLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cityLbl.setText("Only Alphabets are allowed");
-        add(cityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 190, 20));
+        add(cityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 190, 20));
 
         jButton1.setBackground(new java.awt.Color(102, 255, 255));
         jButton1.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -173,7 +173,7 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 80, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 80, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed

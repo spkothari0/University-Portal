@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author shreyas
  */
-public class ManageEnterpriseJPanel extends javax.swing.JPanel {
+public class AddEnterpriseJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem system;
@@ -32,7 +32,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageEnterpriseJPanel
      */
-    public ManageEnterpriseJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public AddEnterpriseJPanel(JPanel userProcessContainer, EcoSystem system) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -207,7 +207,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Add ENTERPRISE");
+        jLabel4.setText("ADD Enterprise");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 723, 30));
 
         cityLbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
