@@ -12,6 +12,8 @@ import Business.Store.Items;
 import Business.UserAccount.UserAccount;
 import Business.WorkQueue.StationeryStoreWorkRequest;
 import Business.WorkQueue.WorkRequest;
+import Business.utilities.tableHeaderColors;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -37,6 +39,10 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         this.organization = organization;
         this.enterprise = enterprise;
         this.business = business;
+        delManTbl.getTableHeader().setDefaultRenderer(new tableHeaderColors());
+        menuTbl.getTableHeader().setDefaultRenderer(new tableHeaderColors());
+        populateMenuTable();
+        populateReqTable();
     }
 
     /**
@@ -88,7 +94,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 30));
 
         tabbedPaneCustom1.setBackground(new java.awt.Color(102, 255, 255));
-        tabbedPaneCustom1.setFont(new java.awt.Font("Stencil", 1, 14)); // NOI18N
+        tabbedPaneCustom1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         tabbedPaneCustom1.setSelectedColor(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -170,7 +176,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(refreshJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(processJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(181, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
 
         tabbedPaneCustom1.addTab("Manage Request", jPanel2);
@@ -222,7 +228,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         typeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pen and Penciles", "Books", "Others"}));
 
         itemNameTxt.setBackground(new java.awt.Color(204, 255, 204));
-        itemNameTxt.setForeground(new java.awt.Color(255, 51, 51));
+        itemNameTxt.setForeground(new java.awt.Color(51, 51, 51));
         itemNameTxt.setMinimumSize(new java.awt.Dimension(7, 25));
         itemNameTxt.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -305,7 +311,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
         delBtn.setBackground(new java.awt.Color(102, 255, 255));
         delBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        delBtn.setForeground(new java.awt.Color(102, 255, 255));
         delBtn.setText("Delete");
         delBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,7 +320,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
         addBtn.setBackground(new java.awt.Color(102, 255, 255));
         addBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        addBtn.setForeground(new java.awt.Color(102, 255, 255));
         addBtn.setText("Add");
         addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -345,7 +349,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(125, 125, 125)
                 .addComponent(delBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -363,7 +367,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         jLabel1.setBackground(new java.awt.Color(102, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 255, 255));
-        jLabel1.setText("Food Store Manager");
+        jLabel1.setText("Stationery Store Manager");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -372,7 +376,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(442, 442, 442)
                 .addComponent(jLabel1)
-                .addContainerGap(333, Short.MAX_VALUE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -411,7 +415,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_backBtnActionPerformed
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
-        populateRequestTable();
+        populateReqTable();
     }//GEN-LAST:event_refreshJButtonActionPerformed
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
@@ -428,11 +432,11 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         } else {
             request.setStatus("Completed");
             JOptionPane.showMessageDialog(null, "The request has been completed successfully.", "Success", JOptionPane.INFORMATION_MESSAGE);
-            populateRequestTable();
+            populateReqTable();
         }
     }//GEN-LAST:event_processJButtonActionPerformed
 
-    public void populateTable() {
+    public void populateReqTable() {
         DefaultTableModel dtm = (DefaultTableModel) delManTbl.getModel();
         dtm.setRowCount(0);
         for (Organization o : enterprise.getOrganizationDirectory().getOrganizationList()) {
@@ -442,17 +446,18 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
                     row[0] = request.getRequestID();
                     row[1] = request.getSender().getStudent().getName();
                     row[2] = request;
-                    row[3] = request.getStatus().toString();
+                    row[3] = request.getStatus();
                     dtm.addRow(row);
                 }
             }
         }
     }
     
-    private void populateRequestTable() {
+    private void populateMenuTable() {
         DefaultTableModel dtm = (DefaultTableModel) menuTbl.getModel();
         dtm.setRowCount(0);
-
+        if(enterprise.getStationeryInventoryList()==null)
+            return;
         for (Items store : enterprise.getStationeryInventoryList()) {
             Object row[] = new Object[4];
             row[0] = store;
@@ -491,13 +496,15 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
             enterprise.deleteStationeryItem(item);
             JOptionPane.showMessageDialog(null, "Item deleted successfully.", "Success",
                     JOptionPane.INFORMATION_MESSAGE);
-            populateTable();
+            populateMenuTable();
         }
     }//GEN-LAST:event_delBtnActionPerformed
 
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
         // TODO add your handling code here:
         if (isValidInput()) {
+            if(enterprise.getStationeryInventoryList()==null)
+                enterprise.setStationeryInventoryList(new ArrayList<>());
             for (Items item : enterprise.getStationeryInventoryList()) {
                 if (itemNameTxt.getText().equals(item.getItemName())) {
 
@@ -532,10 +539,12 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
             s.setItemName(name);
             s.setItemType(type);
             s.setPrice(price);
+            s.setQuantity(Integer.parseInt(quantityTxt.getText()));
             JOptionPane.showMessageDialog(null, "Item Added Successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-            populateTable();
+            populateMenuTable();
             itemNameTxt.setText("");
             priceTxt.setText("");
+            quantityTxt.setText("");
             typeComboBox.setSelectedIndex(0);
 
         } else {
