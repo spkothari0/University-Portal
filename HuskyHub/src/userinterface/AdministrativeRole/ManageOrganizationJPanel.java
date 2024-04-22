@@ -38,11 +38,11 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         organizationJComboBox.removeAllItems();
         String ent = enterprise.getEnterpriseType().toString();
         for (Type type : Organization.Type.values()) {
-            if (ent.equals("Diet Unit")) {
+            if (ent.equals("Nourishment Enterprise")) {
                 if (type.getValue().equals(Type.Nutrition.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-            } else if (ent.equals("Trainer Unit")) {
+            } else if (ent.equals("Gym Helper Enterprise")) {
                 if (type.getValue().equals(Type.FitnessTraining.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
@@ -50,29 +50,33 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                     organizationJComboBox.addItem(type);
                 }
 
-            } else if (ent.equals("Doctor Unit")) {
+            } else if (ent.equals("Health Consultant Enterprise")) {
                 if (type.getValue().equals(Type.GeneralPractitioner.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.Physiotherapist.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-//                if (type.getValue().equals(Type.Orthopedic.getValue())) {
-//                    organizationJComboBox.addItem(type);
-//                }
 
-            } else if (ent.equals("Dorm Inventory Unit")) {
+            } else if (ent.equals("University Housing Enterprise")) {
                 if (type.getValue().equals(Type.DormInventory.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.Delivery.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
-            } else if (ent.equals("Maintenance Unit")) {
+            } else if (ent.equals("Housing Repair Enterprise")) {
                 if (type.getValue().equals(Type.Service.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
                 if (type.getValue().equals(Type.ServiceWorker.getValue())) {
+                    organizationJComboBox.addItem(type);
+                }
+            }else if (ent.equals("College Store Enterprise")) {
+                if (type.getValue().equals(Type.FoodStore.getValue())) {
+                    organizationJComboBox.addItem(type);
+                }
+                if (type.getValue().equals(Type.StationaryStore.getValue())) {
                     organizationJComboBox.addItem(type);
                 }
             }
@@ -113,7 +117,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(0, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        organizationJTable.setBackground(new java.awt.Color(204, 204, 204));
+        organizationJTable.setBackground(new java.awt.Color(204, 255, 204));
         organizationJTable.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         organizationJTable.setForeground(new java.awt.Color(51, 51, 51));
         organizationJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -145,7 +149,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
             organizationJTable.getColumnModel().getColumn(1).setResizable(false);
         }
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 480, 120));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 480, 120));
 
         addJButton.setBackground(new java.awt.Color(102, 255, 255));
         addJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -156,9 +160,9 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 122, 42));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 122, 42));
 
-        organizationJComboBox.setBackground(new java.awt.Color(204, 204, 204));
+        organizationJComboBox.setBackground(new java.awt.Color(204, 255, 204));
         organizationJComboBox.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         organizationJComboBox.setForeground(new java.awt.Color(51, 51, 51));
         organizationJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -167,12 +171,12 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
                 organizationJComboBoxActionPerformed(evt);
             }
         });
-        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 190, 30));
+        add(organizationJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 190, 30));
 
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setText("Organization Type :");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, -1));
 
         backJButton.setBackground(new java.awt.Color(102, 255, 255));
         backJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -188,7 +192,7 @@ public class ManageOrganizationJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText("Manage Organization");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 90, 270, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 270, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addJButtonActionPerformed

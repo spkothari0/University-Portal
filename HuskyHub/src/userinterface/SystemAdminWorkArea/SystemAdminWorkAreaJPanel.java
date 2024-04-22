@@ -12,6 +12,7 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.ArrayList;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
@@ -31,6 +32,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     Enterprise enterprise;
     UserAccount account;
     Network network;
+    ImageIcon adminImage;
 
     public SystemAdminWorkAreaJPanel(JPanel userProcessContainer, Enterprise enterprise, Organization organization, UserAccount account, EcoSystem business, Network network) {
         initComponents();
@@ -101,90 +103,103 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageNetwork = new javax.swing.JButton();
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTree = new javax.swing.JTree();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         viewStudentsBtn = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
+        imgLabel = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
         jSplitPane.setDividerLocation(90);
         jSplitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
         jPanel1.setMinimumSize(new java.awt.Dimension(565, 25));
         jPanel1.setPreferredSize(new java.awt.Dimension(565, 25));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(102, 255, 255));
         jLabel1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
         jLabel1.setText("System Admin");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 6, 151, 26));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 40, 151, 26));
 
         jSplitPane.setLeftComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnManageNetwork.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageNetwork.setBackground(new java.awt.Color(102, 255, 255));
         btnManageNetwork.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(51, 51, 51));
-        btnManageNetwork.setText("Manage Network");
+        btnManageNetwork.setText("Add/Delete Network");
+        btnManageNetwork.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnManageNetworkMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageNetworkMouseExited(evt);
+            }
+        });
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 190, 38));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 270, 38));
 
-        btnManageEnterprise.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageEnterprise.setBackground(new java.awt.Color(102, 255, 255));
         btnManageEnterprise.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(51, 51, 51));
         btnManageEnterprise.setText("Manage Enterprises");
+        btnManageEnterprise.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnManageEnterpriseMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageEnterpriseMouseExited(evt);
+            }
+        });
         btnManageEnterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 190, 40));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 270, 40));
 
-        btnManageAdmin.setBackground(new java.awt.Color(204, 204, 204));
+        btnManageAdmin.setBackground(new java.awt.Color(102, 255, 255));
         btnManageAdmin.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(51, 51, 51));
-        btnManageAdmin.setText("Manage Enterprise Admin");
+        btnManageAdmin.setText("Add/Delete Enterprise Admin");
+        btnManageAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnManageAdminMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageAdminMouseExited(evt);
+            }
+        });
         btnManageAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 190, 41));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 270, 41));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/manageNetworkImg.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/manageEnterpriseImg.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 28, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/manageAdminImg.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 28, -1));
-
+        greetLbl.setBackground(new java.awt.Color(102, 255, 255));
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        greetLbl.setForeground(new java.awt.Color(204, 204, 204));
+        greetLbl.setForeground(new java.awt.Color(102, 255, 255));
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel2.add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 290, 60));
+        jPanel2.add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 290, 60));
 
+        jLabel7.setBackground(new java.awt.Color(102, 255, 255));
         jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Welcome,");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, 90, 40));
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 90, 40));
 
         jTree.setBackground(new java.awt.Color(204, 204, 204));
         jTree.setForeground(new java.awt.Color(51, 51, 51));
@@ -195,27 +210,29 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTree);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 243, 300));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 243, 300));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundLogo.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 100, 100));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/backgroundFoot.png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 264, 52));
-
-        viewStudentsBtn.setBackground(new java.awt.Color(204, 204, 204));
+        viewStudentsBtn.setBackground(new java.awt.Color(102, 255, 255));
         viewStudentsBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         viewStudentsBtn.setForeground(new java.awt.Color(51, 51, 51));
-        viewStudentsBtn.setText("View Students");
+        viewStudentsBtn.setText("Students List");
+        viewStudentsBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                viewStudentsBtnMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                viewStudentsBtnMouseExited(evt);
+            }
+        });
         viewStudentsBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewStudentsBtnActionPerformed(evt);
             }
         });
-        jPanel2.add(viewStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 330, 190, 40));
+        jPanel2.add(viewStudentsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 270, 40));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/manageAdminImg.png"))); // NOI18N
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 28, -1));
+        imgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/SystemAdmin.jpg"))); // NOI18N
+        jPanel2.add(imgLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(488, 66, 380, 280));
 
         jSplitPane.setRightComponent(jPanel2);
 
@@ -257,20 +274,59 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_viewStudentsBtnActionPerformed
 
+    private void btnManageNetworkMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageNetworkMouseEntered
+        // TODO add your handling code here:
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/Network.png")));
+    }//GEN-LAST:event_btnManageNetworkMouseEntered
+
+    private void btnManageNetworkMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageNetworkMouseExited
+        // TODO add your handling code here:
+        adminImage = null;
+        imgLabel.setIcon(adminImage);
+    }//GEN-LAST:event_btnManageNetworkMouseExited
+
+    private void btnManageEnterpriseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterpriseMouseEntered
+        // TODO add your handling code here:adminImage
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/enterpriseImg.png")));
+    }//GEN-LAST:event_btnManageEnterpriseMouseEntered
+
+    private void btnManageEnterpriseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterpriseMouseExited
+        // TODO add your handling code here:
+        adminImage = null;
+        imgLabel.setIcon(adminImage);
+    }//GEN-LAST:event_btnManageEnterpriseMouseExited
+
+    private void btnManageAdminMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageAdminMouseEntered
+        // TODO add your handling code here:
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/entAdmin.png")));
+    }//GEN-LAST:event_btnManageAdminMouseEntered
+
+    private void btnManageAdminMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageAdminMouseExited
+        // TODO add your handling code here:
+        adminImage = null;
+        imgLabel.setIcon(adminImage);
+    }//GEN-LAST:event_btnManageAdminMouseExited
+
+    private void viewStudentsBtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewStudentsBtnMouseEntered
+        // TODO add your handling code here: 
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/studentList.png")));
+    }//GEN-LAST:event_viewStudentsBtnMouseEntered
+
+    private void viewStudentsBtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewStudentsBtnMouseExited
+        // TODO add your handling code here:
+        adminImage = null;
+        imgLabel.setIcon(adminImage);
+    }//GEN-LAST:event_viewStudentsBtnMouseExited
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageEnterprise;
     private javax.swing.JButton btnManageNetwork;
     private javax.swing.JLabel greetLbl;
+    private javax.swing.JLabel imgLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

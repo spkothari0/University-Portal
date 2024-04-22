@@ -7,7 +7,9 @@ package Business.Enterprise;
 
 import Business.Organization.Organization;
 import Business.Organization.OrganizationDirectory;
+import Business.Store.Items;
 import Business.Inventory.DormInventoryDirectory;
+import com.db4o.collections.ActivatableArrayList;
 import java.util.ArrayList;
 
 /**
@@ -21,13 +23,19 @@ public abstract class Enterprise extends Organization {
     private DormInventoryDirectory dormInventoryDirectory;
     private ArrayList<Items> itemsList;
     private ArrayList<ServiceTypes> serviceTypeList;
+    protected ArrayList<Items> foodInventoryList = new ArrayList<>();
+    protected ArrayList<Items> stationeryInventoryList = new ArrayList<>();
 
+    ;
+    
     public Enterprise(String name, EnterpriseType type) {
         super(name);
         this.enterpriseType = type;
         this.itemsList = new ArrayList<>();
         this.serviceTypeList = new ArrayList<>();
         organizationDirectory = new OrganizationDirectory();
+        foodInventoryList = new ArrayList<>();
+        stationeryInventoryList = new ArrayList<>();
     }
 
     public OrganizationDirectory getOrganizationDirectory() {
@@ -40,12 +48,12 @@ public abstract class Enterprise extends Organization {
 
     public enum EnterpriseType {
 
-        DietUnit("Diet Unit"),
-        TrainerUnit("Trainer Unit"),
-        DoctorUnit("Doctor Unit"),
-        DormInventoryUnit("Dorm Inventory Unit"),
-        MaintenanceUnit("Maintenance Unit"),
-        CollegeStore("College Store");
+        NourishmentEnterprise("Nourishment Enterprise"),
+        GymHelperEnterprise("Gym Helper Enterprise"),
+        HealthConsultantEnterprise("Health Consultant Enterprise"),
+        UniversityHousingEnterprise("University Housing Enterprise"),
+        HousingRepairEnterprise("Housing Repair Enterprise"),
+        CollegeStoreEnterprise("College Store Enterprise");
 
         private String value;
 
@@ -107,4 +115,39 @@ public abstract class Enterprise extends Organization {
         itemsList.remove(item);
     }
 
+    public ArrayList<Items> getFoodInventoryList() {
+        return foodInventoryList;
+    }
+
+    public ArrayList<Items> getStationeryInventoryList() {
+        return stationeryInventoryList;
+    }
+    
+    public void setFoodInventoryList(ArrayList<Items> l){
+        foodInventoryList=l;
+    }
+    
+    public void setStationeryInventoryList(ArrayList<Items> l){
+        stationeryInventoryList=l;
+    }
+
+    public Items createFoodMenu() {
+        Items i = new Items();
+        this.foodInventoryList.add(i);
+        return i;
+    }
+
+    public void deleteFoodItem(Items item) {
+        foodInventoryList.remove(item);
+    }
+
+    public void deleteStationeryItem(Items item) {
+        stationeryInventoryList.remove(item);
+    }
+
+    public Items createStationeryMenu() {
+        Items i = new Items();
+        this.stationeryInventoryList.add(i);
+        return i;
+    }
 }

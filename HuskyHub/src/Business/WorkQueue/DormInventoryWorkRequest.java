@@ -5,8 +5,9 @@
  */
 package Business.WorkQueue;
 
-import Business.Enterprise.Items;
 import java.util.ArrayList;
+
+import Business.Store.Items;
 
 /**
  *
