@@ -55,7 +55,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        backBtn = new javax.swing.JButton();
         tabbedPaneCustom1 = new userinterface.tabbedPaneCustom.TabbedPaneCustom();
         jPanel2 = new javax.swing.JPanel();
         refreshJButton = new javax.swing.JButton();
@@ -81,17 +80,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        backBtn.setBackground(new java.awt.Color(102, 255, 255));
-        backBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        backBtn.setForeground(new java.awt.Color(51, 51, 51));
-        backBtn.setText("< Back");
-        backBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backBtnActionPerformed(evt);
-            }
-        });
-        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 30));
 
         tabbedPaneCustom1.setBackground(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
@@ -410,10 +398,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backBtnActionPerformed
-
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
         populateReqTable();
     }//GEN-LAST:event_refreshJButtonActionPerformed
@@ -556,7 +540,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addBtn;
-    private javax.swing.JButton backBtn;
     private javax.swing.JButton delBtn;
     private javax.swing.JTable delManTbl;
     private javax.swing.JTextField itemNameTxt;

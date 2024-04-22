@@ -70,18 +70,17 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
         delManTbl = new javax.swing.JTable();
         processJButton = new javax.swing.JButton();
         refreshJButton = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         greetLbl = new javax.swing.JLabel();
         enterpriseLabel = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(0, 51, 51));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(0, 102, 102));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         delManTbl.setBackground(new java.awt.Color(204, 255, 204));
         delManTbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -109,9 +108,9 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(delManTbl);
+        jScrollPane2.setViewportView(delManTbl);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 730, 130));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 730, 130));
 
         processJButton.setBackground(new java.awt.Color(102, 255, 255));
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -122,7 +121,7 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
                 processJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 150, 50));
+        add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 150, 50));
 
         refreshJButton.setBackground(new java.awt.Color(102, 255, 255));
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -133,67 +132,35 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 130, 50));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 350, 130, 50));
 
-        jPanel3.setBackground(new java.awt.Color(0, 102, 102));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel4.setBackground(new java.awt.Color(0, 51, 51));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel7.setText("Welcome,");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 120, 40));
+        jLabel8.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel8.setText("Welcome,");
+        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, 120, 40));
 
         greetLbl.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
         greetLbl.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jPanel3.add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 320, 40));
+        jPanel4.add(greetLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 320, 40));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 40));
+        add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 40));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
         enterpriseLabel.setText(" SERVICE REQUEST");
-        jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 410, 30));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 410, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed
-
-        int selectedRow = delManTbl.getSelectedRow();
-
-        if (selectedRow < 0) {
-            JOptionPane.showMessageDialog(null, "Please select a row.", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        MaintenanceWorkRequest request = (MaintenanceWorkRequest) delManTbl.getValueAt(selectedRow, 2);
-        if (request.getStatus() == "Completed") {
-            JOptionPane.showMessageDialog(null, "The request has been already completed.", "Error", JOptionPane.ERROR_MESSAGE);
-            populateTable();
-        } else {
-            request.setStatus("Completed");
-            JOptionPane.showMessageDialog(null, "The request has been completed successfully.", "Success", JOptionPane.INFORMATION_MESSAGE);
-            populateTable();
-        }
-
+        // TODO add your handling code here:
     }//GEN-LAST:event_processJButtonActionPerformed
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
-        populateTable();
+        // TODO add your handling code here:
     }//GEN-LAST:event_refreshJButtonActionPerformed
 
 
@@ -201,10 +168,9 @@ public class ServiceWorkerWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable delManTbl;
     private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JLabel greetLbl;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton processJButton;
     private javax.swing.JButton refreshJButton;
     // End of variables declaration//GEN-END:variables

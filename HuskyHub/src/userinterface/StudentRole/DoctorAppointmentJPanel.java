@@ -75,13 +75,13 @@ public class DoctorAppointmentJPanel extends javax.swing.JPanel {
         physioBtn.setBackground(new java.awt.Color(102, 255, 255));
         physioBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         physioBtn.setForeground(new java.awt.Color(51, 51, 51));
-        physioBtn.setText("Physiotherapist");
+        physioBtn.setText("Counseling and Psychological Services");
         physioBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 physioBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(physioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 156, 35));
+        jPanel1.add(physioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, 260, 35));
 
         backJButton.setBackground(new java.awt.Color(102, 255, 255));
         backJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N

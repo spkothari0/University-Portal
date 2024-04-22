@@ -90,7 +90,6 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         physioTbl = new javax.swing.JTable();
-        enterpriseLabel = new javax.swing.JLabel();
 
         setLayout(new java.awt.CardLayout());
 
@@ -148,11 +147,6 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
         jScrollPane2.setViewportView(physioTbl);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 820, 140));
-
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        enterpriseLabel.setForeground(new java.awt.Color(102, 255, 255));
-        enterpriseLabel.setText("Manage Organization Employees");
-        jPanel1.add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 410, 30));
 
         add(jPanel1, "card2");
     }// </editor-fold>//GEN-END:initComponents
@@ -218,7 +212,6 @@ public class PhysiotherapistJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel enterpriseLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;

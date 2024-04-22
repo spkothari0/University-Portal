@@ -91,12 +91,10 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         backJButton = new javax.swing.JButton();
         txtWtDec = new javax.swing.JTextField();
-        goalComboBox = new javax.swing.JComboBox<>();
-        trainerAptBtn = new javax.swing.JButton();
+        goalComboBox = new javax.swing.JComboBox<String>();
         submitRequest = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         dietStatusTbl = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -181,19 +179,8 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         goalComboBox.setBackground(new java.awt.Color(204, 255, 204));
         goalComboBox.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         goalComboBox.setForeground(new java.awt.Color(51, 51, 51));
-        goalComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gain Weight", "Loose Weight" }));
+        goalComboBox.setModel(new javax.swing.DefaultComboBoxModel<String>(new String[] { "Gain Weight", "Loose Weight" }));
         add(goalComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 138, 32));
-
-        trainerAptBtn.setBackground(new java.awt.Color(102, 255, 255));
-        trainerAptBtn.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        trainerAptBtn.setForeground(new java.awt.Color(51, 51, 51));
-        trainerAptBtn.setText("Get Training Workouts");
-        trainerAptBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                trainerAptBtnActionPerformed(evt);
-            }
-        });
-        add(trainerAptBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 183, 40));
 
         submitRequest.setBackground(new java.awt.Color(102, 255, 255));
         submitRequest.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -238,20 +225,14 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
         }
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 720, 130));
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 255, 255));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Training");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 180, -1));
-        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 760, 10));
+        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 520, 10));
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
         add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 10, 160));
 
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
         add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 10, 160));
-        add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 760, 10));
+        add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 510, 10));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 255, 255));
@@ -293,14 +274,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
     private void txtWtDecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtWtDecActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtWtDecActionPerformed
-
-    private void trainerAptBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_trainerAptBtnActionPerformed
-        // TODO add your handling code here:
-        TrainerAppointmentJPanel trainer = new TrainerAppointmentJPanel(userProcessContainer, system, network, userAccount);
-        userProcessContainer.add("TrainerAppointmentJPanel", trainer);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
-    }//GEN-LAST:event_trainerAptBtnActionPerformed
 
     private void submitRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitRequestActionPerformed
         // TODO add your handling code here:
@@ -379,7 +352,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -390,7 +362,6 @@ public class StudentAnalysisJPanel extends javax.swing.JPanel {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JButton submitRequest;
-    private javax.swing.JButton trainerAptBtn;
     private javax.swing.JTextField txtBMI;
     private javax.swing.JTextField txtWtDec;
     // End of variables declaration//GEN-END:variables
