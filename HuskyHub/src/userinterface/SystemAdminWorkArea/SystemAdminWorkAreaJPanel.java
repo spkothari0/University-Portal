@@ -153,7 +153,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageEnterprise.setBackground(new java.awt.Color(102, 255, 255));
         btnManageEnterprise.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(51, 51, 51));
-        btnManageEnterprise.setText("Manage Enterprises");
+        btnManageEnterprise.setText("Create Enterprises");
         btnManageEnterprise.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnManageEnterpriseMouseEntered(evt);
@@ -172,7 +172,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         btnManageAdmin.setBackground(new java.awt.Color(102, 255, 255));
         btnManageAdmin.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(51, 51, 51));
-        btnManageAdmin.setText("Add/Delete Enterprise Admin");
+        btnManageAdmin.setText("Modify Enterprise Admin");
         btnManageAdmin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnManageAdminMouseEntered(evt);
@@ -248,7 +248,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnManageNetworkActionPerformed
 
     private void btnManageEnterpriseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEnterpriseActionPerformed
-        ManageEnterpriseJPanel manageEnterpriseJPanel = new ManageEnterpriseJPanel(userProcessContainer, system);
+        AddEnterpriseJPanel manageEnterpriseJPanel = new AddEnterpriseJPanel(userProcessContainer, system);
         userProcessContainer.add("manageEnterpriseJPanel", manageEnterpriseJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
