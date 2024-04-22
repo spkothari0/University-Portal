@@ -13,6 +13,7 @@ import Business.UserAccount.UserAccount;
 import Business.WorkQueue.StationeryStoreWorkRequest;
 import Business.WorkQueue.WorkRequest;
 import Business.utilities.tableHeaderColors;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -92,7 +93,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 30));
 
-        tabbedPaneCustom1.setBackground(new java.awt.Color(255, 255, 255));
+        tabbedPaneCustom1.setBackground(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         tabbedPaneCustom1.setSelectedColor(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -226,7 +227,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         typeComboBox.setForeground(new java.awt.Color(51, 51, 51));
         typeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pen and Penciles", "Books", "Others"}));
 
-        itemNameTxt.setBackground(new java.awt.Color(204, 204, 204));
+        itemNameTxt.setBackground(new java.awt.Color(204, 255, 204));
         itemNameTxt.setForeground(new java.awt.Color(51, 51, 51));
         itemNameTxt.setMinimumSize(new java.awt.Dimension(7, 25));
         itemNameTxt.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -310,7 +311,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
         delBtn.setBackground(new java.awt.Color(102, 255, 255));
         delBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        delBtn.setForeground(new java.awt.Color(102, 255, 255));
         delBtn.setText("Delete");
         delBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,7 +320,6 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
 
         addBtn.setBackground(new java.awt.Color(102, 255, 255));
         addBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        addBtn.setForeground(new java.awt.Color(102, 255, 255));
         addBtn.setText("Add");
         addBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -368,7 +367,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
         jLabel1.setBackground(new java.awt.Color(102, 255, 255));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 255, 255));
-        jLabel1.setText("Food Store Manager");
+        jLabel1.setText("Stationery Store Manager");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -377,7 +376,7 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(442, 442, 442)
                 .addComponent(jLabel1)
-                .addContainerGap(333, Short.MAX_VALUE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,7 +456,8 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
     private void populateMenuTable() {
         DefaultTableModel dtm = (DefaultTableModel) menuTbl.getModel();
         dtm.setRowCount(0);
-
+        if(enterprise.getStationeryInventoryList()==null)
+            return;
         for (Items store : enterprise.getStationeryInventoryList()) {
             Object row[] = new Object[4];
             row[0] = store;
@@ -503,6 +503,8 @@ public class StationeryStoreManagerJPanel extends javax.swing.JPanel {
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
         // TODO add your handling code here:
         if (isValidInput()) {
+            if(enterprise.getStationeryInventoryList()==null)
+                enterprise.setStationeryInventoryList(new ArrayList<>());
             for (Items item : enterprise.getStationeryInventoryList()) {
                 if (itemNameTxt.getText().equals(item.getItemName())) {
 

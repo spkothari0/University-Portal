@@ -120,11 +120,10 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         placeOrderBtn1 = new javax.swing.JButton();
         imgLabel = new javax.swing.JLabel();
         btnUpdateProfile = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         btnUniversityStore = new javax.swing.JButton();
         btnStationeryStore = new javax.swing.JButton();
         btnFoodStore = new javax.swing.JButton();
-        
+
         setBackground(new java.awt.Color(0, 51, 51));
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -213,9 +212,6 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
         add(btnUpdateProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, 150, 40));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/manageAdminImg.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 60, 40, 40));
 
         btnUniversityStore.setBackground(new java.awt.Color(102, 255, 255));
         btnUniversityStore.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -421,7 +417,6 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnUpdateProfile;
     private javax.swing.JLabel greetLbl;
     private javax.swing.JLabel imgLabel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JButton placeOrderBtn1;
