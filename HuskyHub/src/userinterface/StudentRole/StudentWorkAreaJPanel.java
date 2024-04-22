@@ -150,7 +150,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         btnMaintainReq.setBackground(new java.awt.Color(102, 255, 255));
         btnMaintainReq.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         btnMaintainReq.setForeground(new java.awt.Color(51, 51, 51));
-        btnMaintainReq.setText("Dorm Maintenence");
+        btnMaintainReq.setText("Housing Maintenence");
         btnMaintainReq.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnMaintainReqMouseEntered(evt);
@@ -183,7 +183,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         placeOrderBtn1.setBackground(new java.awt.Color(102, 255, 255));
         placeOrderBtn1.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         placeOrderBtn1.setForeground(new java.awt.Color(51, 51, 51));
-        placeOrderBtn1.setText("Student Store");
+        placeOrderBtn1.setText("Housing Inventory Requirements");
         placeOrderBtn1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 placeOrderBtn1MouseEntered(evt);
@@ -200,7 +200,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
         add(placeOrderBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 340, 80));
 
         imgLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userinterface/images/StudentWorkArea.jpg"))); // NOI18N
-        add(imgLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 186, 490, 270));
+        add(imgLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 186, 600, 320));
 
         btnUpdateProfile.setBackground(new java.awt.Color(102, 255, 255));
         btnUpdateProfile.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
@@ -325,7 +325,7 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
     private void placeOrderBtn1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_placeOrderBtn1MouseEntered
         // TODO add your handling code here:
-        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/StudentStore.png")));
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/house.png")));
         hideStoreButtons();
     }//GEN-LAST:event_placeOrderBtn1MouseEntered
 
@@ -349,6 +349,8 @@ public class StudentWorkAreaJPanel extends javax.swing.JPanel {
 
     private void btnUniversityStoreMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUniversityStoreMouseEntered
         // TODO add your handling code here:
+        imgLabel.setIcon(new ImageIcon(getClass().getResource("/userinterface/images/StudentStore.png")));
+        hideStoreButtons();
     }//GEN-LAST:event_btnUniversityStoreMouseEntered
 
     private void btnUniversityStoreMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUniversityStoreMouseExited
