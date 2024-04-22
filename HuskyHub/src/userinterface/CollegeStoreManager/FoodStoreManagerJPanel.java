@@ -94,7 +94,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
         });
         add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 80, 30));
 
-        tabbedPaneCustom1.setBackground(new java.awt.Color(255, 255, 255));
+        tabbedPaneCustom1.setBackground(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.setFont(new java.awt.Font("Stencil", 1, 14)); // NOI18N
         tabbedPaneCustom1.setSelectedColor(new java.awt.Color(102, 255, 255));
         tabbedPaneCustom1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -105,7 +105,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(30, 130, 130));
 
-        refreshJButton.setBackground(new java.awt.Color(204, 204, 204));
+        refreshJButton.setBackground(new java.awt.Color(102, 255, 255));
         refreshJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(51, 51, 51));
         refreshJButton.setText("Refresh");
@@ -115,7 +115,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
             }
         });
 
-        processJButton.setBackground(new java.awt.Color(204, 204, 204));
+        processJButton.setBackground(new java.awt.Color(102, 255, 255));
         processJButton.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         processJButton.setForeground(new java.awt.Color(51, 51, 51));
         processJButton.setText("Mark as Completed");
@@ -125,7 +125,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
             }
         });
 
-        delManTbl.setBackground(new java.awt.Color(204, 204, 204));
+        delManTbl.setBackground(new java.awt.Color(204, 255, 204));
         delManTbl.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
         delManTbl.setForeground(new java.awt.Color(51, 51, 51));
         delManTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -184,7 +184,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(30, 130, 130));
 
-        menuTbl.setBackground(new java.awt.Color(204, 204, 204));
+        menuTbl.setBackground(new java.awt.Color(204, 255, 204));
         menuTbl.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
         menuTbl.setForeground(new java.awt.Color(51, 51, 51));
         menuTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -205,7 +205,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(menuTbl);
 
-        delBtn.setBackground(new java.awt.Color(204, 204, 204));
+        delBtn.setBackground(new java.awt.Color(102, 255, 255));
         delBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         delBtn.setForeground(new java.awt.Color(51, 51, 51));
         delBtn.setText("Delete");
@@ -218,24 +218,24 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
         jPanel4.setBackground(new java.awt.Color(30, 130, 130));
 
         jLabel5.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel5.setForeground(new java.awt.Color(102, 255, 255));
         jLabel5.setText("Item Type:");
 
         jLabel3.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel3.setForeground(new java.awt.Color(102, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Item Name:");
 
         jLabel4.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel4.setForeground(new java.awt.Color(102, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Price:");
 
-        typeComboBox.setBackground(new java.awt.Color(204, 204, 204));
+        typeComboBox.setBackground(new java.awt.Color(204, 255, 204));
         typeComboBox.setForeground(new java.awt.Color(51, 51, 51));
         typeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Beverages", "Foot Items"}));
 
-        itemNameTxt.setBackground(new java.awt.Color(204, 204, 204));
+        itemNameTxt.setBackground(new java.awt.Color(204, 255, 204));
         itemNameTxt.setForeground(new java.awt.Color(255, 51, 51));
         itemNameTxt.setMinimumSize(new java.awt.Dimension(7, 25));
         itemNameTxt.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -244,7 +244,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
             }
         });
 
-        priceTxt.setBackground(new java.awt.Color(204, 204, 204));
+        priceTxt.setBackground(new java.awt.Color(204, 255, 204));
         priceTxt.setForeground(new java.awt.Color(51, 51, 51));
         priceTxt.setMinimumSize(new java.awt.Dimension(7, 25));
         priceTxt.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -254,11 +254,11 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
         });
 
         jLabel6.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel6.setForeground(new java.awt.Color(102, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Quantity:");
 
-        quantityTxt.setBackground(new java.awt.Color(204, 204, 204));
+        quantityTxt.setBackground(new java.awt.Color(204, 255, 204));
         quantityTxt.setForeground(new java.awt.Color(51, 51, 51));
         quantityTxt.setMinimumSize(new java.awt.Dimension(7, 25));
         quantityTxt.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -316,7 +316,7 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        addBtn.setBackground(new java.awt.Color(204, 204, 204));
+        addBtn.setBackground(new java.awt.Color(102, 255, 255));
         addBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         addBtn.setForeground(new java.awt.Color(51, 51, 51));
         addBtn.setText("Add");
@@ -367,28 +367,24 @@ public class FoodStoreManagerJPanel extends javax.swing.JPanel {
 
         jPanel3.setBackground(new java.awt.Color(0, 102, 102));
 
-        jLabel1.setBackground(new java.awt.Color(102, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setText("Food Store Manager");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(442, 442, 442)
-                .addComponent(jLabel1)
-                .addContainerGap(333, Short.MAX_VALUE))
+            .addGap(0, 950, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap())
+            .addGap(0, 60, Short.MAX_VALUE)
         );
 
         add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 60));
+
+        jLabel1.setBackground(new java.awt.Color(102, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 255, 255));
+        jLabel1.setText("Food Store Manager");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshJButtonActionPerformed
