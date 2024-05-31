@@ -2,7 +2,7 @@
 The final project of AED
 Github Link: (https://github.com/kothari-shr/AED_INFO_5100_InitToWinIt)
 
-# University Portal [University Student Management System]
+# University Portal [University Event Management System]
 
 
 ## Overview
